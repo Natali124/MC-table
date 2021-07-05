@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="main.css">
+  <title>MCSP table</title>
+  <script type="text/javascript" src="https://www.hostmath.com/Math/MathJax.js?config=OK"></script>
+  <script src="main.js"></script>  
+</head>
+<body>
+  <div>
+  <table class="tableH">
+    <thead>
+      <tr>
+        <th style="width: 60px;" class="AM">time</th>
+        <th>week 1</th>
+        <th>week 2</th>
+        <th>week 3</th>
+        <th>week 4</th>
+      </tr>
+    </thead>
+  </table>
+
+  <table class="tableB">
+   <tr>
+     <td rowspan="6" class="AM">9 AM</td>
+   </tr>
+   <tr>
+    <td><button onclick="f1f1('G1D')" class="hbtn" id="G1">Better sleep through modeling  <img id="chili" src="chili.png"> (Olivia Walch)</button><button onclick="f1f1h('G1hD')" class="hbtn" id="G1h">Better sheep through modeling <img id="chili" src="chili.png"> (J-Lo)</button></td>
+    <td><button onclick="f1f2('G2D')" class="hbtn" id="G2">A pair of fractal curves  <img id="chili" src="chili.png"><img id="chili" src="chili.png"> (Ben)</button><button onclick="f1f2h('G2hD')" class="hbtn" id="G2h">The pirate game  <img id="chili" src="chili.png"> (Ben)</button></td>
+    <td><button onclick="f1f3('G3D')" class="btn" id="G3">Curvature lies within <img id="chili" src="chili.png"><img id="chili" src="chili.png"> (Apurva Nakade)</button></td>
+    <td><button onclick="f1f4('G4D')" class="btn" id="G4">Archers at the ready! <img id="chili" src="chili.png"><img id="chili" src="chili.png"><img id="chili" src="chili.png"><img id="chili" src="chili.png"> (Zoe)</button></td>
+  </tr>
+  <tr>
+      <td><button onclick="f2f1('G5D')" class="btn" id="G5">Insert geometry joke here <img id="chili" src="chili.png"><img id="chili" src="chili.png"> (Zoe)</button></td>
+      <td><button onclick="f2f2('G6D')" class="hbtn" id="G6">Euclidean geometry beyond Euclid <img id="chili" src="chili.png"><img id="chili" src="chili.png"> (Yuval Wigderson)</button><button onclick="f2f2h('G6hD')" class="hbtn" id="G6h">Algorithms on your phone <img id="chili" src="chili.png"><img id="chili" src="chili.png"> (Agustin Garcia)</button></td>
+      <td><button onclick="f2f3('G7D')" class="btn" id="G7">Finite fields and how to find them <img id="chili" src="chili.png"><img id="chili" src="chili.png"><img id="chili" src="chili.png"> (Viv)</button></td>
+      <td><button onclick="f2f4('G8D')" class="btn" id="G8">Causal inference: how can we prove that X causes Y? <img id="chili" src="chili.png"> (Mira Bernstein)</button></td>
+    </tr>
+    <tr>
+      <td><button onclick="f3f1('G9D')" class="btn" id="G9"><b1>[HR]</b1> Introduction to group theory <img id="chili" src="chili.png"><img id="chili" src="chili.png"> (Samantha)</button></td>
+      <td><button onclick="f3f2('G10D')" class="btn" id="G10">Functions of a complex variable (week 1 of 2) <img id="chili" src="chili.png"><img id="chili" src="chili.png"><img id="chili" src="chili.png"> (Mark)</button></td>
+      <td><button onclick="f3f3('G11D')" class="btn" id="G11">Quadratic forms <img id="chili" src="chili.png"><img id="chili" src="chili.png"> (Gabrielle)</button></td>
+      <td><button onclick="f3f4('G12D')" class="hbtn" id="G12">The 17 worlds of planar ants<img id="chili" src="chili.png"><img id="chili" src="chili.png"> (Dror Bar-Natan)</button><button onclick="f3f4h('G12hD')" class="hbtn" id="G12h">The probabilistic method <img id="chili" src="chili.png"><img id="chili" src="chili.png"> (Mia)</button></td>
+    </tr>
+    <tr>
+      <td><button onclick="f4f1('G13D')" class="btn" id="G13">Sparsest cut <img id="chili" src="chili.png"><img id="chili" src="chili.png"><img id="chili" src="chili.png"> (Alan)</button></td>
+      <td><button onclick="f4f2('G14D')" class="btn" id="G14"><b1>[HR]</b1> Model theory <img id="chili" src="chili.png"><img id="chili" src="chili.png"><img id="chili" src="chili.png"> (Aaron)</button></td>
+      <td><button onclick="f4f3('G15D')" class="btn" id="G15">The calculus of variations <img id="chili" src="chili.png"><img id="chili" src="chili.png"><img id="chili" src="chili.png"><img id="chili" src="chili.png">(Ben)</button></td>
+      <td><button onclick="f4f4('G16D')" class="hbtn" id="G16">The derivative as a linear transformation <img id="chili" src="chili.png"><img id="chili" src="chili.png"> (Alan)</button><button onclick="f4f4h('G16hD')" class="hbtn" id="G16h">The inverse and implicit function theorems <img id="chili" src="chili.png"><img id="chili" src="chili.png"><img id="chili" src="chili.png"> (Alan)</button></td>
+    </tr>
+    <tr>
+      <td><button onclick="f5f1('G17D')" class="btn" id="G17">Topics in number theory <img id="chili" src="chili.png"><img id="chili" src="chili.png"> (Misha)</button></td>
+      <td><button onclick="f5f2('G18D')" class="btn" id="G18">Representations of symmetric groups <img id="chili" src="chili.png"><img id="chili" src="chili.png"><img id="chili" src="chili.png"><img id="chili" src="chili.png"> (Samantha)</button></td>
+      <td><button onclick="f5f3('G19D')" class="btn" id="G19">The Schwarzschild solution <img id="chili" src="chili.png"><img id="chili" src="chili.png"><img id="chili" src="chili.png"><img id="chili" src="chili.png"> (Jon Tannenhauser) </button></td>
+      <td><button onclick="f5f4('G20D')" class="btn" id="G20">Trail mix <img id="chili" src="chili.png"><img id="chili" src="chili.png"> → <img id="chili" src="chili.png"><img id="chili" src="chili.png"><img id="chili" src="chili.png"> (Mark)</button></td>
+    </tr>
+  </table>
+
+  <table class="tableB">
+    <tr>
+      <td rowspan="6" class="AM">10 AM</td>
+    </tr>
+    <tr>
+     <td><button onclick="f6f1('2G1D')" class="btn" id="2G1">How to count primes <img id="chili" src="chili.png"><img id="chili" src="chili.png"> (Viv)</button></td>
+     <td><button onclick="f6f2('2G2D')" class="btn" id="2G2">Hilbert’s 3rd problem <img id="chili" src="chili.png"><img id="chili" src="chili.png"><img id="chili" src="chili.png"><img id="chili" src="chili.png"> (Steve Schweber)</button></td>
+     <td><button onclick="f6f3('2G3D')" class="btn" id="2G3">Factoring large prime numbers <img id="chili" src="chili.png"><img id="chili" src="chili.png"> (Linus)</button></td>
+     <td><button onclick="f6f4('2G4D')" class="btn" id="2G4">Evolution of random graphs <img id="chili" src="chili.png"><img id="chili" src="chili.png"><img id="chili" src="chili.png"> (Misha)</button></td>
+   </tr>
+   <tr>
+       <td><button onclick="f7f1('2G5D')" class="btn" id="2G5">Incidence combinatorics <img id="chili" src="chili.png"><img id="chili" src="chili.png"><img id="chili" src="chili.png"><img id="chili" src="chili.png"> (Aaron)</button></td>
+       <td><button onclick="f7f2('2G6D')" class="btn" id="2G6">Introduction to graph theory <img id="chili" src="chili.png"><img id="chili" src="chili.png"> (Marisa)</button></td>
+       <td><button onclick="f7f3('2G7D')" class="btn" id="2G7">Functions of a complex variable (week 2 of 2) <img id="chili" src="chili.png"><img id="chili" src="chili.png"><img id="chili" src="chili.png"> (Mark)</button></td>
+       <td><button onclick="f7f4('2G8D')" class="btn" id="2G8">Knot theory <img id="chili" src="chili.png"><img id="chili" src="chili.png"> (Emily)</button></td>
+     </tr>
+     <tr>
+       <td><button onclick="f8f1('2G9D')" class="btn" id="2G9">Introduction to quantum computing <img id="chili" src="chili.png"><img id="chili" src="chili.png"> (Jorge)</button></td>
+       <td><button onclick="f8f2('2G10D')" class="btn" id="2G10">Sit down and (don’t) solve SAT? <img id="chili" src="chili.png"> (Zoe)</button></td>
+       <td><button onclick="f8f3('2G11D')" class="btn" id="2G11">Lights, camera, group actions! <img id="chili" src="chili.png"><img id="chili" src="chili.png"><img id="chili" src="chili.png"> (Emily)</button></td>
+       <td><button onclick="f8f4('2G12D')" class="btn" id="2G12">Nonunique factorization in the Chicken McNugget monoid <img id="chili" src="chili.png"><img id="chili" src="chili.png">(Gabrielle)
+         </button></td>
+     </tr>
+     <tr>
+       <td><button onclick="f9f1('2G13D')" class="btn" id="2G13"><b1>[HR]</b1> Mathcamp crash course <img id="chili" src="chili.png"> (Assaf)</button></td>
+       <td><button onclick="f9f2('2G14D')" class="btn" id="2G14">The special theory of relativity <img id="chili" src="chili.png"><img id="chili" src="chili.png"><img id="chili" src="chili.png"> (Jorge)</button></td>
+       <td><button onclick="f9f3('2G15D')" class="hbtn" id="2G15">Myth of the 13 Archimedean solids <img id="chili" src="chili.png"> (Lizka)</button><button onclick="f9f3h('2G15hD')" class="hbtn" id="2G15h">Lattices that make up the world <img id="chili" src="chili.png"><img id="chili" src="chili.png"> (Elizabeth Chang-Davidson)</button></td>
+       <td><button onclick="f9f4('2G16D')" class="btn" id="2G16">Nowhere differentiable but continuous functions are everywhere! <img id="chili" src="chili.png"><img id="chili" src="chili.png"><img id="chili" src="chili.png"> (Charlotte)</button></td>
+     </tr>
+     <tr>
+       <td><button onclick="f10f1('2G17D')" class="btn" id="2G17">Multivariable calculus crash course <img id="chili" src="chili.png"><img id="chili" src="chili.png"><img id="chili" src="chili.png"> (Mark)</button></td>
+       <td><button onclick="f10f2('2G18D')" class="btn" id="2G18">Topology through Morse theory <img id="chili" src="chili.png"><img id="chili" src="chili.png"><img id="chili" src="chili.png"> (Kayla Wright)</button></td>
+       <td><button onclick="f10f3('2G19D')" class="btn" id="2G19">Surreal numbers <img id="chili" src="chili.png"><img id="chili" src="chili.png"> (Aaron)</button></td>
+       <td><button onclick="f10f4('2G20D')" class="btn" id="2G20">The fundamental theorem of algebra and its many proofs <img id="chili" src="chili.png"><img id="chili" src="chili.png"><img id="chili" src="chili.png"><img id="chili" src="chili.png"> (Jorge)</button></td>
+     </tr>
+   </table>
+
+   <table class="tableB">
+    <tr>
+      <td rowspan="6" class="AM">Noon</td>
+    </tr>
+      <tr>
+       <td><button onclick="f11f1('3G1D')" class="btn" id="3G1">A combinatorial proof of the Jacobi triple product identity <img id="chili" src="chili.png"><img id="chili" src="chili.png"><img id="chili" src="chili.png"><img id="chili" src="chili.png"> (Gabrielle)</button></td>
+       <td><button onclick="f11f2('3G2D')" class="btn" id="3G2">Combinatorial species <img id="chili" src="chili.png"><img id="chili" src="chili.png"><img id="chili" src="chili.png"> (Linus)</button></td>
+       <td><button onclick="f11f3('3G3D')" class="btn" id="3G3">Graph colorings <img id="chili" src="chili.png"><img id="chili" src="chili.png"> (Mia)</button></td>
+       <td><button onclick="f11f4('3G4D')" class="btn" id="3G4">Finite Fourier analysis <img id="chili" src="chili.png"><img id="chili" src="chili.png"><img id="chili" src="chili.png"> (Mike Orrison)</button></td>
+     </tr>
+     <tr>
+       <td><button onclick="f12f1('3G5D')" class="btn" id="3G5">Continued fractions <img id="chili" src="chili.png"><img id="chili" src="chili.png"> (Ben)</button></td>
+       <td><button onclick="f12f2('3G6D')" class="btn" id="3G6">Dirichlet’s class number formula <img id="chili" src="chili.png"><img id="chili" src="chili.png"><img id="chili" src="chili.png"><img id="chili" src="chili.png"> (Viv)</button></td>
+       <td><button onclick="f12f3('3G7D')" class="btn" id="3G7">Kleinian groups and fractals <img id="chili" src="chili.png"><img id="chili" src="chili.png"><img id="chili" src="chili.png"> (Dan Gulotta)</button></td>
+       <td><button onclick="f12f4('3G8D')" class="btn" id="3G8">Learning online learning online <img id="chili" src="chili.png"><img id="chili" src="chili.png"> (Eric Neyman)</button></td>
+     </tr>
+     <tr>
+       <td><button onclick="f13f1('3G9D')" class="btn" id="3G9">Cryptography and how to break it <img id="chili" src="chili.png"><img id="chili" src="chili.png"><img id="chili" src="chili.png"> (Linus)</button></td>
+       <td><button onclick="f13f2('3G10D')" class="btn" id="3G10"><b1>[HR]</b1> Introduction to analysis <img id="chili" src="chili.png"><img id="chili" src="chili.png"> (Alan & Charlotte)</button></td>
+       <td><button onclick="f13f3('3G11D')" class="btn" id="3G11">Noncommutative ring theory (week 1 of 2)<img id="chili" src="chili.png"><img id="chili" src="chili.png"><img id="chili" src="chili.png"><img id="chili" src="chili.png">(Susan) </button></td>
+       <td><button onclick="f13f4('3G12D')" class="btn" id="3G12">Non-Euclidean geometries <img id="chili" src="chili.png"> (Samantha)</button></td>
+     </tr>
+     <tr>
+       <td><button onclick="f14f1('3G13D')" class="btn" id="3G13"><b1>[HR]</b1>Introduction to linear algebra <img id="chili" src="chili.png"><img id="chili" src="chili.png"> (Emily)</button></td>
+       <td><button onclick="f14f2('3G14D')" class="btn" id="3G14"><b1>[HR] </b1> Introduction to ring theory <img id="chili" src="chili.png"><img id="chili" src="chili.png"><img id="chili" src="chili.png"> (Susan)</button></td>
+       <td><button onclick="f14f3('3G15D')" class="btn" id="3G15">Using the Cantor set to classify (infinite) surfaces <img id="chili" src="chili.png"><img id="chili" src="chili.png"><img id="chili" src="chili.png"> (Assaf) </button></td>
+       <td><button onclick="f14f4('3G16D')" class="btn" id="3G16">Noncommutative ring theory (week 2 of 2) <img id="chili" src="chili.png"><img id="chili" src="chili.png"><img id="chili" src="chili.png"><img id="chili" src="chili.png"> (Susan)</button></td>
+     </tr>
+     <tr>
+       <td><button onclick="f15f1('3G17D')" class="btn" id="3G17">Kakeya sets over finite fields <img id="chili" src="chili.png"><img id="chili" src="chili.png"> (Charlotte)</button></td>
+       <td><button onclick="f15f2('3G18D')" class="btn" id="3G18">Problem solving: geometric transformations <img id="chili" src="chili.png"><img id="chili" src="chili.png"> (Misha)</button></td>
+       <td><button onclick="f15f3('3G19D')" class="btn" id="3G19">What are your numbers worth? <img id="chili" src="chili.png"> (Eric) </button></td>
+       <td><button onclick="f15f4('3G20D')" class="btn" id="3G20">PDEs part 1: Laplace’s equation <img id="chili" src="chili.png"><img id="chili" src="chili.png"><img id="chili" src="chili.png"><img id="chili" src="chili.png"> (Assaf)</button></td>
+     </tr>
+   </table>
+  </div>
+  <ps id="box"><b><a1 class="y">yellow</a1>: Classes required for or requiring this one</b><br><br><b><a1 class="related">pink</a1>: Smorgasbord</b><br><br>&#128214; <b>:Reading</b><br><br> &#128172;  <b>:Speaking</b><br><br> &#9999;&#65039; <b>:Writing</b><br><br>&#129300; <b>:Problem solving</b><br><br>&#128101; <b>:Collaborating</b><br><br> &#127940;  <b>:Other activitying</b><br><br></ps>
+  <p class="info" id="G1D"><b>Better sleep through modeling</b> (Olivia Walch,  MTW <grey>ΘF</grey>)<br><br>
+    What happens if we come up with math models to describe the phenomena of human sleep and
+    circadian rhythms? What if we hook these models up to people’s wearables and run them on phones?
+    What if we use the models to compute what people should do during the day to sleep better at night?
+    (Will people accept math as their sleep savior??) <br>
+    
+    <br> <i>Class format:</i> Slides, mostly lecture <br>
+    <i>Prerequisites:</i> Must have experience sleeping <br><br>
+    <b>Chilis:</b> <img id="chili" src="chili.png"> <br>
+    <b>Class Actions:</b> <blue>HW Recommended</blue> <br>
+    <b>Themes:</b> <purple>Smorgasbord, Math in real life</purple>
+    
+  
+</p>    
+  <p class="info" id="G1hD"><b>Better sheep through modeling</b> (J-Lo, <grey>MTW</grey> ΘF)<br><br>
+    Sheep need food, but there is not always enough food to go around. How do individuals (like sheep)
+    respond to a lack of resources? Will they become aggressive and greedy, or learn to cooperate? If they
+    settle on a solution, will they keep their word or betray each other’s trust?
+    Evolutionary game theory is the study of how strategies and behaviors change over time. By
+    making some simple assumptions about how individual sheep make decisions, we will be able to make
+    predictions about how the entire herd changes. 
+    <br><br><i>Class format:</i> The class will start with a game: you will be a sheep trying to collect as much food
+    as possible. This will be followed by some whole-group review and discussion of this game, where
+    participants will have the opportunity to share their thoughts if they wish to. The class will gradually
+    transition to more of a lecture formatas we begin to define some tools that can be used to study
+    games of this kind. <br>
+    <i>Prerequisites:</i> Must be willing to be a sheep<br> <br>
+    <b>Chilis:</b> <img id="chili" src="chili.png"> <br>
+    <b>Class Actions:</b> &#127940; (Optional: &#128172;) <blue>HW Recommended</blue> <br>
+    <b>Themes:</b> <purple>Smorgasbord, Games, Math in real life</purple>
+    
+  </p>
+  <p class="info" id="G2D">Coming soon</p>
+  <p class="info" id="G2hD">Coming soon</p>
+  <p class="info" id="G3D">Coming soon</p>
+  <p class="info" id="G4D">Coming soon</p>
+  <p class="info" id="G5D"><b>Insert geometry joke here</b> (Zoe, MTWΘF)<br><br>
+    Looking at drawings, Pac-man’s universe, or even the ground we walk on, many things appear “flat”.
+    Looking at space locally only tells us so much about the fundamental properties of the space itself.
+    In this class we will look at an overview of different geometries and the ways of thinking of surfaces.
+    We will especially look at ways of visualizing spaces and how they connect to problems one might
+    encounter in various areas of math. <br>
+    
+    It can be extremely valuable to consider problems in spaces where they naturally reside. Mathematically, if we have a problem that loops in on itself, say considering words with two letters, we
+    might want to consider solving that problem on a torus. If we need to differentiate the parity of an
+    object, maybe it lives in a Möbius strip? For example, if we are looking to accurately represent what
+    we see around us in a drawing on a piece of paper, we are using the properties of projective space! <br>
+    <br><i>Class format:</i> The class will mostly be lectures with interruptions of hands on activities that campers
+    will be recommended to participate in <br>
+    <i>Prerequisites:</i> Linear algebra, if you’re taking the week 1 Introduction to linear algebra at the same
+    time that will be enough! <br><br>
+    <b>Chilis:</b> <img id="chili" src="chili.png"><img id="chili" src="chili.png"> <br>
+    <b>Class Actions:</b> &#129300; &#127940; (Optional: &#128214; &#9999;&#65039; &#128172; &#128101;) <blue>HW Recommended</blue> <br>
+    <b>Themes:</b> <purple>Squishy shapes</purple>
+    </p>
+  <p class="info" id="G6D">Coming soon</p>
+  <p class="info" id="G6hD">Coming soon</p>
+  <p class="info" id="G7D">Coming soon</p>
+  <p class="info" id="G8D">Coming soon</p>
+  <p class="info" id="G9D"><b>Introduction to group theory</b> (Samantha, MTWΘF)<br><br>
+    A group is a set of items together with a way for them to “interact” with each other. For example,
+one could take the real numbers, which interact with each other via adding. Or you could take the
+set of symmetries of a square, where interactions occur by composing the symmetries. In this class,
+we’ll cover the basics about groups- defining them, interesting properties that certain groups have,
+mapping between groups, manipulating groups, and so forth.<br>
+Note: Groups are the fundamental objects in algebra, and will be foundational for a lot of the classes
+at Mathcamp; as such, homework will be required so that you may get used to interacting with groups
+and proving results about them. Most of class time will be spent on lectures, but I may also give some
+in-class work time for the homework, if time permits. <br>
+    <br> <i>Class format:</i> Most of class time will be spent on lectures, but I may also give some in-class work time
+    for the homework if time permits. Work time would be done in break out rooms so you could work
+    with your classmates, if you’d like!<br>
+    <i>Prerequisites:</i> None. <br>
+    <a style="font-style: italic;">Required for:</a> Representations of symmetric groups (W2); Topology through Morse theory (W2);
+Dirichlet’s class number formula (W2); Finite fields and how to find them (W3); Lights, camera,
+group actions! (W3); Kleinian groups and fractals (W3); Archers at the ready! (W4); Finite Fourier
+analysis (W4)<br> <br>
+    <b>Chilis:</b> <img id="chili" src="chili.png"> <img id="chili" src="chili.png"> <br>
+    <b>Class Actions:</b> &#129300; (Optional: &#128101; ) <red>HW Required</red> <br>
+    <b>Themes:</b> <purple>Algebraic structures</purple></p>
+  <p class="info" id="G10D">Coming soon</p>
+  <p class="info" id="G11D">Coming soon</p>
+  <p class="info" id="G12D">Coming soon</p>
+  <p class="info" id="G12hD">Coming soon</p>
+  <p class="info" id="G13D"><b>Sparsest cut</b> (Alan, MTWΘF)<br><br>
+    The sparsest cut problem asks the following: Given a (finite simple undirected) graph G, find a subset
+S of the vertices that minimizes <br>
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+  <mfrac>
+    <mrow>
+      <mi style="font-size: 15px; font:normal; font-weight:10">number of edges with one endpoint in S and one endpoint in &nbsp;
+        <msup>
+        <mi style="font-size: 15px; font:normal; font-weight:10"> S</mi>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi style="font-size: 15px; font:normal; font-weight:10">c</mi>
+        </mrow>
+      </msup></mi>
+    </mrow>
+    <mrow>
+      <mi style="font-size: 15px; font:normal; font-weight:10">min(number of vertices in S, number of vertices in &nbsp; <msup>
+        <mi style="font-size: 15px; font:normal; font-weight:10"> S</mi>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi style="font-size: 15px; font:normal; font-weight:10">c</mi>
+        </mrow>
+      </msup>)</mi>
+    </mrow>
+  </mfrac>
+</math>
+ The point of the denominator is to try to balance the sizes of S and S<sup>c</sup>. You can think of sparsest cut
+as a discrete analogue of the isoperimetric problem. <br>
+Is there an efficient way to find the minimum? The short answer is “probably not,” but fortunately,
+there is an efficient way to approximate the solution: if G has N vertices, then there is an algorithm
+that gives you a subset S which does not necessarily attain the minimum, but it will not be too far
+off. In particular, it will be within a factor of log N of the minimum. <br>
+In this class, we will introduce the algorithm and then discuss why this algorithm produces good
+approximations. A key part of the proof is connecting the sparsest cut problem to a fundamental
+question about discrete geometric spaces. If there is time, we will briefly mention how the discrete
+5-dimensional Heisenberg group plays a role in a better (but more difficult) approximation algorithm
+for sparsest cut. These are just some of the many examples of the connections between theoretical
+computer science and metric geometry. <br>
+  
+    <br> <i>Class format:</i> I will give lectures using Google Jamboard, and I will screen-share Jamboard from my
+    tablet. If you’d like, you can open up Jamboard in your browser to browse through previous slides.<br>
+    <i>Prerequisites:</i> There are no official prerequisites for this class. In particular, you do not need to have
+any background in theoretical computer science or graph theory. We will introduce many simple but
+new ideas rather quickly, which is why this is a 3-chili class. <br><br>
+    <b>Chilis:</b> <img id="chili" src="chili.png"> <img id="chili" src="chili.png"> <img id="chili" src="chili.png"><br>
+    <b>Class Actions:</b> <blue>HW Recommended</blue> <br>
+    <b>Themes:</b> <purple> CS & algorithms, Discrete analysis, Graph Theory</purple></p>
+  <p class="info" id="G14D">Coming soon</p>
+  <p class="info" id="G15D">Coming soon</p>
+  <p class="info" id="G16D">Coming soon</p>
+  <p class="info" id="G16hD">Coming soon</p>
+  <p class="info" id="G17D"><b>Topics in number theory</b> (Misha, MTWΘF)<br><br>
+    This is a class about exploring two things: number theory, and the various ways an online class can
+    be taught. More precisely,<br>
+    <br>(1) On Monday, I will guide you through proving a theorem about Pascal’s triangle modulo a
+    prime p through a series of problems you can work on alone or in groups.<br>
+    <br>(2) Tuesday will be about how to compute the GCD of two numbers - in theory, and in the
+    computer algebra system Mathematica. (Using Mathematica yourself is optional.)<br>
+    <br>(3) On Wednesday, I will give a more standard lecture about the Chinese remainder theorem—and,
+    as a bonus, Lagrange interpolation.<br>
+    <br>(4) On Thursday, we’ll look at some math competition problems about unique factorization, and
+    solve them together in class.<br>
+    <br>(5) Friday’s class is a slide-based lecture about several things we can prove (ending with quadratic
+    reciprocity, if you’ve heard of this infamous theorem) by looking at the same product in two
+    different ways.<br>
+    <br>These classes will be mostly independent, but they will generally be easier to follow if you go to all of
+    them, and Wednesday’s class is specifically a prerequisite for Friday’s. <br>
+    <br> <i>Class format:</i> It will vary. See above for details! <br>
+    <i>Prerequisites:</i> None <br>
+   <i>Required for:</i> Factoring large prime numbers (W3); What are your numbers worth? or, the part of
+algebraic number theory we can actually do (W3) <br> <br>
+    <b>Chilis:</b> <img id="chili" src="chili.png">  <img id="chili" src="chili.png"> <br>
+    <b>Class Actions:</b> &#129300; (Optional: &#128172; &#129300; &#128101; &#127940;) <grey>HW Optional</grey> <br>
+    <b>Themes:</b> <purple>Smörgåsbord, Number theory</purple>
+    </p>
+  <p class="info" id="G18D">Coming soon</p>
+  <p class="info" id="G19D">Coming soon</p>
+  <p class="info" id="G20D">Coming soon</p>
+  <p class="info" id="2G1D"><b>How to count primes</b> (Viv, MTWΘF)<br><br>
+    How many primes are there?
+Well, OK, infinitely many, but how many primes are there up to 100? 1000? 1000000? x? What
+kind of answer am I even looking for here? <br>
+In 1896, de la Vallée Poussin and Hadamard independently proved the Prime Number Theorem,
+which says that the number of primes up to x is (x/ln x)*(1 + o(1)). We won’t prove the Prime Number
+Theorem, but we will understand what the statement means, and we’ll build up some fundamental
+tools in analytic number theory to allow us to prove something close. <br>
+    <br> <i>Class format:</i> Lecture; I’ll be sharing a tablet screen and writing, with (hopefully) daily notes. <br>
+    <i>Prerequisites:</i> Comfort with single-variable calculus (specifically the integral test for convergent series,
+    differentiation, integration, integration by parts) <br><br>
+    <b>Chilis:</b> <img id="chili" src="chili.png"> <img id="chili" src="chili.png"> <br>
+    <b>Class Actions:</b> <blue>HW Recommended</blue> <br>
+    <b>Themes:</b> <purple>Discrete analysis, Number theory</purple>
+    </p>
+  <p class="info" id="2G2D">Coming soon</p>
+  <p class="info" id="2G3D">Coming soon</p>
+  <p class="info" id="2G4D">Coming soon</p>
+  <p class="info" id="2G5D"><b>Incidence combinatorics</b> (Aaron, MTWΘF)<br><br>
+    “My most striking contribution to geometry is, no doubt, my problem on the number
+    of distinct distances.” — Paul Erdős <br>
+    <br> In 1946, Paul Erdős asked two simple questions: If you place n points in the plane, and then measure
+    the distances between every pair of points, what is the minimum number of distinct distances you can
+    get? What is the maximum number of pairs of points that can be exactly distance 1 from each other?<br>
+    <br>The Distinct Distances Problem served as a challenge for decades, with mathematicians inventing
+    a whole new field of mathematics – incidence combinatorics – to create a better lower bound every
+    few years. Finally in 2015, Guth and Katz won a bunch of prizes for almost solving it. Meanwhile,
+    the Unit Distances Problem is wide open—only one improvement has been made since 1946.<br>
+    <br>We will work together to reinvent this philosophy of counting, prove basically the best-known bounds
+    on the Unit Distances Problem, and learn how you can count all kinds of things with just points on
+    lines and curves.<br>
+    <br> <i>Class format:</i> IBL: This class will consist almost entirely of solving problems. Other than a brief intro
+    each day, and some opportunities to present work, we will be in breakout rooms, working on the same
+    problems. <br>
+    <i>Prerequisites:</i> We will briefly use some probability theory (it will be good if you understand the phrase
+“linearity of expectation”). I’ll also assume some graph theory, though I’ll try to review all definitions.<br><br>
+    <b>Chilis:</b> <img id="chili" src="chili.png"> <img id="chili" src="chili.png"> <img id="chili" src="chili.png"> <img id="chili" src="chili.png"> <br>
+    <b>Class Actions:</b> &#128214; &#129300; &#128101; (Optional: &#9999;&#65039; &#128172;) <blue>HW Recommended</blue> <br>
+    <b>Themes:</b> <purple>Discrete analysis, Graph Theory</purple>
+    </p>
+  <p class="info" id="2G6D">Coming soon</p>
+  <p class="info" id="2G7D">Coming soon</p>
+  <p class="info" id="2G8D">Coming soon</p>
+  <p class="info" id="2G9D"><b>Introduction to quantum computing</b> (Jorge, MTWΘF)<br><br>
+    In this class, we will introduce what quantum computing is, and we will accomplish two main goals in
+    order to do that. First, we introduce the basic unit of quantum information–the qubit. We will study
+    the electron spin as a physical example where qubits can be created experimentally, and then we will
+    introduce some math in order to represent and manipulate these units of information. (Spoiler: the
+    math has a lot to do with vectors and matrices!) <br>
+    The second goal is introducing the quantum teleportation algorithm. This is the procedure by
+    which we can transport quantum information between two different people, with the only requisites of
+    sharing an entangled qubit (I’ll teach you what “entangled” means) and your usual Internet connection
+    so you can send over 2 classical bits of information. Why so much trouble just to send information,
+    you may ask? Well, as we shall see, measuring quantum information in any way tends to destroy it
+    (you can say qubits are very shy), so this algorithm is kind of a big deal for quantum computers to
+    work. <br>
+    <br><i>Class format:</i> I’ll be using my tablet as a whiteboard, and will lecture as we go. Questions are
+    encouraged at any time. Will assign a couple of problems at the end of each lecture.<br>
+    <i>Prerequisites:</i> Don’t be intimidated by the description–no quantum mechanics or physics will be
+needed! We’ll only need familiarity with how to add and subtract vectors, either numerically (when
+given the value of the components) or graphically (if the vectors are drawn on a plane). Knowing how
+to operate with matrices is a plus. <br><br>
+    <b>Chilis:</b> <img id="chili" src="chili.png"> <img id="chili" src="chili.png"> <br>
+    <b>Class Actions: </b><blue>HW Recommended</blue> <br>
+    <b>Themes:</b> <purple>CS & algorithms, Math in real life</purple>
+    </p>
+  <p class="info" id="2G10D">Coming soon</p>
+  <p class="info" id="2G11D">Coming soon</p>
+  <p class="info" id="2G12D">Coming soon</p>
+  <p class="info" id="2G13D"><b>Mathcamp crash course</b> (Assaf, MTWΘF)<br><br>
+    Math is useless unless it is properly communicated. Most of math communication happens through a
+    toolbox of terminology and proof techniques that provide us with a backbone to understand and talk
+    about mathematics. These proof techniques are often taken for granted in textbooks, math classes
+    (even at Mathcamp!) and lectures. This class is designed to introduce fundamental proof techniques
+    and writing skills in order to make the rest of the wonderful world of mathematics more accessible.<br>
+    This class will cover direct proofs from axioms, proofs using negation, proofs with complicated
+    logical structure, induction proofs, and proofs using cardinality and the pigeonhole principle. If you
+    are unfamiliar with these proof techniques, then this class is highly recommended for you. If you have
+    heard of these techniques, but would like to practice using them, this class is also right for you.<br>
+    Here are some problems that can assess your knowledge of proof writing:<br>
+    <br>(1) Negate the following sentence without using any negative words (“no”, “not”, etc.): “If a book
+    in my library has a page with fewer than 30 words, then every word on that page starts with a
+    vowel.”<br>
+    <br>(2) Given two sets of real numbers A and B, we say that A dominates B when for every a ∈ A
+    there exists b ∈ B such that a < b. Find two disjoint, nonempty sets A and B such that A
+    dominates B and B dominates A.<br>
+    <br>(3) Prove that there are infinitely many prime numbers.<br>
+    <br>(4) Let f : A → B and g : B → C be maps of sets. Prove that if g ◦ f is injective then f is
+    injective. (This may be obvious, but do you know how to write down the proof concisely and
+    rigorously?)<br>
+    <br>(5) Define rigorously what it means for a function to be increasing.<br>
+    <br>(6) What is wrong with the following argument (aside from the fact that the claim is false)? On
+    a certain island, there are n ≥ 2 cities, some of which are connected by roads. If each city is
+    connected by a road to at least one other city, then you can travel from any city to any other
+    city along the roads.
+    Proof. We proceed by induction on n. The claim is clearly true for n = 1. Now suppose the
+    claim is true for an island with n = k cities. To prove that it’s also true for n = k + 1, we
+    add another city to this island. This new city is connected by a road to at least one of the old
+    cities, from which you can get to any other old city by the inductive hypothesis. Thus you can
+    travel from the new city to any other city, as well as between any two of the old cities. This
+    proves that the claim holds for n = k + 1, so by induction it holds for all n. <br>
+    <br>(7) Mathcampers can message each other privately on Slack over the course of camp. Prove that
+    there are two campers who messaged the same number of people throughout camp.
+    If you would not be comfortable writing down proofs or presenting your solutions to these problems,
+    then you can probably benefit from this crash course. If you found this list of questions intimidating
+    or didn’t know how to begin thinking about some of them, then you should definitely take this class.
+    It will make the rest of your Mathcamp experience much more enjoyable and productive. And the
+    class itself will be fun too!<br>
+    
+    <br>
+    Note that this class is not focused on exposing mathematical background, so if you’d like to brush
+    up on the foundations of graph theory, number theory, etc., this is not where we will do that. <br>
+    <br> <i>Class format:</i> Lecture: handwritten notes on shared screen. Homework: proof-writing exercises to be
+    submitted for feedback. <br>
+    <i>Prerequisites:</i> None! <br><br>
+    <b>Chilis:</b> <img id="chili" src="chili.png"> <br>
+    <b>Class Actions:</b> &#9999;&#65039; <red>HW Required</red> <br>
+    <b>Themes:</b> <purple>Smorgasbord</purple>
+    </p>
+  <p class="info" id="2G14D">Coming soon</p>
+  <p class="info" id="2G15D">Coming soon</p>
+  <p class="info" id="2G15hD">Coming soon</p>
+  <p class="info" id="2G16D">Coming soon</p>
+  <p class="info" id="2G17D"><b>Multivariable calculus crash course</b> (Mark, MTWΘF)<br><br>
+    In real life, interesting quantities usually depend on several variables (such as the coordinates of a
+point, the time, the temperature, the number of campers in the room, the real and imaginary parts
+of a complex number, ...). Because of this, “ordinary”(single-variable) calculus often isn’t enough to
+solve practical problems. In this class, we’ll quickly go through the basics of calculus for functions of
+several variables. As time permits, we’ll look at some nice applications, such as: If you’re in the desert
+and you want to cool off as quickly as possible, how do you decide what direction to go in? What is
+the total area under a bell curve? What force fields are consistent with conservation of energy? <br>
+One reason, and maybe the best reason, to take this crash course right now rather than waiting
+until you encounter the material naturally after BC calculus and/or in college, is to be able to take
+the course on functions of a complex variable (which have many amazing features) that starts in week
+two. <br>
+    <br> <i>Class format:</i> Interactive lecture (over Zoom). I’ll be using a document camera like a “blackboard”
+    (and scanning the notes afterward), looking out at your faces even when you can’t see mine (when
+    I’m not actually writing, you will see mine), and asking questions to help us go through the material
+    together. <br>
+    <i>Prerequisites:</i> Basic knowledge of single-variable calculus (both differentiation and integration) <br>
+    <i>Required for:</i> Functions of a complex variable (1 of 2) (W2); PDEs part 1: Laplace’s equation (W4) <br><br>
+    <b>Chilis:</b> <img id="chili" src="chili.png"> <img id="chili" src="chili.png"> <img id="chili" src="chili.png"> <br>
+    <b>Class Actions: </b><blue>HW Recommended</blue> <br>
+    <b>Themes:</b> <purple>Analysis</purple>
+    </p>
+  <p class="info" id="2G18D">Coming soon</p>
+  <p class="info" id="2G19D">Coming soon</p>
+  <p class="info" id="2G20D">Coming soon</p>
+  <p class="info" id="3G1D"><b>A Combinatorial Proof of the Jacobi Triple Product Identity</b> (Gabrielle, MTWΘF)<br><br>
+    For all q and z for which the following sums and products makes sense, we have the following equality,
+called the Jacobi Triple Product Identity:
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+  <munderover>
+    <mo>&#x220F;<!-- ∏ --></mo>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mi style="font-size: 15px; font:normal; font-weight:10">i</mi>
+      <mo>=</mo>
+      <mn>0</mn>
+    </mrow>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mo>&#x221E;</mo>
+    </mrow>
+  </munderover>
+  <mrow class="MJX-TeXAtom-ORD">
+    <mo stretchy="false">(</mo>
+    <mn>1</mn>
+    <mo>+</mo>
+    <mi style="font-size: 15px; font:normal; font-weight:10">z</mi>
+    <msup>
+      <mi style="font-size: 15px; font:normal; font-weight:10">q</mi>
+      <mrow class="MJX-TeXAtom-ORD">
+        <mi style="font-size: 15px; font:normal; font-weight:10">i</mi>
+      </mrow>
+    </msup>
+    <mo stretchy="false">)</mo>
+  </mrow>
+  <munderover>
+    <mo>&#x220F;<!-- ∏ --></mo>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mi style="font-size: 15px; font:normal; font-weight:10">j</mi>
+      <mo>=</mo>
+      <mn>0</mn>
+    </mrow>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mo>&#x221E;</mo>
+    </mrow>
+  </munderover>
+  <mrow class="MJX-TeXAtom-ORD">
+    <mo stretchy="false">(</mo>
+    <mn>1</mn>
+    <mo>+</mo>
+    <msup>
+      <mi style="font-size: 15px; font:normal; font-weight:10">z</mi>
+      <mrow class="MJX-TeXAtom-ORD">
+        <mo>&#x2212;<!-- − --></mo>
+        <mn>1</mn>
+      </mrow>
+    </msup>
+    <msup>
+      <mi style="font-size: 15px; font:normal; font-weight:10">q</mi>
+      <mrow class="MJX-TeXAtom-ORD">
+        <mi style="font-size: 15px; font:normal; font-weight:10">j</mi>
+        <mo>+</mo>
+        <mn>1</mn>
+      </mrow>
+    </msup>
+    <mo stretchy="false">)</mo>
+  </mrow>
+  <munderover>
+    <mo>&#x220F;<!-- ∏ --></mo>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mi style="font-size: 15px; font:normal; font-weight:10">k</mi>
+      <mo>=</mo>
+      <mn>0</mn>
+    </mrow>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mo>&#x221E;</mo>
+    </mrow>
+  </munderover>
+  <mrow class="MJX-TeXAtom-ORD">
+    <mo stretchy="false">(</mo>
+    <mn>1</mn>
+    <mo>&#x2212;<!-- − --></mo>
+    <msup>
+      <mi style="font-size: 15px; font:normal; font-weight:10">q</mi>
+      <mrow class="MJX-TeXAtom-ORD">
+        <mi style="font-size: 15px; font:normal; font-weight:10">k</mi>
+        <mo>+</mo>
+        <mn>1</mn>
+      </mrow>
+    </msup>
+    <mo stretchy="false">)</mo>
+  </mrow>
+  <mo>=</mo>
+  <munderover>
+    <mo>&#x2211;<!-- ∑ --></mo>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mi style="font-size: 15px; font:normal; font-weight:10">&#x2113;<!-- ℓ --></mi>
+      <mo>=</mo>
+      <mo>&#x2212;<!-- − --></mo>
+      <mrow class="MJX-TeXAtom-ORD">
+        <mo>&#x221E;</mo>
+      </mrow>
+    </mrow>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mo>&#x221E;</mo>
+    </mrow>
+  </munderover>
+  <mrow class="MJX-TeXAtom-ORD">
+    <msup>
+      <mi style="font-size: 15px; font:normal; font-weight:10">z</mi>
+      <mrow class="MJX-TeXAtom-ORD">
+        <mi style="font-size: 15px; font:normal; font-weight:10">&#x2113;<!-- ℓ --></mi>
+      </mrow>
+    </msup>
+    <msup>
+      <mi style="font-size: 15px; font:normal; font-weight:10">q</mi>
+      <mrow class="MJX-TeXAtom-ORD">
+        <mi style="font-size: 15px; font:normal; font-weight:10">&#x2113;<!-- ℓ --></mi>
+        <mo stretchy="false">(</mo>
+        <mi style="font-size: 15px; font:normal; font-weight:10">&#x2113;<!-- ℓ --></mi>
+        <mo>&#x2212;<!-- − --></mo>
+        <mn>1</mn>
+        <mo stretchy="false">)</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo>/</mo>
+        </mrow>
+        <mn>2</mn>
+      </mrow>
+    </msup>
+  </mrow>
+</math>   
+   Yikes, but it’s useful (we will see an application!). Even more yikes, we’re going to prove this equality
+using partitions, where a partition of a nonnegative integer n is a way of writing n as a sum of
+positive integers, e.g. 4 + 1 + 1 + 1 is a partition of 7. Come learn about the shocking and beautiful
+interplay between combinatorics and analysis. (The intercast of this interplay includes partitions,
+Young diagrams, and generating functions.)
+
+<br>
+    <br> <i>Class format:</i> Days 1-4: Lecture < 30 minutes, IBL for the rest of class time; Day 5: Lecture<br>
+    <i>Prerequisites:</i> comfort with infinite series (be able to sum a geometric series, but we will ignore ques-
+tions of convergence) and limits (not much deeper than an intuitive notion); if you are worried about
+it, talk to me! <br><br>
+    <b>Chilis:</b> <img id="chili" src="chili.png"> <img id="chili" src="chili.png"> <img id="chili" src="chili.png"> <img id="chili" src="chili.png"> <br>
+    <b>Class Actions:</b>  &#128214; (Optional:  &#128101;) <blue>HW Recommended</blue> <br>
+    <b>Themes:</b> <purple>Algebraic Combinatorics</purple>
+    </p>
+  <p class="info" id="3G2D">Coming soon</p>
+  <p class="info" id="3G3D">Coming soon</p>
+  <p class="info" id="3G4D">Coming soon</p>
+  <p class="info" id="3G5D"><b>Continued fractions</b> (Ben, MTWΘF)<br><br>
+    <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+      <mi style="font-size: 15px; font:normal; font-weight:10">One common, and quite good, approximation for π is &nbsp;</mi>
+      <mfrac>
+        <mn>22</mn>
+        <mn>7</mn>
+      </mfrac>
+      <mi style="font-size: 15px; font:normal; font-weight:10">,&nbsp; or &nbsp;</mi>
+      <mn>3</mn>
+      <mo>+</mo>
+      <mfrac>
+        <mn>1</mn>
+        <mn>7</mn>
+      </mfrac>
+      
+      <mi style="font-size: 15px; font:normal; font-weight:10">.&nbsp; A slightly better one is &nbsp;</mi> 
+      </math>
+      <br>
+      <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+      <mfrac>
+        <mn>333</mn>
+        <mn>106</mn>
+      </mfrac>
+      <mo>=</mo>
+      <mn>3</mn>
+      <mo>+</mo>
+      <mfrac>
+        <mn>1</mn>
+        <mrow>
+          <mn>7</mn>
+          <mo>+</mo>
+          <mfrac>
+            <mn>1</mn>
+            <mn>15</mn>
+          </mfrac>
+        </mrow>
+      </mfrac>
+  
+      <mi style="font-size: 15px; font:normal; font-weight:10">,</mi>
+    </math>
+    <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+    <mi style="font-size: 15px; font:normal; font-weight:10"> and a much better one is &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</mi>
+   </math>
+    <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+      <mfrac>
+        <mn>355</mn>
+        <mn>113</mn>
+      </mfrac>
+      <mo>=</mo>
+      <mn>3</mn>
+      <mo>+</mo>
+      <mfrac>
+        <mn>1</mn>
+        <mrow>
+          <mn>7</mn>
+          <mo>+</mo>
+          <mfrac>
+            <mn>1</mn>
+            <mn>16</mn>
+          </mfrac>
+        </mrow>
+      </mfrac>
+      <mi style="font-size: 15px; font:normal; font-weight:10">.</mi>
+    </math>
+    <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+      <mi style="font-size: 15px; font:normal; font-weight:10">(It’s accurate to six decimal places—if we approximate π by &nbsp;</mi>
+      <mfrac>
+        <mn>3141</mn>
+        <mn>1000</mn>
+      </mfrac>
+      <mi style="font-size: 15px; font:normal; font-weight:10">, it’s accurate to only three places despite having</mi> 
+      </math>
+      <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+      <mi style="font-size: 15px; font:normal; font-weight:10"> a relatively huge denominator, which you’d expect to let us get closer.) These “very close” approximations all come</mi>
+      </math>
+      <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+       <mi style="font-size: 15px; font:normal; font-weight:10"> from continued fractions, which you might also have
+        heard about in the golden ratio, φ, which is given by</mi>
+        </math>
+    <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+      <mrow class="MJX-TeXAtom-ORD">
+        <mo>&#x3C6;</mo>
+      </mrow>
+      <mo>=</mo>
+      <mn>1</mn>
+      <mo>+</mo>
+      <mfrac>
+        <mn>1</mn>
+        <mrow>
+          <mn>1</mn>
+          <mo>+</mo>
+          <mfrac>
+            <mn>1</mn>
+            <mrow>
+              <mn>1</mn>
+              <mo>+</mo>
+              <mfrac>
+                <mn>1</mn>
+                <mrow>
+                  <mn>1</mn>
+                  <mo>+</mo>
+                  <mo>.</mo>
+                  <mo>.</mo>
+                  <mo>.</mo>
+                </mrow>
+              </mfrac>
+            </mrow>
+          </mfrac>
+        </mrow>
+      </mfrac>
+      <mo>=</mo>
+      <mfrac>
+        <mrow>
+          <mn>1</mn>
+          <mo>+</mo>
+          <msqrt>
+            <mn>5</mn>
+          </msqrt>
+        </mrow>
+        <mn>2</mn>
+      </mfrac>
+      <mi style="font-size: 15px; font:normal; font-weight:10">.</mi>
+    </math>
+    <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+    <mi style="font-size: 15px; font:normal; font-weight:10">More generally, if we take an eventually periodic continued fraction, such as  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</mi>
+    </math>
+    <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+      <mn>3</mn>
+      <mo>+</mo>
+      <mfrac>
+        <mn>1</mn>
+        <mrow>
+          <mn>4</mn>
+          <mo>+</mo>
+          <mfrac>
+            <mn>1</mn>
+            <mrow>
+              <mn>5</mn>
+              <mo>+</mo>
+              <mfrac>
+                <mn>1</mn>
+                <mrow>
+                  <mn>4</mn>
+                  <mo>+</mo>
+                  <mfrac>
+                    <mn>1</mn>
+                    <mrow>
+                      <mn>5</mn>
+                      <mo>+</mo>
+                      <mfrac>
+                        <mn>1</mn>
+                        <mrow>
+                          <mn>4</mn>
+                          <mo>+</mo>
+                          <mfrac>
+                            <mn>1</mn>
+                            <mrow>
+                              <mn>5</mn>
+                              <mo>+</mo>
+                              <mfrac>
+                                <mn>1</mn>
+                                <mrow>
+                                  <mo>.</mo>
+                                  <mo>.</mo>
+                                  <mo>.</mo>
+                                </mrow>
+                              </mfrac>
+                            </mrow>
+                          </mfrac>
+                        </mrow>
+                      </mfrac>
+                    </mrow>
+                  </mfrac>
+                </mrow>
+              </mfrac>
+            </mrow>
+          </mfrac>
+        </mrow>
+      </mfrac>
+    </math>
+    <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+      <mi style="font-size: 15px; font:normal; font-weight:10">we can show that it’s a number of the form &nbsp;</mi>
+      <mfrac>
+        <mrow>
+          <mi style="font-size: 15px; font:normal; font-weight:10">a</mi>
+          <mo>+</mo>
+          <msqrt>
+            <mi style="font-size: 15px; font:normal; font-weight:10">d</mi>
+          </msqrt>
+        </mrow>
+        <mi style="font-size: 15px; font:normal; font-weight:10">b</mi>
+      </mfrac>
+      <mi style="font-size: 15px; font:normal; font-weight:10">&nbsp; for some integers a, b, d. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</mi>
+    </math>
+    <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+      <mi style="font-size: 15px; font:normal; font-weight:10">But what about the other way around? If we have a real number of the form &nbsp;</mi>
+      <mfrac>
+        <mrow>
+          <mi style="font-size: 15px; font:normal; font-weight:10">a</mi>
+          <mo>+</mo>
+          <msqrt>
+            <mi style="font-size: 15px; font:normal; font-weight:10">d</mi>
+          </msqrt>
+        </mrow>
+        <mi style="font-size: 15px; font:normal; font-weight:10">b</mi>
+      </mfrac>
+      <mi style="font-size: 15px; font:normal; font-weight:10">,&nbsp; what can we say </mi>
+    </math>
+    <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+    <mi style="font-size: 15px; font:normal; font-weight:10">about its continued fraction expansion?&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</mi>
+    </math>
+    <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+      <mi style="font-size: 15px; font:normal; font-weight:10">
+    This course will aim to answer this question, and also provide a more general introduction to
+      continued fraction expansions.</mi>
+     </math>
+      <br>
+    <br> <i>Class format:</i> The course will be primarily lecture-based, with homework problems building intuition
+    for the concepts and exploring related topics <br>
+    <i>Prerequisites:</i> None! Some past exposure to the idea of a limit won’t hurt, but isn’t strictly necessary <br> <br>
+    <b>Chilis:</b> <img id="chili" src="chili.png"> <img id="chili" src="chili.png"> <br>
+    <b>Class Actions: </b><blue>HW Recommended</blue> <br>
+    <b>Themes:</b> <purple>Discrete analysis</purple>
+    </p>
+  <p class="info" id="3G6D">Coming soon</p>
+  <p class="info" id="3G7D">Coming soon</p>
+  <p class="info" id="3G8D">Coming soon</p>
+  <p class="info" id="3G9D"><b>Cryptography and how to break it</b> (Linus, MTWΘF)<br><br>
+    In a typical cryptography class, you learn cryptosystems like Diffie-Hellman that let two people commu-
+    nicate securely even if all their messages are open to the public. And, yes, we will do that. (Contents:
+    Diffie-Hellman, RSA, Yau circuit evaluation, mayyybe elliptic curves.)
+    But more importantly. Just as there exist smart mathematicians trying to make the internet secure,
+    there exist smart mathematicians trying to learn your credit card details. And from their battle springs
+    cool math. So in this class, we’ll look at a ton of attacks that bust open modern cryptosystems when
+    they are implemented even slightly incorrectly. <br>
+    <br> <i>Class format:</i> Lecture<br>
+    <i>Prerequisites:</i> Modular arithmetic, enough to have a<sup>p</sup> = a mod p deep in your heart.<br> <br>
+    <b>Chilis:</b> <img id="chili" src="chili.png"> <img id="chili" src="chili.png"> <img id="chili" src="chili.png"> <br>
+    <b>Class Actions: </b><blue>HW Recommended</blue> <br>
+    <b>Themes:</b> <purple>CS & algorithms, Number theory</purple> </p>
+  <p class="info" id="3G10D">Coming soon</p>
+  <p class="info" id="3G11D">Coming soon</p>
+  <p class="info" id="3G12D">Coming soon</p>
+  <p class="info" id="3G13D"><b>Introduction to linear algebra</b> (Emily, MTWΘF)<br><br>
+    Linear algebra is a fundamental area of mathematics that deals with vectors, matrices, and linear
+
+    systems, but really it is so much more than that. It provides us with the building blocks to bet-
+    ter understand so many areas of applied and pure math, from geometry to homological algebra to
+    
+    engineering. Every mathematician learns linear algebra at some point! <br>
+    Some topics that we will explore: vector spaces, dimension, matrices, linear transformations, rank,
+    and as many other topics as we can fit in at a 2-chili pace. We will approach topics from both
+    computational (doing examples) and theoretical (doing proofs) perspectives, so some comfortability
+    with abstract concepts would be good to have. Homework is required in the sense that you should
+    definitely attempt it to gain a fuller understanding, but it will be neither collected nor graded. <br>
+    <br> <i>Class format:</i> You can expect about half of our class-time to be spent in a lecture format, and the
+    other half spent doing IBL style worksheets.<br>
+    <i>Prerequisites:</i> None officially, but taking the Mathcamp crash course at the same time would be a
+good idea if you are new to abstraction.<br>
+<i>Required for:</i> Representations of symmetric groups (W2); The calculus of variations (W3); The Schwarzschild solution (W3); The derivative as a linear transformation (W4); The fundamental theo-
+rem of algebra and its many proofs (W4); Finite Fourier analysis (W4) <br> <br>
+    <b>Chilis:</b> <img id="chili" src="chili.png"> <img id="chili" src="chili.png"> <br>
+    <b>Class Actions:</b> &#128214; &#129300; (Optional: &#128172; &#128101;) <red>HW Required</red> <br>
+    <b>Themes:</b> <purple>Algebraic structures</purple>
+    </p>
+  <p class="info" id="3G14D">Coming soon</p>
+  <p class="info" id="3G15D">Coming soon</p>
+  <p class="info" id="3G16D">Coming soon</p>
+  <p class="info" id="3G17D"><b>Kakeya sets over finite fields </b> (Charlotte, MTWΘF)<br><br>
+    Imagine you have a needle on a table in front of you. (For our mathematical purposes, we assume said
+    needle has zero width.) You would like to move the needle along the table so that it ends up rotated
+    180 degrees. <br>
+    Certainly rotating through an appropriately sized circle would do the trick, but can we rotate the
+    needle using less area? It turns out the answer to this question is yes - to an extreme degree. We can
+    rotate it using arbitrarily small area—that is, through as small a region as we would like! <br>
+    This probably surprising and counterintuitive fact (that we’ll prove in class) leads to one of the most
+    important and still unsolved conjectures in harmonic analysis: the Kakeya conjecture. In an effort
+    to shed some light on this conjecture, mathematicians analyzed the analogous problem in the setting
+    of finite fields. In the finite field setting, a shockingly simple and elegant proof was found using ...
+    polynomials! In this class we’ll discover the power of polynomials while proving the finite field Kakeya
+    conjecture. <br>
+    <br> <i>Class format:</i> I’ll be taking notes on a tablet during class. You’ll be listening, and asking or answering
+    questions if you’d like to! <br>
+    <i>Prerequisites:</i> It would be helpful, but not necessary, to be comfortable with the definition of a vector
+space and its dimension. <br><br>
+    <b>Chilis:</b> <img id="chili" src="chili.png"> <img id="chili" src="chili.png"> <br>
+    <b>Class Actions:</b> (Optional: &#9999;&#65039; &#128172; &#129300; ) <blue>HW Recommended</blue> <br>
+    <b>Themes:</b> <purple>Discrete analysis</purple>
+    </p>
+  <p class="info" id="3G18D">Coming soon</p>
+  <p class="info" id="3G19D">Coming soon</p>
+  <p class="info" id="3G20D">Coming soon</p>
+
+</body>
+</html>
