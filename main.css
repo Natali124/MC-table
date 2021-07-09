@@ -3,7 +3,7 @@ body{
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    background:url(TAU.png);
+    background:url(tile1.png);
     background-size:100%;
     background-color: rgb(252, 221, 255);
     
@@ -24,7 +24,7 @@ body{
     
 }
 #G3{
-    /* background-color: #ffffff;b
+    /* background-color: #ffffff; 
     color: rgb(0, 0, 0);
     border: transparent;
     border-bottom: 4px solid transparent;
@@ -185,12 +185,58 @@ table tr, td, th{
 .y {
     background-color: #f1f15a !important;
     color: black !important;
-}
+} /*
 .related {
     background-color: rgb(246, 221, 248);
     color: black !important;
+} */
+.algebra {
+    background-color: rgb(211, 255, 198);
+}
+.structures {
+    background-color: rgb(196, 255, 214);
+
 }
 
+.analysis {
+    background-color: rgb(189, 255, 229);
+}
+
+.cs {
+    background-color: rgb(204, 255, 245);
+}
+
+.discrete{
+    background-color: rgb(163, 255, 250);
+}
+
+.games {
+    background-color: rgb(184, 244, 255);
+}
+
+.graph {
+    background-color: rgb(193, 234, 255);
+}
+
+.irl {
+    background-color: rgb(184, 215, 255);
+}
+
+.number {
+    background-color: rgb(203, 209, 255);
+}
+
+.rigid {
+    background-color: rgb(214, 199, 255);
+}
+
+.squishy {
+    background-color: rgb(234, 208, 255);
+}
+
+.symmetries {
+    background-color: rgb(237, 199, 247);
+}
 
 p{
     margin-top: 50px;
