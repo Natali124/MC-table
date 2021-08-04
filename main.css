@@ -24,6 +24,7 @@ body{
     max-height: 40%;
 }
 
+
 #G1{
   
 }
@@ -166,6 +167,11 @@ table tr, td, th{
     text-align: center;
     width: 60px;
 }
+.days{
+   text-align: center;
+   width: 250px;
+   color: black;
+}
 .tableH th{
     width: 280px;
 }
@@ -180,9 +186,12 @@ table tr, td, th{
     border-radius: 5px;
     text-align: center;
     font-size: 8.5px;
-    background-color: white;
     height: 30px;
     width: 280px;
+    width:100%;
+}
+.color{
+    background-color: blue;
 }
 .hbtn{
     font-weight: bold;
@@ -298,7 +307,7 @@ grey{
 #box{
     transition: 1s;
     width: 180px;
-    height: 400px;
+    height: 40x;
     position:fixed;
     top: 0;
     right: 0;
@@ -314,361 +323,3 @@ grey{
     height: 9px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media (max-width: 1450px) {
-    
-    #box{
-        width: 160px;
-        
-    }  
-}  
-  
-@media (max-width: 1400px) {
-    
-#box{
-    width: 140px;
-    
-}    
-.btn{
-    width: 270px;
-}
-.hbtn{
-    width: 135px;
-}
-.tableH th{
-    width: 270px;
-}
-    
-   
-}
-@media (max-width: 1350px) {
-#box{
-     margin-right: 10px;
-    font-size: 14px;
-}
-.btn{
-    width: 260px;
-}
-.hbtn{
-    width: 130px;
-}
-.tableH th{
-    width: 260px;
-}}
-@media (max-width: 1300px) {
-
-    .btn{
-        width: 250px;
-    }
-    .hbtn{
-        width: 125px;
-    }
-    .tableH th{
-        width: 250px;
-    }
-    
-}
-@media (max-width: 1260px) {
-
-    .btn{
-        height: 32px;
-        width: 240px;
-    }
-    .hbtn{
-        height: 32px;
-        width: 120px;
-    }
-    .tableH th{
-        width: 240px;
-    }
-    #box{
-        width: 120px;
-        height: 350px;
-        font-size: 12px;
-    }
-}
-@media (max-width: 1190px) {
-
-        .btn{
-          
-            width: 220px;
-        }
-        .hbtn{
-           
-            width: 110px;
-        }
-        .tableH th{
-            width: 220px;
-        }
-        #box{
-            width: 110px;
-            margin-right: 8px;
-        }
-        }
-@media (max-width: 1100px) {
-
-        .btn{
-            height: 34px;
-            width: 200px;
-        }
-        .hbtn{
-            height: 34px;
-            width: 100px;
-        }
-        .tableH th{
-            width: 200px;
-        }
-        #box{
-            width: 100px;
-        }
-    }
-@media (max-width: 1020px) {
-
-        .btn{
-            width: 190px;
-        }
-        .hbtn{
-            width: 95px;
-        }
-        .tableH th{
-            width: 190px;
-        }
-    }
-@media (max-width: 980px) {
-
-        .btn{
-            
-            width: 180px;
-        }
-        .hbtn{
-            width: 90px;
-        }
-        .tableH th{
-            width: 180px;
-        }
-        #box{
-            height:  300px;
-            width: 90px;
-        }
-    } 
-@media (max-width: 930px) {
-    .AM{
-        width: 50px !important;
-    }
-        .btn{
-            height: 36px;
-            width: 170px;
-        }
-        .hbtn{
-            height: 36px;
-            width: 85px;
-        }
-        .tableH th{
-            width: 170px;
-        }
-        #box{
-            width: 85px;
-        }
-        img{
-            width: 8px;
-            height: 7px;
-        }                                   
-    }
-@media (max-width: 880px) {
-    .AM{
-        width: 45px !important;
-    }
-        .btn{
-            height: 37px;
-            width: 160px;
-        }
-        .hbtn{
-            height: 37px;
-            width: 80px;
-        }
-        .tableH th{
-            width: 160px;
-        }
-        #box{
-           height:250px;
-            width: 80px;
-        }                                   
-    }
-@media (max-width: 830px) {
-    .AM{
-        width: 40px !important;
-    }
-        .btn{
-            height: 38px;
-            width: 150px;
-        }
-        .hbtn{
-            height: 38px;
-            width: 75px;
-        }
-        .tableH th{
-            width: 150px;
-        }
-        #box{
-            width: 75px;
-        }                                   
-    }
-@media (max-width: 780px) {
-    .AM{
-        width: 30px !important;
-    }
-        .btn{
-            height: 40px;
-            width: 140px;
-            font-size: 8px;
-        }
-        .hbtn{
-            height: 40px;
-            width: 70px;
-            font-size: 6.5px;
-        }
-        .tableH th{
-            width: 140px;
-        }
-        #box{
-            width: 70px;
-        }
-        #G5{
-            height: 45px;
-           
-           
-         }
-        #G6{
-            height: 45px;
-            
-        }
-        #G6h{
-            height: 45px;
-            
-        }
-        #G7{
-            height: 45px;
-           
-            
-        }
-        #G8{
-            height: 45px;
-          
-        }
-         #G9{
-            height: 45px;
-           
-            
-         }
-         #G10{
-            height: 45px;
-        
-        }
-        #G11{
-            height: 45px;
-        }
-        #G12{
-            height: 45px;
-         
-        }
-        #G12h{
-        
-            height: 45px;
-        }
-         #G13{
-            height: 45px;
-           
-           
-         }
-         #G14{
-            height: 45px;
-          
-           
-        }
-        #G15{
-            height: 45px; 
-           
-           
-        }
-        #G16{
-            height: 45px;
-           
-           
-        }
-        #G16h{
-            height: 45px;
-        }                                   
-    }
-@media (max-width: 730px) {
-    .AM{
-        width: 20px !important;
-        font-size: 12px;
-    }
-        .btn{
-            width: 100px;
-            font-size: 6px;
-        }
-        .hbtn{
-            width: 50px;
-            font-size: 5px;
-        }
-        .tableH th{
-            width: 100px;
-        }
-        img{
-            width: 7px;
-            height: 6px;
-        }
-        #box{
-          display: none;
-        }          
-    }
-@media (max-width: 400px) {
-  
-        .btn{
-            font-size: 5px;
-            width: 70px;
-        }
-        .hbtn{
-            font-size: 4px;
-            width: 35px;
-            
-        }
-        .tableH th{
-            font-size: 8px;
-            width: 70px;
-        }
-               
-    }     
-              

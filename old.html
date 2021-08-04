@@ -1,0 +1,1999 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="old.css">
+  <title>Interactive Schedule</title>
+  <script type="text/javascript" src="https://www.hostmath.com/Math/MathJax.js?config=OK"></script>
+  <script src="old.js"></script>  
+</head>
+<body>
+  <div>
+  <table class="tableH">
+    <thead>
+      <tr>
+        <th style="width: 60px;" class="AM">time</th>
+        <th>week 1</th>
+        <th>week 2</th>
+        <th>week 3</th>
+        <th>week 4</th>
+      </tr>
+    </thead>
+  </table>
+
+  <table class="tableB">
+   <tr>
+     <td rowspan="6" class="AM">9 AM</td>
+   </tr>
+   <tr>
+    <td><button onclick="f1f1('G1D')" class="hbtn" id="G1">Better sleep through modeling  <img id="chili" src="chili.png"> (Olivia Walch)</button><button onclick="f1f1h('G1hD')" class="hbtn" id="G1h">Better sheep through modeling <img id="chili" src="chili.png"> (J-Lo)</button></td>
+    <td><button onclick="f1f2('G2D')" class="hbtn" id="G2">A pair of fractal curves  <img id="chili" src="chili.png"><img id="chili" src="chili.png"> (Ben)</button><button onclick="f1f2h('G2hD')" class="hbtn" id="G2h">The pirate game  <img id="chili" src="chili.png"> (Ben)</button></td>
+    <td><button onclick="f1f3('G3D')" class="btn" id="G3">Curvature lies within <img id="chili" src="chili.png"><img id="chili" src="chili.png"> (Apurva Nakade)</button></td>
+    <td><button onclick="f1f4('G4D')" class="btn" id="G4">Archers at the ready! <img id="chili" src="chili.png"><img id="chili" src="chili.png"><img id="chili" src="chili.png"><img id="chili" src="chili.png"> (Zoe)</button></td>
+  </tr>
+  <tr>
+      <td><button onclick="f2f1('G5D')" class="btn" id="G5">Insert geometry joke here <img id="chili" src="chili.png"><img id="chili" src="chili.png"> (Zoe)</button></td>
+      <td><button onclick="f2f2('G6D')" class="hbtn" id="G6">Euclidean geometry beyond Euclid <img id="chili" src="chili.png"><img id="chili" src="chili.png"> (Yuval Wigderson)</button><button onclick="f2f2h('G6hD')" class="hbtn" id="G6h">Algorithms on your phone <img id="chili" src="chili.png"><img id="chili" src="chili.png"> (Agustin Garcia)</button></td>
+      <td><button onclick="f2f3('G7D')" class="btn" id="G7">Finite fields and how to find them <img id="chili" src="chili.png"><img id="chili" src="chili.png"><img id="chili" src="chili.png"> (Viv)</button></td>
+      <td><button onclick="f2f4('G8D')" class="btn" id="G8">Causal inference: how can we prove that X causes Y? <img id="chili" src="chili.png"> (Mira Bernstein)</button></td>
+    </tr>
+    <tr>
+      <td><button onclick="f3f1('G9D')" class="btn" id="G9"><b1>[HR]</b1> Introduction to group theory <img id="chili" src="chili.png"><img id="chili" src="chili.png"> (Samantha)</button></td>
+      <td><button onclick="f3f2('G10D')" class="btn" id="G10">Functions of a complex variable (week 1 of 2) <img id="chili" src="chili.png"><img id="chili" src="chili.png"><img id="chili" src="chili.png"> (Mark)</button></td>
+      <td><button onclick="f3f3('G11D')" class="btn" id="G11">Quadratic forms <img id="chili" src="chili.png"><img id="chili" src="chili.png"> (Gabrielle)</button></td>
+      <td><button onclick="f3f4('G12D')" class="hbtn" id="G12">The 17 worlds of planar ants <br> <img id="chili" src="chili.png"><img id="chili" src="chili.png"> (Dror Bar-Natan)</button><button onclick="f3f4h('G12hD')" class="hbtn" id="G12h">The probabilistic method <br> <img id="chili" src="chili.png"><img id="chili" src="chili.png"> (Mia)</button></td>
+    </tr>
+    <tr>
+      <td><button onclick="f4f1('G13D')" class="btn" id="G13">Sparsest cut <img id="chili" src="chili.png"><img id="chili" src="chili.png"><img id="chili" src="chili.png"> (Alan)</button></td>
+      <td><button onclick="f4f2('G14D')" class="btn" id="G14"><b1>[HR]</b1> Model theory <img id="chili" src="chili.png"><img id="chili" src="chili.png"><img id="chili" src="chili.png"> (Aaron)</button></td>
+      <td><button onclick="f4f3('G15D')" class="btn" id="G15">The calculus of variations <img id="chili" src="chili.png"><img id="chili" src="chili.png"><img id="chili" src="chili.png"><img id="chili" src="chili.png">(Ben)</button></td>
+      <td><button onclick="f4f4('G16D')" class="hbtn" id="G16">The derivative as a linear transformation <img id="chili" src="chili.png"><img id="chili" src="chili.png"> (Alan)</button><button onclick="f4f4h('G16hD')" class="hbtn" id="G16h">The inverse and implicit function theorems <img id="chili" src="chili.png"><img id="chili" src="chili.png"><img id="chili" src="chili.png"> (Alan)</button></td>
+    </tr>
+    <tr>
+      <td><button onclick="f5f1('G17D')" class="btn" id="G17">Topics in number theory <img id="chili" src="chili.png"><img id="chili" src="chili.png"> (Misha)</button></td>
+      <td><button onclick="f5f2('G18D')" class="btn" id="G18">Representations of symmetric groups <img id="chili" src="chili.png"><img id="chili" src="chili.png"><img id="chili" src="chili.png"><img id="chili" src="chili.png"> (Samantha)</button></td>
+      <td><button onclick="f5f3('G19D')" class="btn" id="G19">The Schwarzschild solution <img id="chili" src="chili.png"><img id="chili" src="chili.png"><img id="chili" src="chili.png"><img id="chili" src="chili.png"> (Jon Tannenhauser) </button></td>
+      <td><button onclick="f5f4('G20D')" class="btn" id="G20">Trail mix <img id="chili" src="chili.png"> → <img id="chili" src="chili.png"><img id="chili" src="chili.png"><img id="chili" src="chili.png"> (Mark)</button></td>
+    </tr>
+  </table>
+
+  <table class="tableB">
+    <tr>
+      <td rowspan="6" class="AM">10 AM</td>
+    </tr>
+    <tr>
+     <td><button onclick="f6f1('2G1D')" class="btn" id="2G1">How to count primes <img id="chili" src="chili.png"><img id="chili" src="chili.png"> (Viv)</button></td>
+     <td><button onclick="f6f2('2G2D')" class="btn" id="2G2">Hilbert’s 3rd problem <img id="chili" src="chili.png"><img id="chili" src="chili.png"><img id="chili" src="chili.png"><img id="chili" src="chili.png"> (Steve Schweber)</button></td>
+     <td><button onclick="f6f3('2G3D')" class="btn" id="2G3">Factoring large prime numbers <img id="chili" src="chili.png"><img id="chili" src="chili.png"> (Linus)</button></td>
+     <td><button onclick="f6f4('2G4D')" class="btn" id="2G4">Evolution of random graphs <img id="chili" src="chili.png"><img id="chili" src="chili.png"><img id="chili" src="chili.png"> (Misha)</button></td>
+   </tr>
+   <tr>
+       <td><button onclick="f7f1('2G5D')" class="btn" id="2G5">Incidence combinatorics <img id="chili" src="chili.png"><img id="chili" src="chili.png"><img id="chili" src="chili.png"><img id="chili" src="chili.png"> (Aaron)</button></td>
+       <td><button onclick="f7f2('2G6D')" class="btn" id="2G6">Introduction to graph theory <img id="chili" src="chili.png"><img id="chili" src="chili.png"> (Marisa)</button></td>
+       <td><button onclick="f7f3('2G7D')" class="btn" id="2G7">Functions of a complex variable (week 2 of 2) <img id="chili" src="chili.png"><img id="chili" src="chili.png"><img id="chili" src="chili.png"> (Mark)</button></td>
+       <td><button onclick="f7f4('2G8D')" class="btn" id="2G8">Knot theory <img id="chili" src="chili.png"><img id="chili" src="chili.png"> (Emily)</button></td>
+     </tr>
+     <tr>
+       <td><button onclick="f8f1('2G9D')" class="btn" id="2G9">Introduction to quantum computing <img id="chili" src="chili.png"><img id="chili" src="chili.png"> (Jorge)</button></td>
+       <td><button onclick="f8f2('2G10D')" class="btn" id="2G10">Sit down and (don’t) solve SAT? <img id="chili" src="chili.png"> (Zoe)</button></td>
+       <td><button onclick="f8f3('2G11D')" class="btn" id="2G11">Lights, camera, group actions! <img id="chili" src="chili.png"><img id="chili" src="chili.png"><img id="chili" src="chili.png"> (Emily)</button></td>
+       <td><button onclick="f8f4('2G12D')" class="btn" id="2G12">Nonunique factorization in the Chicken McNugget monoid <img id="chili" src="chili.png"><img id="chili" src="chili.png">(Gabrielle)
+         </button></td>
+     </tr>
+     <tr>
+       <td><button onclick="f9f1('2G13D')" class="btn" id="2G13"><b1>[HR]</b1> Mathcamp crash course <img id="chili" src="chili.png"> (Assaf)</button></td>
+       <td><button onclick="f9f2('2G14D')" class="btn" id="2G14">The special theory of relativity <img id="chili" src="chili.png"><img id="chili" src="chili.png"><img id="chili" src="chili.png"> (Jorge)</button></td>
+       <td><button onclick="f9f3('2G15D')" class="hbtn" id="2G15">Myth of the 13 Archimedean solids  <img id="chili" src="chili.png"> (Lizka)</button><button onclick="f9f3h('2G15hD')" class="hbtn" id="2G15h">Lattices that make up the world <img id="chili" src="chili.png"><img id="chili" src="chili.png"> (Elizabeth Chang-Davidson)</button></td>
+       <td><button onclick="f9f4('2G16D')" class="btn" id="2G16">Nowhere differentiable but continuous functions are everywhere! <img id="chili" src="chili.png"><img id="chili" src="chili.png"><img id="chili" src="chili.png"> (Charlotte)</button></td>
+     </tr>
+     <tr>
+       <td><button onclick="f10f1('2G17D')" class="btn" id="2G17">Multivariable calculus crash course <img id="chili" src="chili.png"><img id="chili" src="chili.png"><img id="chili" src="chili.png"> (Mark)</button></td>
+       <td><button onclick="f10f2('2G18D')" class="btn" id="2G18">Topology through Morse theory <img id="chili" src="chili.png"><img id="chili" src="chili.png"><img id="chili" src="chili.png"> (Kayla Wright)</button></td>
+       <td><button onclick="f10f3('2G19D')" class="btn" id="2G19">Surreal numbers <img id="chili" src="chili.png"><img id="chili" src="chili.png"> (Aaron)</button></td>
+       <td><button onclick="f10f4('2G20D')" class="btn" id="2G20">The fundamental theorem of algebra and its many proofs <img id="chili" src="chili.png"><img id="chili" src="chili.png"><img id="chili" src="chili.png"><img id="chili" src="chili.png"> (Jorge)</button></td>
+     </tr>
+   </table>
+
+   <table class="tableB">
+    <tr>
+      <td rowspan="6" class="AM">Noon</td>
+    </tr>
+      <tr>
+       <td><button onclick="f11f1('3G1D')" class="btn" id="3G1">A combinatorial proof of the Jacobi triple product identity <img id="chili" src="chili.png"><img id="chili" src="chili.png"><img id="chili" src="chili.png"><img id="chili" src="chili.png"> (Gabrielle)</button></td>
+       <td><button onclick="f11f2('3G2D')" class="btn" id="3G2">Combinatorial species <img id="chili" src="chili.png"><img id="chili" src="chili.png"><img id="chili" src="chili.png"> (Linus)</button></td>
+       <td><button onclick="f11f3('3G3D')" class="btn" id="3G3">Graph colorings <img id="chili" src="chili.png"><img id="chili" src="chili.png"> (Mia)</button></td>
+       <td><button onclick="f11f4('3G4D')" class="btn" id="3G4">Finite Fourier analysis <img id="chili" src="chili.png"><img id="chili" src="chili.png"><img id="chili" src="chili.png"> (Mike Orrison)</button></td>
+     </tr>
+     <tr>
+       <td><button onclick="f12f1('3G5D')" class="btn" id="3G5">Continued fractions <img id="chili" src="chili.png"><img id="chili" src="chili.png"> (Ben)</button></td>
+       <td><button onclick="f12f2('3G6D')" class="btn" id="3G6">Dirichlet’s class number formula <img id="chili" src="chili.png"><img id="chili" src="chili.png"><img id="chili" src="chili.png"><img id="chili" src="chili.png"> (Viv)</button></td>
+       <td><button onclick="f12f3('3G7D')" class="btn" id="3G7">Kleinian groups and fractals <img id="chili" src="chili.png"><img id="chili" src="chili.png"><img id="chili" src="chili.png"> (Dan Gulotta)</button></td>
+       <td><button onclick="f12f4('3G8D')" class="btn" id="3G8">Learning online learning online <img id="chili" src="chili.png"><img id="chili" src="chili.png"> (Eric Neyman)</button></td>
+     </tr>
+     <tr>
+       <td><button onclick="f13f1('3G9D')" class="btn" id="3G9">Cryptography and how to break it <img id="chili" src="chili.png"><img id="chili" src="chili.png"><img id="chili" src="chili.png"> (Linus)</button></td>
+       <td><button onclick="f13f2('3G10D')" class="btn" id="3G10"><b1>[HR]</b1> Introduction to analysis <img id="chili" src="chili.png"><img id="chili" src="chili.png"> (Alan & Charlotte)</button></td>
+       <td><button onclick="f13f3('3G11D')" class="btn" id="3G11">Noncommutative ring theory (week 1 of 2)<img id="chili" src="chili.png"><img id="chili" src="chili.png"><img id="chili" src="chili.png"><img id="chili" src="chili.png">(Susan) </button></td>
+       <td><button onclick="f13f4('3G12D')" class="btn" id="3G12">Non-Euclidean geometries <img id="chili" src="chili.png"> (Samantha)</button></td>
+     </tr>
+     <tr>
+       <td><button onclick="f14f1('3G13D')" class="btn" id="3G13"><b1>[HR]</b1>Introduction to linear algebra <img id="chili" src="chili.png"><img id="chili" src="chili.png"> (Emily)</button></td>
+       <td><button onclick="f14f2('3G14D')" class="btn" id="3G14"><b1>[HR] </b1> Introduction to ring theory <img id="chili" src="chili.png"><img id="chili" src="chili.png"><img id="chili" src="chili.png"> (Susan)</button></td>
+       <td><button onclick="f14f3('3G15D')" class="btn" id="3G15"> Classifying infinite-type surfaces <img id="chili" src="chili.png"><img id="chili" src="chili.png"><img id="chili" src="chili.png"> (Assaf) </button></td>
+       <td><button onclick="f14f4('3G16D')" class="btn" id="3G16">Noncommutative ring theory (week 2 of 2) <img id="chili" src="chili.png"><img id="chili" src="chili.png"><img id="chili" src="chili.png"><img id="chili" src="chili.png"> (Susan)</button></td>
+     </tr>
+     <tr>
+       <td><button onclick="f15f1('3G17D')" class="btn" id="3G17">Kakeya sets over finite fields <img id="chili" src="chili.png"><img id="chili" src="chili.png"> (Charlotte)</button></td>
+       <td><button onclick="f15f2('3G18D')" class="btn" id="3G18">Problem solving: geometric transformations <img id="chili" src="chili.png"><img id="chili" src="chili.png"> (Misha)</button></td>
+       <td><button onclick="f15f3('3G19D')" class="btn" id="3G19">What are your numbers worth? <img id="chili" src="chili.png"> (Eric) </button></td>
+       <td><button onclick="f15f4('3G20D')" class="btn" id="3G20">PDEs part 1: Laplace’s equation <img id="chili" src="chili.png"><img id="chili" src="chili.png"><img id="chili" src="chili.png"><img id="chili" src="chili.png"> (Assaf)</button></td>
+     </tr>
+   </table>
+  </div>
+  <ps id="box"><b><a1 class="y">yellow</a1>: Classes required for or requiring this one</b><br><br>&#128214; <b>:Reading</b><br><br> &#128172;  <b>:Speaking</b><br><br> &#9999;&#65039; <b>:Writing</b><br><br>&#129300; <b>:Problem solving</b><br><br>&#128101; <b>:Collaborating</b><br><br> &#127940;  <b>:Other activitying</b><br><br><br><a href="main.html"><button>Click here for the Week 5 Schedule!</button></a></ps>
+  <p class="info" id="G1D"><b>Better sleep through modeling</b> (Olivia Walch,  MTW <grey>ΘF</grey>)<br><br>
+    What happens if we come up with math models to describe the phenomena of human sleep and
+    circadian rhythms? What if we hook these models up to people’s wearables and run them on phones?
+    What if we use the models to compute what people should do during the day to sleep better at night?
+    (Will people accept math as their sleep savior??) <br>
+    
+    <br> <i>Class format:</i> Slides, mostly lecture <br>
+    <i>Prerequisites:</i> Must have experience sleeping <br><br>
+    <b>Chilis:</b> <img id="chili" src="chili.png"> <br>
+    <b>Class Actions:</b> <blue>HW Recommended</blue> <br>
+    <b>Themes:</b> <purple>Smorgasbord, Math in real life</purple>
+    
+  
+</p>    
+  <p class="info" id="G1hD"><b>Better sheep through modeling</b> (J-Lo, <grey>MTW</grey> ΘF)<br><br>
+    Sheep need food, but there is not always enough food to go around. How do individuals (like sheep)
+    respond to a lack of resources? Will they become aggressive and greedy, or learn to cooperate? If they
+    settle on a solution, will they keep their word or betray each other’s trust?
+    Evolutionary game theory is the study of how strategies and behaviors change over time. By
+    making some simple assumptions about how individual sheep make decisions, we will be able to make
+    predictions about how the entire herd changes. 
+    <br><br><i>Class format:</i> The class will start with a game: you will be a sheep trying to collect as much food
+    as possible. This will be followed by some whole-group review and discussion of this game, where
+    participants will have the opportunity to share their thoughts if they wish to. The class will gradually
+    transition to more of a lecture formatas we begin to define some tools that can be used to study
+    games of this kind. <br>
+    <i>Prerequisites:</i> Must be willing to be a sheep<br> <br>
+    <b>Chilis:</b> <img id="chili" src="chili.png"> <br>
+    <b>Class Actions:</b> &#127940; (Optional: &#128172;) <blue>HW Recommended</blue> <br>
+    <b>Themes:</b> <purple>Smorgasbord, Games, Math in real life</purple>
+    
+  </p>
+  <p class="info" id="G2D"><b>A pair of fractal curves</b>(Ben, MTW<grey>ΘF</grey>)<br><br>
+    “Fractal” is one of those words that comes up a lot in popular math; usually the definition is something
+like “a shape that looks like a part of that same shape.” In this class, we’ll start by investigating a
+pair of fractal curves and then try to peer, just a little bit, into a more general picture. <br>
+
+The two particular curves, the Cantor–Lebesgue Staircase and Minkowski’s ? Function, both arise
+when we switch between different ways of writing real numbers—in base two or base three, or as
+continued fractions. The more general picture should provide some insight into what would happen
+if we chose other perspective still. Best of all, the Cantor-Lebesgue Staircase is a very useful function
+to see at least once, because it is a particularly fun counterexample!
+  
+    <br><br>
+    <i>Class format:</i>Interactive Lecture <br>
+    <i>Prerequisites:</i>The second day will make the most sense if you’ve seen continued fractions before—but
+    as long as you’re willing to take my word on one or two things, the entire course should not have any
+    prerequisites. <br> <br>
+    <b>Chilis:</b> <img id="chili" src="chili.png"> <img id="chili" src="chili.png"> <br>
+    <b>Class Actions:</b><blue>HW Recommended</blue> <br>
+    <b>Themes:</b> <purple>Smörgåsbord, Discrete analysis</purple>
+    
+  </p>
+  <p class="info" id="G2hD"><b>The pirate game</b>(Ben, <grey>MTW</grey> ΘF) <br><br>
+    In modern political science and economics, one of the major mathematical tools for analyzing and
+solving problems is game theory. Real, serious people use game theory to study real, serious problems. <br>
+That’s not really what this course is about. We’ll first cover some of the first basics of game theory,
+to make sure that everyone is on the same page when it comes time to think about some very unserious,
+entertaining, fun games. These games include such deep and relevant questions as: What should you
+do when you’re captured by the bears? How many pirates have to die while dividing up treasure?
+How can the JCs best resolve their differences through the noble art of Nerf gun warfare? <br>
+Nevertheless, if you’ve heard a bit about game theory and want to get a grasp on the basics, this
+class should help familiarize you with some of the terminology and give you a good starting point for
+later investigations.
+  
+    <br><br>
+    <i>Class format:</i> Interactive Lecture, then problem solving <br>
+    <i>Prerequisites:</i>  None! <br> <br>
+    <b>Chilis:</b> <img id="chili" src="chili.png"> <br>
+    <b>Class Actions:</b>  &#129300; &#128101; <blue>HW Recommended</blue> <br>
+    <b>Themes:</b> <purple>Smörgåsbord, Games</purple></p>
+    <p class="info" id="G3D"><b>Curvature lies within</b> (Apurva Nakade, MTWΘF)<br><br>
+      Thanks to several high-res photos of outer space, we have experimentally verified one of the most
+  
+  counter-intuitive predictions of Einstein’s theory of general relativity: that mass bends the space-
+  time continuum. Gravity arises as the bending of this space-time continuum and is mathematically
+  
+  indistinguishable from curvature. But what does it mean for space-time to bend? How can we tell
+  that our universe is curved without being able to look at it from the outside?<br/> 
+  In this 2-chili class, we’ll answer some of these questions for two-dimensional objects. We’ll define
+  curvature à la Gauss and use it to study the geometry of surfaces. We’ll do some explicit computations
+  and, time permitting, prove the Gauss–Bonnet theorem.
+  <br><br>
+      <i>Class format:</i> The class will be a mix of lectures and IBL. You should expect to spend a considerable
+      part of the class time solving problems in breakout rooms. <br>
+      <i>Prerequisites:</i>  Differentiation (definition, interpretation, basic computations) <br> <br>
+      <b>Chilis:</b> <img id="chili" src="chili.png"> <img id="chili" src="chili.png"> <br>
+      <b>Class Actions:</b>  &#129300; &#128101; <blue>HW Optional</blue> <br>
+      <b>Themes:</b> <purple>Squishy shapes</purple>
+    </p>
+  <p class="info" id="G4D"><b>Archers at the ready!</b> (Zoe, MTWΘF)<br><br>
+    In homological algebra, it is easy to get sick of drawing arrows. Between the fleets of arrows and all the chains, cochains, cycles, boundaries, and torsion, it is hard to tell whether we are studying math or some medieval fantasy realm. While looking at homological algebra we will also motivate the topological origins while showing why we want to take these mechanisms further in more algebraic contexts. Warning: commutative diagrams will be everywhere.
+    <br><br>
+    <i>Class format:</i> This will be a lecture style class <br>
+    <i>Prerequisites:</i>  Group theory (maybe some field theory and ring theory too) <br> <br>
+    <b>Chilis:</b> <img id="chili" src="chili.png"> <img id="chili" src="chili.png"> <img id="chili" src="chili.png"> <img id="chili" src="chili.png"> <br>
+    <b>Class Actions:</b> &#128214; &#127940; (Optional: &#9999;&#65039; &#128172; &#129300;) <blue>HW Recommended</blue> <br>
+    <b>Themes:</b> <purple>Algebraic structures</purple>
+
+    
+  </p>
+  <p class="info" id="G5D"><b>Insert geometry joke here</b> (Zoe, MTWΘF)<br><br>
+    Looking at drawings, Pac-man’s universe, or even the ground we walk on, many things appear “flat”.
+    Looking at space locally only tells us so much about the fundamental properties of the space itself.
+    In this class we will look at an overview of different geometries and the ways of thinking of surfaces.
+    We will especially look at ways of visualizing spaces and how they connect to problems one might
+    encounter in various areas of math. <br>
+    
+    It can be extremely valuable to consider problems in spaces where they naturally reside. Mathematically, if we have a problem that loops in on itself, say considering words with two letters, we
+    might want to consider solving that problem on a torus. If we need to differentiate the parity of an
+    object, maybe it lives in a Möbius strip? For example, if we are looking to accurately represent what
+    we see around us in a drawing on a piece of paper, we are using the properties of projective space! <br>
+    <br><i>Class format:</i> The class will mostly be lectures with interruptions of hands on activities that campers
+    will be recommended to participate in <br>
+    <i>Prerequisites:</i> Linear algebra, if you’re taking the week 1 Introduction to linear algebra at the same
+    time that will be enough! <br><br>
+    <b>Chilis:</b> <img id="chili" src="chili.png"><img id="chili" src="chili.png"> <br>
+    <b>Class Actions:</b> &#129300; &#127940; (Optional: &#128214; &#9999;&#65039; &#128172; &#128101;) <blue>HW Recommended</blue> <br>
+    <b>Themes:</b> <purple>Squishy shapes</purple>
+    </p>
+  <p class="info" id="G6D"><b>Euclidean geometry beyond Euclid</b> (Yuval Wigderson,  MTW<grey>ΘF</grey>)<br><br>
+    The poet Edna St. Vincent Millay wrote a sonnet
+
+    called “Euclid alone has looked on Beauty bare”.
+    In many ways, I agree with the sentiment—Euclidean geometry is one of the most beautiful subjects
+    in mathematics, full of astonishing results and miraculous proofs. But I don’t think it’s fair to say
+    that Euclid has a monopoly on its beauty; there’s a ton of beauty in Euclidean geometry that Euclid
+    didn’t know about! <br>
+    This class will be about those things: questions that Euclid might have asked (but didn’t), and
+    
+    theorems that Euclid might have proved (but didn’t). In many cases, we’ll see that some simple-
+    looking problems in Euclidean geometry lie on the forefront of modern mathematics, more than 2000
+    
+    years after Euclid almost posed them (but didn’t). For instance, it turns out that to really understand
+    a basic question about counting points and lines in the plane, you probably need to understand ℓ-adic
+    étale intersection cohomology and perverse sheaves.
+    Unfortunately, I have no idea what ℓ-adic étale intersection cohomology and perverse sheaves are, so
+    we won’t really get into that. But I plan to discuss a number of different topics in not-quite-Euclidean
+    geometry, show you some of the surprising connections to other areas of mathematics like number
+    theory and probability, and tell you about several conjectures that are still unproven, even though
+    they could be as old as Euclid (but aren’t).
+    <br><br>
+    <i>Class format:</i>Lecture on a virtual whiteboard, without breakout rooms.<br>
+    <i>Prerequisites:</i> None <br> <br>
+    <b>Chilis:</b> <img id="chili" src="chili.png"> <img id="chili" src="chili.png"> <br>
+    <b>Class Actions:</b><grey>HW Optional</grey> <br>
+    <b>Themes:</b> <purple>Smörgåsbord, Discrete analysis, Rigid shapes</purple>
+    </p>
+  <p class="info" id="G6hD"><b>Algorithms on your phone </b>(Agustin Garcia, <grey>MTW</grey> ΘF) <br><br>
+    Your phone can do a whole lot of things, but how? Turns out, not all of it is hocus pocus and machine
+learning wizardry. In this class, we’ll focus on music processing algorithms. We’ll learn about the
+Fourier Transform and use it to identify frequencies in a signal. Then we’ll look at applications, like
+Shazam’s music detection algorithm and, time permitting, automatic beat detection.
+  
+    <br><br>
+    <i>Class format:</i>The class will be conducted in a single Zoom room (lecture style). I will screen share
+    as I hand-write on a notes app, and occasionally share other media/ code. <br>
+    <i>Prerequisites:</i> Integration and Euler’s Identity. Familiarity with asymptotic (big O) notation may help
+    you appreciate the content more but is not necessary.<br> <br>
+    <b>Chilis:</b> <img id="chili" src="chili.png"> <img id="chili" src="chili.png"> <br>
+    <b>Class Actions:</b> <grey>HW Optional</grey> <br>
+    <b>Themes:</b> <purple>Smörgåsbord, CS & algorithms, Math in real life</purple>
+    </p>
+  <p class="info" id="G7D"><b>Finite fields and how to find them </b>(Viv, MTWΘF) <br><br>
+    You may be familiar with fields like Q or R or C. But what about fields that are a lot smaller? Like,
+<i>a lot</i> smaller? <br/>
+The integers modulo p form a field (that is to say, a set where we can add, multiply, subtract, and
+divide according to rule 4) when (and only when) p is prime. However, there are many many more
+finite fields out there! In this class we’ll see how to construct finite fields, and in particular see how
+constructing finite fields is like finding primes between N and 2N. (If that sounds completely unrelated,
+come see why it is not.) We’ll also explore the structure of finite fields, and, time permitting, show
+that we have found them all.
+<br><br>
+<i>Class format:</i> Lecture; I’ll be sharing a tablet screen and writing. <br>
+<i>Prerequisites:</i> Group Theory; Ring theory, to the point where you’re comfortable quotienting a ring
+by an ideal<br> <br>
+<b>Chilis:</b> <img id="chili" src="chili.png"> <img id="chili" src="chili.png"> <img id="chili" src="chili.png"><br>
+<b>Class Actions:</b> <grey>HW Recommended</grey> <br>
+<b>Themes:</b> <purple> Algebreic structures, Number theory</purple>
+
+  </p>
+  <p class="info" id="G8D"><b>Causal inference: how can we tell if X causes Y?</b> (Mira Bernstein, MTWΘF) <br><br>
+    You probably know that correlation does not imply causation. But usually, whether we are interested in basic science, medicine, or social policy, it’s causation that we actually care about. So how <span><strong>can</strong></span> we tell whether <span class="math inline">\(X\)</span> causes <span class="math inline">\(Y\)</span>? <br><br>
+    Statisticians have developed a number of <span><em>ad hoc</em></span> approaches to this question over the years — most famously, randomized controlled trials (RCTs). But sometimes randomization isn’t possible: for example, you can’t do an RCT to determine whether smoking causes cancer. It is only in the last few decades that a unifying mathematical framework for causal inference has emerged. Using the formalism of structural causal models, a researcher can tell exactly which quantities they need to measure, which variables they need to manipulate, and what causal conclusions they can draw from the available data. In addition to being extremely useful, structural causal models are also fun to play with: you basically get to solve lots of mini-puzzles involving directed graphs.<br> <br>
+    <span><em>Warning:</em></span> Math-wise, this class is <img id="chili" src="chili.png">, but it might be more like a <img id="chili" src="chili.png"> <img id="chili" src="chili.png"> <img id="chili" src="chili.png"> class in terms of how much it taxes your brain: you’ll need to learn a whole new way of formalizing real-world problems, which can be quite challenging. However, it’ll tax your brain somewhat differently than the way math classes usually do.<br> <br>
+    Homework Recommended: In the homework, you actually get play with data in R and implement the things we discussed in class. (You don’t have to know any R: I’ll provide a quick tutorial with everything you need.)
+
+    <br><br>
+    <i>Class format:</i> Mix of interactive lecture and IBL <br>
+    <i>Prerequisites:</i> Comfort with Bayes’ Theorem: <span class="math inline">\(P(A|B) = \frac{P(B|A)P(A)}{P(B)}\)</span>. If you’re not familiar with this formula and its applications, don’t worry – it’s very elementary and you can easily look it up! For example, if you read the explanation at <a href="https://brilliant.org/wiki/bayes-theorem/" target=”_blank”>https://brilliant.org/wiki/bayes-theorem/</a> and work out some of the examples given there, that should be enough.
+    <br> <br>
+    <b>Chilis:</b> <img id="chili" src="chili.png"><br>
+    <b>Class Actions:</b> &#129300; &#128101; &#127940; (Optional: &#9999;&#65039; &#128172;) <blue>HW Recommended</blue> <br>
+    <b>Themes:</b> <purple> Math in real life</purple>
+
+
+  </p>
+  <p class="info" id="G9D"><b>Introduction to group theory</b> (Samantha, MTWΘF)<br><br>
+    A group is a set of items together with a way for them to “interact” with each other. For example,
+one could take the real numbers, which interact with each other via adding. Or you could take the
+set of symmetries of a square, where interactions occur by composing the symmetries. In this class,
+we’ll cover the basics about groups- defining them, interesting properties that certain groups have,
+mapping between groups, manipulating groups, and so forth.<br>
+Note: Groups are the fundamental objects in algebra, and will be foundational for a lot of the classes
+at Mathcamp; as such, homework will be required so that you may get used to interacting with groups
+and proving results about them. Most of class time will be spent on lectures, but I may also give some
+in-class work time for the homework, if time permits. <br>
+    <br> <i>Class format:</i> Most of class time will be spent on lectures, but I may also give some in-class work time
+    for the homework if time permits. Work time would be done in break out rooms so you could work
+    with your classmates, if you’d like!<br>
+    <i>Prerequisites:</i> None. <br>
+    <a style="font-style: italic;">Required for:</a> Representations of symmetric groups (W2); Topology through Morse theory (W2);
+Dirichlet’s class number formula (W2); Finite fields and how to find them (W3); Lights, camera,
+group actions! (W3); Kleinian groups and fractals (W3); Archers at the ready! (W4); Finite Fourier
+analysis (W4)<br> <br>
+    <b>Chilis:</b> <img id="chili" src="chili.png"> <img id="chili" src="chili.png"> <br>
+    <b>Class Actions:</b> &#129300; (Optional: &#128101; ) <red>HW Required</red> <br>
+    <b>Themes:</b> <purple>Algebraic structures</purple></p>
+  <p class="info" id="G10D"><b>Functions of a complex variable (1 of 2)</b> (Mark, MTWΘF )<br><br>
+    Spectacular (and unexpected) things happen in calculus when you allow the variable (now to be called
+    z = x + iy instead of x) to take on complex values. For example, functions that are “differentiable” in
+    a region of the complex plane now automatically have power series expansions. If you know what the
+    values of such a function are everywhere along a closed curve, then you can deduce its value anywhere
+    inside the curve! Not only is this quite beautiful math, it also has important applications, both inside
+    and outside math. For example, functions of a complex variable were used by Dirichlet to prove his
+    famous theorem about primes in arithmetic progressions, which states that if a and b are positive
+    integers with gcd(a, b) = 1, then the sequence a, a + b, a + 2b, a + 3b, . . . contains infinitely many
+    primes. This was probably the first major result in analytic number theory, the branch of number
+    theory that uses complex analysis as a fundamental tool and that includes such key questions as the
+    Riemann Hypothesis. Meanwhile, in an entirely different direction, complex variables can also be used
+    to solve applied problems involving heat conduction, electrostatic potential, and fluid flow. Dirichlet’s
+    theorem is certainly beyond the scope of this class and heat conduction probably is too, but we’ll prove
+    a major theorem due to Liouville that 1) leads to a proof of the so-called “Fundamental Theorem of
+    Algebra”, which states that any nonconstant polynomial (with real or even complex coefficients) has
+    a root in the complex numbers; I believe Jorge will give the details in a week 4 class and 2) is vital
+    for the study of “elliptic functions”, which have two independent complex periods, and which may be
+    the topic of a week 5 class. Meanwhile, we should also see how to compute some impossible-looking
+    improper integrals by leaving the real axis that we’re supposed to integrate over and venturing boldly
+    forth into the complex plane! This class runs for two weeks, but it should be worth it. (If you can
+    take only the first week, you’ll still get to see a good bit of interesting material, including one or two
+    of the things mentioned above.)
+    <br><br>
+    <i>Class format:</i>Interactive lecture (over Zoom). I’ll be using a document camera like a “blackboard”
+    (and scanning the notes afterward), looking out at your faces even when you can’t see mine (when
+    I’m not actually writing, you will see mine), and asking questions to help us go through the material
+    together. <br>
+    <i>Prerequisites:</i>Multivariable calculus (the week 1 crash course will, by definition, be enough; you
+    should have some comfort with partial derivatives and with line integrals, preferably including Green’s
+    theorem—but the week 1 course may not get to Green’s theorem, in which case we’ll cover it some
+    time in the first week of this class) <br> 
+    <i>Required for:</i> Functions of a complex variable (2 of 2) (W3)
+    <br> <br>
+    <b>Chilis:</b> <img id="chili" src="chili.png">  <img id="chili" src="chili.png">  <img id="chili" src="chili.png"> <br>
+    <b>Class Actions:</b><blue>HW Recommended</blue> <br>
+    <b>Themes:</b> <purple>Analysis</purple>
+    </p>
+  <p class="info" id="G11D"><b>Quadratic forms</b> (Gabrielle, MTWΘF)<br><br>
+    
+    A binary quadratic form is a function <span class="math inline"></span>\(f(x,y) = ax^2 + bxy + cy^2,\)</span> where <span class="math inline">\(a,b,c \in \mathbb{Z},\)</span> as you can read from Viv’s class blurb last week. You can also read the definition of the discriminant, which is <span class="math inline">\(b^2 - 4ac\)</span>, as well as the fact that the class number is finite and has a beautiful formula given by Dirichlet (which you proved if you took her class!).
+    
+    <br/><br/>
+Unfortunately, it is frowned upon for me to plagiarize Viv’s class, so we will learn something else!
+Following Hatcher’s Topology of Numbers, we are going to draw some pretty pictures and use them
+to derive some interesting facts about quadratic forms (including classifying quadratic forms by their
+discriminants, proving that the class number is finite, and figuring out which integers can be output
+by a quadratic form).
+
+
+    <br><br>
+    <i>Class format:</i>Interactive lecture!<br>
+    <i>Prerequisites:</i>Familiarity with Legendre symbols may be helpful but not necessary.<br>
+    <br> <br>
+    <b>Chilis:</b> <img id="chili" src="chili.png">  <img id="chili" src="chili.png">  <img id="chili" src="chili.png"> <br>
+    <b>Class Actions:</b><blue>HW Recommended</blue> <br>
+    <b>Themes:</b> <purple>Analysis</purple>
+
+  </p>
+  <p class="info" id="G12D">
+    <b>The 17 worlds of planar ants</b> (Dror Bar-Natan, MT<grey>WΘF</grey>)<br><br>
+    My goal is to get you hooked, captured and unreleased until you find all 17 in real life, around you. <br>
+We all know that the plane can be filled in different periodic manners: floor tiles are often square
+but sometimes hexagonal, bricks are often laid in an interlaced pattern, fabrics often carry interesting
+patterns. A little less known is that there are precisely 17 symmetry patterns for tiling the plane; not
+one more, not one less. It is even less known how easy these 17 are to identify in the patterns around
+you, how fun it is, how common some are, and how rare some others seem to be. <br>
+Gotta Catch ’Em All!
+<br><br>
+    <i>Class format:</i> Frontal yet conversational lessons on a shared zoom whiteboard on which everyone will
+write.
+<br>
+    <i>Prerequisites:</i>  None <br> <br>
+    <b>Chilis:</b> <img id="chili" src="chili.png"> <br>
+    <b>Class Actions:</b> &#9999;&#65039; (Optional: &#128172;) <blue>HW Recommended</blue> <br>
+    <b>Themes:</b> <purple>Smorgasbord, Symmetries</purple>
+
+
+
+
+  </p>
+  <p class="info" id="G12hD">
+    <b>The probabilistic method</b> (Mia, <grey>MT</grey>WΘF)<br><br>
+    Consider a tournament consisting of n soccer teams, each of which plays every other team precisely
+once. Suppose that for any set of k teams in the tournament, there is some team that beat all of them
+in tournament play. For a fixed k, how big does n have to be for such a tournament to exist? Does
+such an n always exist?
+<br>
+A simple enough question to pose – but one that remained unsettled until 1963, when Erdős introduced and used probabilistic and nonconstructive methods to provide a (remarkably elegant!) proof
+
+that such tournaments exist! This class will illustrate several such examples of problems in combinatorics that are incredibly difficult to resolve with normal constructive methods, yet have elegant and
+
+short probabilistic proofs.
+
+
+
+<br><br>
+    <i>Class format:</i> Interactive lecture with occasional breakout rooms for problem-solving.
+<br>
+    <i>Prerequisites:</i> Basic graph theory <br> <br>
+    <b>Chilis:</b> <img id="chili" src="chili.png"> <img id="chili" src="chili.png"> <br>
+    <b>Class Actions:</b> &#129300; <blue>HW Recommended</blue> <br>
+    <b>Themes:</b> <purple>Smorgasbord, Discrete analysis, Graph Theory</purple>
+
+
+  </p>
+  <p class="info" id="G13D"><b>Sparsest cut</b> (Alan, MTWΘF)<br><br>
+    The sparsest cut problem asks the following: Given a (finite simple undirected) graph G, find a subset
+S of the vertices that minimizes <br>
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+  <mfrac>
+    <mrow>
+      <mi style="font-size: 15px; font:normal; font-weight:10">number of edges with one endpoint in S and one endpoint in &nbsp;
+        <msup>
+        <mi style="font-size: 15px; font:normal; font-weight:10"> S</mi>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi style="font-size: 15px; font:normal; font-weight:10">c</mi>
+        </mrow>
+      </msup></mi>
+    </mrow>
+    <mrow>
+      <mi style="font-size: 15px; font:normal; font-weight:10">min(number of vertices in S, number of vertices in &nbsp; <msup>
+        <mi style="font-size: 15px; font:normal; font-weight:10"> S</mi>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi style="font-size: 15px; font:normal; font-weight:10">c</mi>
+        </mrow>
+      </msup>)</mi>
+    </mrow>
+  </mfrac>
+</math>
+ The point of the denominator is to try to balance the sizes of S and S<sup>c</sup>. You can think of sparsest cut
+as a discrete analogue of the isoperimetric problem. <br>
+Is there an efficient way to find the minimum? The short answer is “probably not,” but fortunately,
+there is an efficient way to approximate the solution: if G has N vertices, then there is an algorithm
+that gives you a subset S which does not necessarily attain the minimum, but it will not be too far
+off. In particular, it will be within a factor of log N of the minimum. <br>
+In this class, we will introduce the algorithm and then discuss why this algorithm produces good
+approximations. A key part of the proof is connecting the sparsest cut problem to a fundamental
+question about discrete geometric spaces. If there is time, we will briefly mention how the discrete
+5-dimensional Heisenberg group plays a role in a better (but more difficult) approximation algorithm
+for sparsest cut. These are just some of the many examples of the connections between theoretical
+computer science and metric geometry. <br>
+  
+    <br> <i>Class format:</i> I will give lectures using Google Jamboard, and I will screen-share Jamboard from my
+    tablet. If you’d like, you can open up Jamboard in your browser to browse through previous slides.<br>
+    <i>Prerequisites:</i> There are no official prerequisites for this class. In particular, you do not need to have
+any background in theoretical computer science or graph theory. We will introduce many simple but
+new ideas rather quickly, which is why this is a 3-chili class. <br><br>
+    <b>Chilis:</b> <img id="chili" src="chili.png"> <img id="chili" src="chili.png"> <img id="chili" src="chili.png"><br>
+    <b>Class Actions:</b> <blue>HW Recommended</blue> <br>
+    <b>Themes:</b> <purple> CS & algorithms, Discrete analysis, Graph Theory</purple></p>
+  <p class="info" id="G14D"><b>Model theory</b> (Aaron, MTWΘF )<br><br>
+    At Mathcamp, we encounter loads of different mathematical widgets. There are groups, graphs, posets,
+tosets, rings, fields, vector spaces, and more. That’s a lot to keep track of, but with model theory, we
+can view all of these as examples of the same phenomenon. <br>
+ 
+We’ll tie all these together with a nice logical framework. We’ll give general definitions of “mathe-
+matical structures,” “axiom systems,” and “proofs”. <br>
+
+Then we’ll use those definitions to construct some Alice-in-Wonderlandishly weird examples. A
+theorem that makes structures big, a theorem that makes structures small, infinite natural numbers,
+infinitesimal reals, and tiny universes of set theory that can fit in your (countably infinite) pocket.
+  
+    <br><br>
+    <i>Class format:</i>  I’ll lecture during the class block. The homework will go over extra examples in a bunch
+    of areas of math, and at least one big theorem will be proved in homework.<br>
+    <i>Prerequisites:</i> Either group theory, graph theory, or ring theory (there are a lot of contexts where we
+    can find model-theory examples, but it’s important to have at least one you’re comfortable with) <br> <br>
+    <b>Chilis:</b> <img id="chili" src="chili.png">  <img id="chili" src="chili.png">  <img id="chili" src="chili.png"> <br>
+    <b>Class Actions:</b> &#129300;<red>HW Required</red> <br>
+    <b>Themes:</b> <purple>Algebraic structures</purple>
+    </p>
+  <p class="info" id="G15D">
+    <b>The calculus of variations</b> (Ben, MTWΘF)<br><br>
+    In the ordinary calculus, one asks questions about functions—things like “where does this function have a maximum?” where the answer is going to be some number in the function’s domain. In the calculus of variations, we study how to use the ideas of the calculus for questions like “which curve connecting these points has the smallest arc length?” where the answer is not some number, but some <i>function</i>.<br>
+
+We’ll see a little bit of how these ideas relate to physics, and we’ll prove and discuss one of the most important results for the study of modern physics. Noether’s Theorem says that the symmetries of the laws of physics correspond to conserved quantities. Before Noether, it was well-understood that some quantity that we call “energy” doesn’t change over time, and most people implicitly assumed that the laws of physics were the same today as they were yesterday—they’re symmetric over time, that is. Noether’s Theorem, among other things, states that the latter fact <i>implies</i> the former—the fact that the laws of physics remain the same over time tells us that energy is conserved.
+<br><br>
+    <i>Class format:</i> Interactive lecture<br>
+    <i>Prerequisites:</i> Linear algebra, some familiarity with analysis, calculus (at least knowing what integrals are and knowing about Taylor series). We won’t need any major results from multivariable calculus, but having seen it before might be useful, for context. <br> <br>
+    <b>Chilis:</b> <img id="chili" src="chili.png"> <img id="chili" src="chili.png"> <img id="chili" src="chili.png"> <img id="chili" src="chili.png"> <br>
+    <b>Class Actions:</b>  <blue>HW Recommended</blue> <br>
+    <b>Themes:</b> <purple>Analysis</purple>
+
+
+  </p>
+  <p class="info" id="G16D">
+    <b>The derivative as a linear transformation</b> (Alan, MT<grey>WΘF</grey>)<br><br>
+
+    Suppose we have a function <span class="math inline">\(\mathbf f : \mathbb R^3 \to \mathbb R^2\)</span>. We can write <span class="math inline">\(\mathbf f(x, y, z) = (g(x,y,z), h(x,y,z))\)</span>. In multivariable calculus, we learn about partial derivatives of <span class="math inline">\(\mathbf f\)</span>. There are 6 different partial derivatives, which we can arrange into a matrix: <span class="math display">\[\begin{aligned}
+    \begin{pmatrix}
+    \partial_x g(x,y,z) &amp; \partial_y g(x,y,z) &amp; \partial_z g(x,y,z)
+    \\
+    \partial_x h(x,y,z) &amp; \partial_y h(x,y,z) &amp; \partial_z h(x,y,z)
+    \end{pmatrix}\end{aligned}\]</span> If all the partial derivatives are continuous, then the matrix above is called the <em>total derivative</em> (or just <em>derivative</em>) of <span class="math inline">\(\mathbf f\)</span> and is denoted <span class="math inline">\(\mathbf f&#39;(x,y,z)\)</span>.<br>
+    Arranging all the partial derivatives this way is not just for notational convenience. A <span class="math inline">\(2 \times 3\)</span> matrix represents a linear transformation <span class="math inline">\(\mathbb R^3 \to \mathbb R^2\)</span>. In this class, we will see how to think of the derivative of a <span class="math inline">\(\mathbb R^m \to \mathbb R^n\)</span> map as a linear transformation, and we will use this point of view to prove and interpret results such as the chain rule (in both single-variable and multivariable calculus).
+    
+    
+    
+      <br><br>
+          <i>Class format:</i> lectures on Jamboard<br>
+          <i>Prerequisites:</i> You should know the definition of the derivative from single-variable calculus. (You
+    do need to know any multivariable calculus. Furthermore, this class does not overlap with Mark’s
+    multivariable class from Week 1.) You should be comfortable with matrix multiplication.
+     <br> <br>
+          <b>Chilis:</b> <img id="chili" src="chili.png"> <img id="chili" src="chili.png"> <br>
+          <b>Class Actions: </b><blue>HW Recommended</blue> <br>
+          <b>Themes:</b> <purple>Smorgasbord, Analysis</purple>
+    
+
+
+
+  </p>
+  <p class="info" id="G16hD">
+    <b>The inverse and implicit function theorems</b> (Alan, <grey>MT</grey>WΘF)<br><br>
+    If a function <span class="math inline">\(\mathbf f : \mathbb R \to \mathbb R\)</span> satisfies <span class="math inline">\(\mathbf f&#39;(\mathbf x) \neq 0\)</span> for all <span class="math inline">\(\mathbf x\)</span>, then the function <span class="math inline">\(\mathbf f\)</span> is invertible. In this class, we will look at a generalization of this to higher dimensions called the <em>inverse function theorem</em>: “If <span class="math inline">\(\mathbf f : \mathbb R^n \to \mathbb R^n\)</span> is a function such that <span class="math inline">\(\mathbf f&#39;\)</span> is continuous and <span class="math inline">\(\det \mathbf f&#39;(\mathbf x_0) \neq 0\)</span>, then <span class="math inline">\(\mathbf f\)</span> is locally a <span class="math inline">\(\mathcal C^1\)</span> homeomorphism near <span class="math inline">\(\mathbf x_0\)</span>.” (We will explain the precise meaning of this in class.)<br>
+    It turns out the higher-dimensional situation is much harder than the one-dimensional situation. To understand the proof of the inverse function theorem, we will need tools such as the total derivative, linear algebra, and the Banach fixed-point theorem. We will also see a corollary of the inverse function theorem called the implicit function theorem, which allows us to describe solutions to system of equations as <span class="math inline">\(\mathcal C^1\)</span> submanifolds of Euclidean space.<br>
+    
+      <br><br>
+          <i>Class format:</i> lectures on Jamboard<br>
+          <i>Prerequisites:</i> Week 2 “Introduction to analysis” and Week 4 “The derivative as a linear transformation” (or the equivalent to these classes)
+     <br> <br>
+          <b>Chilis:</b> <img id="chili" src="chili.png"> <img id="chili" src="chili.png"> <img id="chili" src="chili.png"> <br>
+          <b>Class Actions: <blue>HW Recommended</blue> <br>
+          <b>Themes:</b> <purple>Smorgasbord, Analysis</purple>
+    
+
+
+  </p>
+  <p class="info" id="G17D"><b>Topics in number theory</b> (Misha, MTWΘF)<br><br>
+    This is a class about exploring two things: number theory, and the various ways an online class can
+    be taught. More precisely,<br>
+    <br>(1) On Monday, I will guide you through proving a theorem about Pascal’s triangle modulo a
+    prime p through a series of problems you can work on alone or in groups.<br>
+    <br>(2) Tuesday will be about how to compute the GCD of two numbers - in theory, and in the
+    computer algebra system Mathematica. (Using Mathematica yourself is optional.)<br>
+    <br>(3) On Wednesday, I will give a more standard lecture about the Chinese remainder theorem—and,
+    as a bonus, Lagrange interpolation.<br>
+    <br>(4) On Thursday, we’ll look at some math competition problems about unique factorization, and
+    solve them together in class.<br>
+    <br>(5) Friday’s class is a slide-based lecture about several things we can prove (ending with quadratic
+    reciprocity, if you’ve heard of this infamous theorem) by looking at the same product in two
+    different ways.<br>
+    <br>These classes will be mostly independent, but they will generally be easier to follow if you go to all of
+    them, and Wednesday’s class is specifically a prerequisite for Friday’s. <br>
+    <br> <i>Class format:</i> It will vary. See above for details! <br>
+    <i>Prerequisites:</i> None <br>
+   <i>Required for:</i> Factoring large prime numbers (W3); What are your numbers worth? or, the part of
+algebraic number theory we can actually do (W3) <br> <br>
+    <b>Chilis:</b> <img id="chili" src="chili.png">  <img id="chili" src="chili.png"> <br>
+    <b>Class Actions:</b> &#129300; (Optional: &#128172; &#129300; &#128101; &#127940;) <grey>HW Optional</grey> <br>
+    <b>Themes:</b> <purple>Smörgåsbord, Number theory</purple>
+    </p>
+  <p class="info" id="G18D"><b>Representations of symmetric groups</b> (Samantha, MTWΘF )<br><br>
+    A representation of a group G is a homomorphism φ : G → GL<sub>n</sub>(C). In this class, we’ll focus on
+    representations of symmetric groups S<sub>n</sub>, as their representations are particularly nice. You’ll learn
+    what it means for a representation to be irreducible, and why irreducible representations can be thought
+    of as the building blocks for all representations. We’ll also find all of the irreducible representations
+    of S<sub>n</sub>.
+    <br><br>
+    <i>Class format:</i>Lecture. There will be some recommended homework problems. <br>
+    <i>Prerequisites:</i>intro group theory and intro linear algebra <br> <br>
+    <b>Chilis:</b> <img id="chili" src="chili.png"> <img id="chili" src="chili.png"> <img id="chili" src="chili.png"> <img id="chili" src="chili.png">  <br>
+    <b>Class Actions:</b> (Optional: &#129300; &#128101;  ) <blue>HW Recommended</blue> <br>
+    <b>Themes:</b> <purple>Algebraic Combinatorics, Algebraic structures></purple>
+    
+    </p>
+  <p class="info" id="G19D"><b>The Schwarzschild solution</b> (Jon Tannenhauser, MTWΘF)<br><br>
+    Einstein’s general theory of relativity says that matter tells spacetime how to curve and the curvature of spacetime tells matter how to move. Suppose our spacetime contains a single spherical, static mass such as the sun. The Schwarzschild solution of Einstein’s equations describes the geometry of spacetime in the empty space surrounding the mass. If the mass is sufficiently concentrated, we have a black hole—a region of spacetime where gravity is so strong that nothing can escape. In this course, we won’t derive or solve the Einstein equations. Instead, we’ll first spend a few days building up some needed formalism (coordinate transformations, tensors, metrics, and geodesics). Then we’ll posit the form of Schwarzschild solution and see how its geometry leads to the bizarre physics of black holes. Finally, we’ll discuss in grisly detail what will happen to an astronaut unlucky enough to fall into a black hole (spoiler alert: it’s called “spaghettification”).
+<br><br>
+    <i>Class format:</i> : Interactive lecture. Mostly I’ll be talking, but students are welcome to ask questions anytime via chat, and sometimes I’ll pose questions for students to answer via private chat. I plan to make skeletal PDF notes available, with blank spaces for calculations and proofs, to be filled in during class <br>
+    <i>Prerequisites:</i>  : Physics: some basic mechanics vocabulary (energy, linear and angular momentum, wavelength, frequency), special relativity at the level of the week 2 course. Math: single-variable integral calculus and Taylor series, polar and spherical coordinates, partial derivatives, vectors. <br> <br>
+    <b>Chilis:</b> <img id="chili" src="chili.png"> <img id="chili" src="chili.png"> <img id="chili" src="chili.png"> <img id="chili" src="chili.png"> <br>
+    <b>Class Actions:</b>  <blue>HW Recommended</blue> <br>
+    <b>Themes:</b> <purple>Math in real life</purple>
+
+
+
+
+
+
+  </p>
+  <p class="info" id="G20D">
+    <b>Trail mix</b> (Mark, MTWΘF)<br><br>
+    Is your mathematical hike getting a little too strenuous? Would you like to relax a bit with a class
+    that offers an unrelated topic every day, so you can pick and choose which days to attend, and that
+    does not expect you to do homework? If so, some Trail Mix may be just what you need to regain
+    energy. Individual descriptions of the five topics follow. <br><br>
+    <b>Trail Mix Day 1: The Prüfer Correspondence.</b>
+    Suppose you have n points around a circle, with every pair of points connected by a line segment.
+    (If you like, you have the complete graph Kn.) Now you’re going to erase some of those line segments
+    so you end up with a tree, that is, so that you can still get from each point to each other point along
+    the remaining line segments, but in only one way. (This tree will be a spanning tree for Kn .) How
+    many different trees can you end up with? The answer is a surprisingly simple expression in n, and
+    we’ll find a combinatorial proof that is especially cool. <br><br>
+    <i>Chilies</i> <img id="chili" src="chili.png"> → <img id="chili" src="chili.png"> <img id="chili" src="chili.png"> <br>
+    <i>Prerequisites</i> None. <br><br>
+    <b>Trail Mix Day 2: Cyclotomic Polynomials and Migotti’s Theorem.</b><br><br>
+    The cyclotomic polynomials form an interesting family of polynomials with integer coefficients,
+    whose roots are complex roots of unity. Looking at the first few of these polynomials leads to a natural
+    conjecture about their coefficients. However, after the first hundred or so cases keep confirming the
+    conjectured pattern, eventually it breaks down. In this class we’ll prove a theorem due to Migotti,
+    which sheds some light on what is going on, and in particular on why the conjecture finally fails just
+    when it does.<br><br>
+    <i>Chilies</i> <img id="chili" src="chili.png"> <img id="chili" src="chili.png"> <img id="chili" src="chili.png"> <br>
+    <i>Prerequisites</i> Some experience with complex numbers, preferably including complex roots of unity; some experience with polynomials. <br><br>
+    <b>Trail Mix Day 3: Exploring the Catalan numbers.</b> <br><br>
+    What’s the next number in the sequence 1, 2, 5, 14, . . . ? If this were an “intelligence test” for middle
+    or high schoolers, the answer might be 41 ; that’s the number that continues the pattern in which every
+    number is one less than three times the previous number. If the sequence gives the answer to some
+    combinatorial question, though, the answer is more likely to be 42 . We’ll look at a few questions that
+    do give rise to this sequence (with 42), and we’ll see that the sequence is given by an elegant formula,
+    for which we’ll see a lovely combinatorial proof. <br><br>
+    <i>Chilies</i> <img id="chili" src="chili.png"> <img id="chili" src="chili.png"> <br>
+    <i>Prerequisites</i> None. <br><br>
+    <b>Trail Mix Day 4: Intersection Madness.</b><br>
+    When you intersect two ellipses, you can get four points, right? So why can’t you get four points
+    when you intersect two circles? Well, actually you can, and what’s more, two of the four points are
+    always in the same places! If this seems paradoxical (and, I hope, interesting), wait until we start
+    intersecting two cubic curves (given by polynomial equations of degree 3). There’s a “paradox” there
+    too, first pointed out by the Swiss mathematician Cramer in a letter to Euler, and the resolution of
+    that paradox leads to a “magic” property of the nine intersection points. If time permits, we’ll see
+    how that property (known as the Cayley-Bacharach theorem) gives elegant proofs of Pascal’s hexagon
+    theorem and of the existence of a group law on a cubic curve.<br><br>
+    <i>Chilies</i> <img id="chili" src="chili.png"> <img id="chili" src="chili.png"> → <img id="chili" src="chili.png"> <img id="chili" src="chili.png"> <img id="chili" src="chili.png">
+    <i>Prerequisites</i> None, although a little bit of linear algebra might show up. <br><br>
+    <b>Trail Mix Day 5: Integration by Parts and the Wallis Product.</b><br>
+    Integration by parts is one of the only two truly general techniques for finding antiderivatives that are known (the other is integration by substitution). In this class you’ll see (or review) this method, and encounter two of its applications: How to extend the factorial function, so that <span class="math inline">\((1/2)!\)</span> ends up making sense (although the standard notation used for it is a bit different), and how to derive the famous product formula <span class="math display">\[\frac{\pi}{2} = \frac{2}{1}\cdot \frac{2}{3}\cdot\frac{4}{3} \cdot \frac{4}{5} \frac{6}{5}\frac{6}{7}\, \cdots\,,\]</span> which was first stated by John Wallis in 1655. <br><br>
+    <i>Chilies</i> <img id="chili" src="chili.png"> <img id="chili" src="chili.png"> <img id="chili" src="chili.png"><br>
+    <i>Prerequisites</i> Basic single-variable calculus. <br><br>
+    <i>Class format:</i> Mostly interactive lecture (over Zoom). I’ll be using a document camera like a “blackboard” (and scanning the notes afterward), looking out at your faces even when you can’t see mine (when I’m not actually writing, you will see mine), and asking some questions rather than just talking “at” you. I may set up breakout rooms for you to experiment for a little while at the beginning of the Prüfer Correspondence class, but probably not for the other classes.
+    
+
+
+
+  </p>
+  <p class="info" id="2G1D"><b>How to count primes</b> (Viv, MTWΘF)<br><br>
+    How many primes are there?
+Well, OK, infinitely many, but how many primes are there up to 100? 1000? 1000000? x? What
+kind of answer am I even looking for here? <br>
+In 1896, de la Vallée Poussin and Hadamard independently proved the Prime Number Theorem,
+which says that the number of primes up to x is (x/ln x)*(1 + o(1)). We won’t prove the Prime Number
+Theorem, but we will understand what the statement means, and we’ll build up some fundamental
+tools in analytic number theory to allow us to prove something close. <br>
+    <br> <i>Class format:</i> Lecture; I’ll be sharing a tablet screen and writing, with (hopefully) daily notes. <br>
+    <i>Prerequisites:</i> Comfort with single-variable calculus (specifically the integral test for convergent series,
+    differentiation, integration, integration by parts) <br><br>
+    <b>Chilis:</b> <img id="chili" src="chili.png"> <img id="chili" src="chili.png"> <br>
+    <b>Class Actions:</b> <blue>HW Recommended</blue> <br>
+    <b>Themes:</b> <purple>Discrete analysis, Number theory</purple>
+    </p>
+  <p class="info" id="2G2D"><b>Hilbert’s 3rd problem </b>(Steve Schweber, <grey>M</grey>TWΘF )<br><br>
+    One very simple way to show that two shapes have the same size is to cut one into a few pieces and
+then rearrange those pieces to form a copy of the other (just straight-line cuts and only finitely many
+pieces—no shenanigans allowed, we’re not doing set theory!). We can show that this always works for
+polygons: given polygons P and Q with the same area, we can always cut P into finitely many pieces
+using straight-line cuts and then reassemble those pieces into a copy of Q. <br>
+This raises a natural question: what about polyhedra? In 1900, Hilbert listed the question of
+whether two polyhedra of equal volume can always be “decomposed into each other” as one of 23
+problems he thought would guide mathematical research in the coming century. (Granted, this one
+turned out to be a bit easier than expected—it was solved a year later by Hilbert’s own student,
+Dehn.) The solution to the problem is a beautiful application of abstract algebra ...and a little pinch
+of the axiom of choice (OK fine we may be doing a teeny bit of set theory).
+  
+    <br><br>
+    <i>Class format:</i> Mostly lecture, still working on getting hardware together but I suspect document
+    camera or similar. <br>
+    <i>Prerequisites:</i> None. <br> <br>
+    <b>Chilis:</b> <img id="chili" src="chili.png"> <img id="chili" src="chili.png"> <img id="chili" src="chili.png"> <img id="chili" src="chili.png"> <br>
+    <b>Class Actions:</b><blue>HW Recommended</blue> <br>
+    <b>Themes:</b> <purple>Rigid shapes</purple>
+    </p>
+  <p class="info" id="2G3D"><b>Factoring large prime numbers </b>(Linus, <grey>M</grey>TWΘF )<br><br>
+    My Python program tells me, in about 8 seconds, that the next prime after <span class="math inline">\(10^{1000}\)</span> is <span class="math inline">\(10^{1000}+453\)</span>. It also factors <span class="math inline">\(2^{139}-1\)</span> into <span class="math inline">\(5625767248687 \times 123876132205208335762278423601\)</span> in about 3 seconds.<br/><br>
+    “Wait, I thought the fastest way to do this is to check up to <span class="math inline">\(\sqrt{n}\)</span>?" That’s only if you’re taking an intro to programming class, where even including the <span class="math inline">\(\sqrt{}\)</span> is hailed as the Greatest Idea In Theoretical Computer Science.<br/><br>
+    This class is about better algorithms, in order of increasing fanciness, to tell whether a number is prime. Also, algorithms to factor large composite numbers. Also, how a mathematician factored <span class="math inline">\(2^{93}+1\)</span> in 3 seconds... before the invention of computers, using parts from old bicycles.<br/><br>
+    (The title is a joke on a common misphrasing: if you Google it in quotes you can find it hundreds of times in the wild.)
+  
+
+
+    <br><br>
+    <i>Class format:</i> Lecture. Expect plenty of pico-quizzes where I ask y’all to DM me answers in chat. <br>
+    <i>Prerequisites:</i> Basic number theory: know about inverses mod N, Fermat’s Little Theorem, and the
+    Chinese Remainder Theorem.
+    Programming is NOT a prerequisite. <br> <br>
+    <b>Chilis:</b> <img id="chili" src="chili.png"> <img id="chili" src="chili.png"> <br>
+    <b>Class Actions:</b><blue> HW Recommended</blue> <br>
+    <b>Themes:</b> <purple> CS & algorithms, Number theory</purple>
+  </p>
+
+
+
+
+  <p class="info" id="2G4D">
+    <b>Evolution of random graphs</b> (Misha, <grey>M</grey>TWΘF)<br><br>
+    Imagine the following picture: at midnight, we scatter ten thousand vertices in an empty night sky. Each of the <span class="math inline">\(\binom{10\,000}{2}\)</span> possible edges between these vertices chooses a random time between midnight and <span class="math inline">\(1\)</span> AM. At its chosen time, the edge lights up.<br>
+    At midnight, the sky is dark; at <span class="math inline">\(1\)</span> AM, it is lit up by the complete graph <span class="math inline">\(K_{10\,000}\)</span>. What does the sky graph look like between those times?<br>
+    The sky process is random, but when the number of vertices is sufficiently large, we can make confident predictions about when the graph will acquire certain properties. When will the first cycle appear? When will the graph become connected? When will we see the first Hamiltonian cycle?<br>
+    In this class, we will answer these questions and more—and learn some techniques of probabilistic combinatorics as we go.
+    
+      <br><br>
+          <i>Class format:</i> Interactive lecture; I will present slides which I will annotate as we go.<br>
+          <i>Prerequisites:</i> Introduction to graph theory, or comfort with basic graph theory concepts such as trees, subgraphs, vertex degrees, distance.
+    
+     <br> <br>
+          <b>Chilis:</b> <img id="chili" src="chili.png"> <img id="chili" src="chili.png"> <img id="chili" src="chili.png"> <br>
+          <b>Class Actions:</b> <blue>HW Recommended</blue> <br>
+          <b>Themes:</b> <purple> Discrete analysis, Graph Theory</purple>
+    
+
+
+
+  </p>
+  <p class="info" id="2G5D"><b>Incidence combinatorics</b> (Aaron, MTWΘF)<br><br>
+    “My most striking contribution to geometry is, no doubt, my problem on the number
+    of distinct distances.” — Paul Erdős <br>
+    <br> In 1946, Paul Erdős asked two simple questions: If you place n points in the plane, and then measure
+    the distances between every pair of points, what is the minimum number of distinct distances you can
+    get? What is the maximum number of pairs of points that can be exactly distance 1 from each other?<br>
+    <br>The Distinct Distances Problem served as a challenge for decades, with mathematicians inventing
+    a whole new field of mathematics – incidence combinatorics – to create a better lower bound every
+    few years. Finally in 2015, Guth and Katz won a bunch of prizes for almost solving it. Meanwhile,
+    the Unit Distances Problem is wide open—only one improvement has been made since 1946.<br>
+    <br>We will work together to reinvent this philosophy of counting, prove basically the best-known bounds
+    on the Unit Distances Problem, and learn how you can count all kinds of things with just points on
+    lines and curves.<br>
+    <br> <i>Class format:</i> IBL: This class will consist almost entirely of solving problems. Other than a brief intro
+    each day, and some opportunities to present work, we will be in breakout rooms, working on the same
+    problems. <br>
+    <i>Prerequisites:</i> We will briefly use some probability theory (it will be good if you understand the phrase
+“linearity of expectation”). I’ll also assume some graph theory, though I’ll try to review all definitions.<br><br>
+    <b>Chilis:</b> <img id="chili" src="chili.png"> <img id="chili" src="chili.png"> <img id="chili" src="chili.png"> <img id="chili" src="chili.png"> <br>
+    <b>Class Actions:</b> &#128214; &#129300; &#128101; (Optional: &#9999;&#65039; &#128172;) <blue>HW Recommended</blue> <br>
+    <b>Themes:</b> <purple>Discrete analysis, Graph Theory</purple>
+    </p>
+  <p class="info" id="2G6D"><b>Introduction to graph theory </b> (Marisa, <grey>M</grey>TWΘF )<br><br>
+    A graph is a mathematical object with a bunch of things (called “vertices”), some of which have
+    connections between them (called “edges”). You could argue that just about anything is a graph. And
+    you could extrapolate, perhaps, that graph theory is the most important subject in all of mathematics.
+    But all jokes aside: it’s a branch of math in which we get to ask—and sometimes answer—lots
+    of interesting questions right away, even without building up too much machinery. For example: in
+    Misha’s colloquium from Day 0 about the Icosian Game, we got right to “finding a Hamiltonian cycle
+    in a graph.” This week will have a similar flavor to the first half of Misha’s colloquium: we’ll be building
+    up some vocabulary as we investigate matchings, planar graphs, colorings, and lots more.
+    <br><br>
+    <i>Class format:</i> We’ll spend most our time collaborating as a whole group, with lots of opportunities
+    for you to chime in (out loud or in the chat).<br>
+    <i>Prerequisites:</i> None. <br> 
+    <i>Required for:</i> Graph colorings (W3); The probabilistic method (W4); Evolution of random graphs
+    (W4)<br>
+    <b>Chilis:</b> <img id="chili" src="chili.png"> <img id="chili" src="chili.png"> <br>
+    <b>Class Actions:</b>&#128172; &#129300;  (Optional: ) <blue>HW Recommended</blue> <br>
+    <b>Themes:</b> <purple>Graph Theory</purple>
+    </p>
+  <p class="info" id="2G7D">
+    <b>Functions of a complex variable (2 of 2)</b> (Mark, <grey>M</grey>TWΘF)<br><br>
+    This is the continuation of the class with the same name from week 2; see the blurb for that class for more information. If you are thinking of taking this class in week 3 and you didn’t take it in week 2, please consult with me to make sure you’ll be OK and/or so I can help you catch up on whatever background you may be missing.  <br><br>
+    <i>Class format:</i> Interactive lecture (over Zoom). I’ll be using a document camera like a “blackboard” (and scanning the notes afterward), looking out at your faces even when you can’t see mine (when I’m not actually writing, you will see mine), and asking questions to help us go through the material together. <br>
+    <i>Prerequisites:</i> The material from the week 2 class.<br> <br>
+    <b>Chilis:</b> <img id="chili" src="chili.png"> <img id="chili" src="chili.png"> <img id="chili" src="chili.png"> <br>
+    <b>Class Actions:</b>  <blue>HW Recommended</blue> <br>
+    <b>Themes:</b> <purple>Analysis</purple>
+
+
+
+
+  </p>
+  <p class="info" id="2G8D">
+    <b>Knot theory</b> (Emily, <grey>M</grey>TWΘF)<br><br>
+In this class, we will explore the fascinating and dynamic field of knot theory. While learning what
+is a knot and what is not a knot, we will encounter various types of knots and not shy away from
+manipulating knots and knotting knots together. Whether we are knot sure or not sure if two knots
+are the same, there are a variety of invariants we can use to distinguish between knots. Why not come
+and have some knot fun!
+
+  <br><br>
+      <i>Class format:</i> Interactive lecture<br>
+      <i>Prerequisites:</i> None <br>
+
+ <br> <br>
+      <b>Chilis:</b> <img id="chili" src="chili.png"> <img id="chili" src="chili.png"> <br>
+      <b>Class Actions:</b> <blue>HW Recommended</blue> <br>
+      <b>Themes:</b> <purple> Squishy shapes</purple>
+
+  </p>
+  <p class="info" id="2G9D"><b>Introduction to quantum computing</b> (Jorge, MTWΘF)<br><br>
+    In this class, we will introduce what quantum computing is, and we will accomplish two main goals in
+    order to do that. First, we introduce the basic unit of quantum information–the qubit. We will study
+    the electron spin as a physical example where qubits can be created experimentally, and then we will
+    introduce some math in order to represent and manipulate these units of information. (Spoiler: the
+    math has a lot to do with vectors and matrices!) <br>
+    The second goal is introducing the quantum teleportation algorithm. This is the procedure by
+    which we can transport quantum information between two different people, with the only requisites of
+    sharing an entangled qubit (I’ll teach you what “entangled” means) and your usual Internet connection
+    so you can send over 2 classical bits of information. Why so much trouble just to send information,
+    you may ask? Well, as we shall see, measuring quantum information in any way tends to destroy it
+    (you can say qubits are very shy), so this algorithm is kind of a big deal for quantum computers to
+    work. <br>
+    <br><i>Class format:</i> I’ll be using my tablet as a whiteboard, and will lecture as we go. Questions are
+    encouraged at any time. Will assign a couple of problems at the end of each lecture.<br>
+    <i>Prerequisites:</i> Don’t be intimidated by the description–no quantum mechanics or physics will be
+needed! We’ll only need familiarity with how to add and subtract vectors, either numerically (when
+given the value of the components) or graphically (if the vectors are drawn on a plane). Knowing how
+to operate with matrices is a plus. <br><br>
+    <b>Chilis:</b> <img id="chili" src="chili.png"> <img id="chili" src="chili.png"> <br>
+    <b>Class Actions: </b><blue>HW Recommended</blue> <br>
+    <b>Themes:</b> <purple>CS & algorithms, Math in real life</purple>
+    </p>
+  <p class="info" id="2G10D"><b>Sit down and (don’t) solve SAT? </b>(Zoe, <grey>M</grey>TWΘF )<br><br>
+    How can we tell how hard a problem is? There are a lot of hard problems, but are they just problems
+that a human can’t do? Or that might take a computer billions of years to solve? A lot of modern
+society depends on the fact that factoring integers is hard; it is how we can do all e-commerce. If this
+seems intriguing, we can all sit together and look at SAT or satisfiability and how it relates to all sorts
+of other problems!
+We will see an overview of some basic complexity class definitions and why it’s interesting to try
+to classify problems by their complexity. The class will mainly focus on getting in as many surprising
+SAT reductions as we can because why not.
+  
+    <br><br>
+    <i>Class format:</i> Lectures and lots of example problems and problems to work on <br>
+    <i>Prerequisites:</i> None <br> <br>
+    <b>Chilis:</b> <img id="chili" src="chili.png"> <br>
+    <b>Class Actions:</b> &#9999;&#65039; &#129300; &#128101; (Optional: &#128172; &#127940;  ) <grey>HW Optional</grey> <br>
+    <b>Themes:</b> <purple>CS & algorithms</purple>
+    </p>
+  <p class="info" id="2G11D">
+    <b>Lights, camera, group actions!</b> (Emily, <grey>M</grey>TWΘF)<br><br>
+    One way of thinking of a group action is that it is a function which “applies” elements of a group to elements of a set to produce a new element of that set. We can have groups act on many different kinds of sets—from sets of numbers to sets of tic-tac-toe boards. They can also act on objects such as polygons or graphs. In fact, you have probably already seen a group action without realizing it: by definition, the dihedral group of size 2<i>n</i> acts on a regular polygon with <i>n</i> sides via rotations and reflections. Groups can even act on themselves, which we will find out to be quite important! <br>
+In general, the behavior of a group action give us useful information about the group and the set it acts on. We will explore how various theorems and algorithms hinge upon the theory of group actions, with my personal favorite being how to precisely represent any finite group as a permutation group.  <br><br>
+    <i>Class format:</i> Interactive lecture<br>
+    <i>Prerequisites:</i> Group theory<br> <br>
+    <b>Chilis:</b> <img id="chili" src="chili.png"> <img id="chili" src="chili.png"> <img id="chili" src="chili.png"> <br>
+    <b>Class Actions:</b> (Optional: &#129300;) <blue>HW Recommended</blue> <br>
+    <b>Themes:</b> <purple>Algebraic structure, Symmetries</purple>
+  </p>
+  <p class="info" id="2G12D">
+
+
+    <b>Nonunique factorization in the Chicken McNugget monoid</b> (Gabrielle, <grey>M</grey>TWΘF)<br><br>
+Let’s ponder one of life’s greatest mysteries: The Chicken McNugget. Questions about Chicken McNuggets date all the way back to Ancient Grease. What are they made of? Are they even food? (I do not have answers for you there.) How many Chicken McNuggets is it possible to buy?<br>
+When Chicken McNuggets were first introduced, they were sold in packs of 6, 9, and 20. Under those assumptions, any number <span class="math inline">\(n\)</span> that can be written as <span class="math inline">\(6\cdot x_1 + 9 \cdot x_2 + 20 \cdot x_3 = n\)</span> can be purchased. But such a representation does not have to be unique. There are two ways to buy 18 Chicken McNuggets, by buying 3 6-packs or 2 9-packs, corresponding to the two ways of writing <span class="math display">\[18 = 6 \cdot 3 + 9 \cdot 0 + 20 \cdot 0\]</span> or <span class="math display">\[18 = 6 \cdot 0 + 9 \cdot 2 + 20 \cdot 0.\]</span> We can think of these two expressions as two distinct factorizations of the number 18. This brings us to the big question that we will answer, to some extent, in this class: How nonuniquely can we factor quantities of Chicken McNuggets (and what should this mean)?<br>
+<br><em>This class is not sponsored by McDonald’s.</em>
+
+  <br><br>
+      <i>Class format:</i> IBL, minimal lecture.<br>
+      <i>Prerequisites:</i> None <br>
+
+ <br> <br>
+      <b>Chilis:</b> <img id="chili" src="chili.png"> <img id="chili" src="chili.png"> <br>
+      <b>Class Actions: &#128214; (Optional: &#128172; &#128101;) </b> <grey>HW Optional</grey> <br>
+      <b>Themes:</b> <purple> Algebraic structures</purple>
+
+  </p>
+  <p class="info" id="2G13D"><b>Mathcamp crash course</b> (Assaf, MTWΘF)<br><br>
+    Math is useless unless it is properly communicated. Most of math communication happens through a
+    toolbox of terminology and proof techniques that provide us with a backbone to understand and talk
+    about mathematics. These proof techniques are often taken for granted in textbooks, math classes
+    (even at Mathcamp!) and lectures. This class is designed to introduce fundamental proof techniques
+    and writing skills in order to make the rest of the wonderful world of mathematics more accessible.<br>
+    This class will cover direct proofs from axioms, proofs using negation, proofs with complicated
+    logical structure, induction proofs, and proofs using cardinality and the pigeonhole principle. If you
+    are unfamiliar with these proof techniques, then this class is highly recommended for you. If you have
+    heard of these techniques, but would like to practice using them, this class is also right for you.<br>
+    Here are some problems that can assess your knowledge of proof writing:<br>
+    <br>(1) Negate the following sentence without using any negative words (“no”, “not”, etc.): “If a book
+    in my library has a page with fewer than 30 words, then every word on that page starts with a
+    vowel.”<br>
+    <br>(2) Given two sets of real numbers A and B, we say that A dominates B when for every a ∈ A
+    there exists b ∈ B such that a < b. Find two disjoint, nonempty sets A and B such that A
+    dominates B and B dominates A.<br>
+    <br>(3) Prove that there are infinitely many prime numbers.<br>
+    <br>(4) Let f : A → B and g : B → C be maps of sets. Prove that if g ◦ f is injective then f is
+    injective. (This may be obvious, but do you know how to write down the proof concisely and
+    rigorously?)<br>
+    <br>(5) Define rigorously what it means for a function to be increasing.<br>
+    <br>(6) What is wrong with the following argument (aside from the fact that the claim is false)? On
+    a certain island, there are n ≥ 2 cities, some of which are connected by roads. If each city is
+    connected by a road to at least one other city, then you can travel from any city to any other
+    city along the roads.
+    Proof. We proceed by induction on n. The claim is clearly true for n = 1. Now suppose the
+    claim is true for an island with n = k cities. To prove that it’s also true for n = k + 1, we
+    add another city to this island. This new city is connected by a road to at least one of the old
+    cities, from which you can get to any other old city by the inductive hypothesis. Thus you can
+    travel from the new city to any other city, as well as between any two of the old cities. This
+    proves that the claim holds for n = k + 1, so by induction it holds for all n. <br>
+    <br>(7) Mathcampers can message each other privately on Slack over the course of camp. Prove that
+    there are two campers who messaged the same number of people throughout camp.
+    If you would not be comfortable writing down proofs or presenting your solutions to these problems,
+    then you can probably benefit from this crash course. If you found this list of questions intimidating
+    or didn’t know how to begin thinking about some of them, then you should definitely take this class.
+    It will make the rest of your Mathcamp experience much more enjoyable and productive. And the
+    class itself will be fun too!<br>
+    
+    <br>
+    Note that this class is not focused on exposing mathematical background, so if you’d like to brush
+    up on the foundations of graph theory, number theory, etc., this is not where we will do that. <br>
+    <br> <i>Class format:</i> Lecture: handwritten notes on shared screen. Homework: proof-writing exercises to be
+    submitted for feedback. <br>
+    <i>Prerequisites:</i> None! <br><br>
+    <b>Chilis:</b> <img id="chili" src="chili.png"> <br>
+    <b>Class Actions:</b> &#9999;&#65039; <red>HW Required</red> <br>
+    <b>Themes:</b> <purple>Smorgasbord</purple>
+    </p>
+  <p class="info" id="2G14D"><b>The special theory of relativity </b>(Jorge, <grey>M</grey>TWΘF )<br><br>
+    What happens to the classical laws of motion as we get closer and closer to the speed of light? A very
+young Einstein (in his early 20s) asked this question at the beginning of the 20th century and came to
+groundbreaking conclusions, that supported the development of some very interesting mathematics. <br>
+In this class, we will cover the mathematical description of space-time (i.e you’ll get to learn why
+time is called the “fourth dimension” and how it is NOT really independent from space!) We will study
+the correct transformation laws of space-time between two observers in relative motion at speeds in the
+order of the speed of light–also known as Lorentz transformations. From these, seemingly-paradoxical
+consequences arise: the simultaneity of events, the length of objects and the very perception of time
+are seen as different between observers moving at different speeds! <br>
+We will also study the algebraic structure of four-vectors, which are needed to describe physical
+quantities in a way consistent with Lorentz transformations, as well as the index notation used to
+describe tensors. This will be great preparation to continue studying the theory of General Relativity
+(see class “The Schwarzchild solution”) on Week 3!
+  
+    <br><br>
+    <i>Class format:</i>Lecture based with individual problem solving in class, if time allows. <br>
+    <i>Prerequisites:</i> The algebra of vectors and matrices, especially writing systems of linear equations in
+
+    matrix form. Some familiarity with differential equations can help students obtain a greater appreci-
+    ation of the theory.<br> 
+    <i>Required for:</i>  The Schwarzschild solution (W3)<br> <br>
+    <b>Chilis:</b>  <img id="chili" src="chili.png"><img id="chili" src="chili.png"><img id="chili" src="chili.png"> <br>
+    <b>Class Actions:</b>(Optional: &#129300; ) <blue>HW Recommended</blue> <br>
+    <b>Themes:</b> <purple> Math in real life</purple>
+    </p>
+  <p class="info" id="2G15D">
+    <b>Myth of the 13 Archimedean Solids</b> (Lizka, <grey>M</grey>TW<grey>ΘF</grey>)<br><br>
+    You know about the Platonic Solids: convex polyhedra whose faces are all the same kind of regular n-gon, like cubes and dodecahedra. You might have even seen a proof that there are exactly five of these. A slightly less well known set of polyhedra are the <i> Archimedean Solids </i>. In 1619, Kepler showed that there were exactly 13 Archimedean Solids. In 1997, Peter Cromwell included a full proof of this fact in his book, Polyhedra.<br>
+So people were surprised when Branko Grünbaum showed that there are actually 14 Archimedean Solids. (Moral 1. Beware the pseudo-rhombicuboctahedron.)<br>
+In this class, we will explore the Archimedean Solids and other cool sets of polyhedra to see how two lines of reasoning led to an identity crisis for the Archimedeans.<br> We will discuss the standard story told about this clash, in the process looking at Leonardo da Vinci’s illustrations, Albrecht Dürer’s experiments, and Kepler’s astronomical theories. Then we will learn why this story is completely made up.<br> The short version of where the story goes astray is that it misses a distinction between discovery and creation in mathematics. For the long version, come to the class!  <br><br>
+    <i>Class format:</i> Interactive lecture <br>
+    <i>Prerequisites:</i> None <br> <br>
+    <b>Chilis:</b> <img id="chili" src="chili.png"><br>
+    <b>Class Actions:</b> (Optional: &#128172; &#128101; &#127940;) <grey>No HW</grey> <br>
+    <b>Themes:</b> <purple>Rigid shapes</purple>
+
+  </p>
+  <p class="info" id="2G15hD">
+  </i><b>Lattices that make up the world</b> (<i>Elizabeth Chang-Davidson</i>, <grey>MTW</grey>ΘF)<br><br>
+    How many different ways are there to draw a lattice in three dimensions? In order to answer this question, we have to define what a lattice is, and what makes two lattices different from each other. The answer will take us through understanding a variety of symmetries in three dimensions, since we will be classifying these lattices through the ways that they can be left unchanged after various transformations. Many of the materials that surround us turn out to be made of one of these lattice types at a molecular level, and perhaps unsurprisingly, the molecular structure of materials governs many of their physical properties. Lattice structures help explain why diamonds are hard but graphite is soft, why some metals are brittle and others are ductile, and why salt crystals are cubes. We will finish by discussing some of these ways lattices are of interest to materials scientists, engineers, chemists, and crystallographers.  <br><br>
+    <i>Class format:</i> I will be screensharing me drawing/writing on a tablet for most of the time. Once or twice we will have a drawing exercise where you will be in a breakout room with other students drawing on a Jamboard together.  <br>
+    <i>Prerequisites:</i> Being able to add vectors in R 3 and interpret it geometrically. (If you don’t have this background, or want to solidify your understanding, feel free to Slack DM me or to find me during the 2nd half of TAU on Wednesday.) <br> <br>
+    <b>Chilis:</b> <img id="chili" src="chili.png"> <img id="chili" src="chili.png"><br>
+    <b>Class Actions:</b>  &#9999;&#65039; &#128101; <blue>HW Recommended</blue> <br>
+    <b>Themes:</b> <purple>Math in real life, Rigid shapes, Symmetries</purple>
+  </p>
+  <p class="info" id="2G16D">
+    <b>Nowhere differentiable but continuous functions are everywhere!</b> (Charlotte, <grey>M</grey>TWΘF)<br><br>
+    Analysis is rather well-known for, and well-loved by many because of, its pathological examples. An example that definitely deserves this qualification is Weierstrass’s “Monster of Analysis”: a function that is continuous everywhere, but not differentiable anywhere. Instead of constructing such a function, and therefore proving that such a function exists, we will show that there are <em>many, many</em> such functions, without even constructing a single one! Somehow, this will be easier.<br>
+    We will introduce a way of measuring the size of a set in terms of its density (known as Baire category, but it’s not what it probably sounds like to you). In the sense of Baire category, we will show that the set of continuous but nowhere differentiable functions is “large.” Consequently, we’ll see that the aforementioned Monsters of Analysis, while seemingly quite pathological, may in fact be a rather generic example of a continuous function. <br>
+    <em>An unintended BONUS for taking this class: You will learn what the heck the “bairespace” emoji in Slack is referring to.</em><br>
+    
+      <br><br>
+          <i>Class format:</i> Most of the class will be an interactive lecture. We will sprinkle in some time for
+    activities and problem solving.
+    <br>
+          <i>Prerequisites:</i>You should have some background in analysis. In particular, you should feel comfortable with <span class="math inline">\(\epsilon\)</span>-<span class="math inline">\(\delta\)</span> proofs, know the definition of a sequence in terms of <span class="math inline">\(\epsilon\)</span>s, and have worked with sequences of functions before. It would be useful, but not strictly necessary, to be familiar with metric spaces, uniform convergence, and Cauchy sequences. I will have a quick intro to all of these concepts.
+    <br>
+    
+     <br> <br>
+          <b>Chilis:</b> <img id="chili" src="chili.png"> <img id="chili" src="chili.png"> <img id="chili" src="chili.png"><br>
+          <b>Class Actions: &#129300; &#128101; (Optional: &#9999;&#65039; &#128172;) </b> <blue>HW Recommended</blue> <br>
+          <b>Themes:</b> <purple> Analysis</purple>
+    
+
+  </p>
+  <p class="info" id="2G17D"><b>Multivariable calculus crash course</b> (Mark, MTWΘF)<br><br>
+    In real life, interesting quantities usually depend on several variables (such as the coordinates of a
+point, the time, the temperature, the number of campers in the room, the real and imaginary parts
+of a complex number, ...). Because of this, “ordinary”(single-variable) calculus often isn’t enough to
+solve practical problems. In this class, we’ll quickly go through the basics of calculus for functions of
+several variables. As time permits, we’ll look at some nice applications, such as: If you’re in the desert
+and you want to cool off as quickly as possible, how do you decide what direction to go in? What is
+the total area under a bell curve? What force fields are consistent with conservation of energy? <br>
+One reason, and maybe the best reason, to take this crash course right now rather than waiting
+until you encounter the material naturally after BC calculus and/or in college, is to be able to take
+the course on functions of a complex variable (which have many amazing features) that starts in week
+two. <br>
+    <br> <i>Class format:</i> Interactive lecture (over Zoom). I’ll be using a document camera like a “blackboard”
+    (and scanning the notes afterward), looking out at your faces even when you can’t see mine (when
+    I’m not actually writing, you will see mine), and asking questions to help us go through the material
+    together. <br>
+    <i>Prerequisites:</i> Basic knowledge of single-variable calculus (both differentiation and integration) <br>
+    <i>Required for:</i> Functions of a complex variable (1 of 2) (W2); PDEs part 1: Laplace’s equation (W4) <br><br>
+    <b>Chilis:</b> <img id="chili" src="chili.png"> <img id="chili" src="chili.png"> <img id="chili" src="chili.png"> <br>
+    <b>Class Actions: </b><blue>HW Recommended</blue> <br>
+    <b>Themes:</b> <purple>Analysis</purple>
+    </p>
+  <p class="info" id="2G18D"><b>Topology through Morse theory  </b>(Kayla Wright,  <grey>M</grey>TWΘF )<br><br>
+    Many mathematicians joke that a donut and a coffee mug are “the same.” In this class, we will flip
+a donut on its side, and show this is true using a chocolate icing function. We will also talk about
+some basic topology and on top of this, we will develop general techniques to show that defining
+special functions from a topological space to R can completely determine a space up to continuous
+deformation.
+  
+    <br><br>
+    <i>Class format:</i> Interactive lecture. I plan to share my iPad stream and write live! Maybe I can assign
+    some readings beforehand if students are interested.<br>
+    <i>Prerequisites:</i>Group Theory <br>  
+    <i>Required for:</i> Using the Cantor set to classify (infinite) surfaces (W3)<br> <br>
+    <b>Chilis:</b> <img id="chili" src="chili.png"> <img id="chili" src="chili.png"> <img id="chili" src="chili.png"> <br>
+    <b>Class Actions:</b> <grey>HW Optional</grey> <br>
+    <b>Themes:</b> <purple>Squishy shapes</purple>
+    </p>
+  <p class="info" id="2G19D">
+    <b>Surreal numbers</b> (Aaron, <grey>M</grey>TWΘF)<br><br>
+      A few decades ago, John Conway and some of his colleagues spent several years hard at work playing games. They played classic games like Go, Nim and Dots-and-Boxes, and catalogued new ones like Hackenbush and Sprouts. Eventually a general theory emerged—not the probabilistic game theory of economists, but a deep combinatorial labyrinth of deterministic possibilities. <br>
+ Out of all this complexity, we will carve a number system. In order to measure the unfairness of
+ partisan games, we’ll construct the surreals, a number system which contains not only the reals and
+ the hyperreals, but the ordinals, and every infinite or infinitesimal element of any ordered field set
+ theory can build. <br>
+ Is this overkill to get a little better at the Go endgame? Of course, but as an algebraic structure,
+ it can’t be beat.
+ 
+   <br><br>
+       <i>Class format:</i> This class will be mostly problem-solving, while we play some games and start to figure
+ out how to build a number system out of them. Once we have a handle on how the surreals work, I’ll
+ tell you a few more results about their big-picture structure.
+ <br>
+       <i>Prerequisites:</i> Some set theory, including ordinal arithmetic
+  <br> <br>
+       <b>Chilis:</b> <img id="chili" src="chili.png"> <br>
+       <b>Class Actions:</b>  &#128214; &#129300; &#128101; <blue>HW Recommended</blue> <br>
+       <b>Themes:</b> <purple>Algebraic structures, Games</purple>
+ 
+
+    </p>
+  <p class="info" id="2G20D">
+    <b>The fundamental theorem of algebra and its many proofs</b> (Jorge, <grey>M</grey>TWΘF)<br><br>
+The Fundamental Theorem of Algebra states that any complex polynomial must have a complex root. Although this problem would seem to lie at the intersection of the theory of numbers and the theory of equations, it is absolutely baffling how many seemingly-unrelated areas of mathematics can be interweaved to come up with different beautiful proofs of the result!<br>
+Indeed, in this class we will think of the FTA in terms of advanced calculus, complex analysis, field extensions and topology. We will give an independent proof inside of each domain—a testament to the richness of the complex numbers as a mathematical structure. Perhaps more importantly, this gives us an excuse to learn advanced mathematics with an immediate theoretical application.<br>
+As we go through each of the proofs, I will encourage us to discuss what is it about them that makes them fail on a different field, such as <span class="math inline">\(\mathbb{Q}\)</span> or <span class="math inline">\(\mathbb{R}\)</span>. This kind of reasoning will help you truly understand what <span class="math inline">\(\mathbb{C}\)</span> and <span class="math inline">\(\mathbb{R}\)</span> are, and what makes them unique.
+  <br><br>
+      <i>Class format:</i> Lecture with QA.
+<br>
+      <i>Prerequisites: </i>Complex numbers arithmetic, in particular Euler’s formula and De Moivre’s formula.
+Calculus: continuity, integration, and the extreme value theorem. Abstract algebra: the definitions of
+groups, rings and fields. Linear algebra: the definition of a vector space.
+
+ <br> <br>
+      <b>Chilis:</b> <img id="chili" src="chili.png"> <img id="chili" src="chili.png"> <img id="chili" src="chili.png"> <img id="chili" src="chili.png"><br>
+      <b>Class Actions: </b> <grey>HW Optional</grey> <br>
+      <b>Themes:</b> <purple> Smorgasbord, Analysis</purple>
+
+  </p>
+  <p class="info" id="3G1D"><b>A Combinatorial Proof of the Jacobi Triple Product Identity</b> (Gabrielle, MTWΘF)<br><br>
+    For all q and z for which the following sums and products makes sense, we have the following equality,
+called the Jacobi Triple Product Identity:
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+  <munderover>
+    <mo>&#x220F;<!-- ∏ --></mo>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mi style="font-size: 15px; font:normal; font-weight:10">i</mi>
+      <mo>=</mo>
+      <mn>0</mn>
+    </mrow>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mo>&#x221E;</mo>
+    </mrow>
+  </munderover>
+  <mrow class="MJX-TeXAtom-ORD">
+    <mo stretchy="false">(</mo>
+    <mn>1</mn>
+    <mo>+</mo>
+    <mi style="font-size: 15px; font:normal; font-weight:10">z</mi>
+    <msup>
+      <mi style="font-size: 15px; font:normal; font-weight:10">q</mi>
+      <mrow class="MJX-TeXAtom-ORD">
+        <mi style="font-size: 15px; font:normal; font-weight:10">i</mi>
+      </mrow>
+    </msup>
+    <mo stretchy="false">)</mo>
+  </mrow>
+  <munderover>
+    <mo>&#x220F;<!-- ∏ --></mo>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mi style="font-size: 15px; font:normal; font-weight:10">j</mi>
+      <mo>=</mo>
+      <mn>0</mn>
+    </mrow>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mo>&#x221E;</mo>
+    </mrow>
+  </munderover>
+  <mrow class="MJX-TeXAtom-ORD">
+    <mo stretchy="false">(</mo>
+    <mn>1</mn>
+    <mo>+</mo>
+    <msup>
+      <mi style="font-size: 15px; font:normal; font-weight:10">z</mi>
+      <mrow class="MJX-TeXAtom-ORD">
+        <mo>&#x2212;<!-- − --></mo>
+        <mn>1</mn>
+      </mrow>
+    </msup>
+    <msup>
+      <mi style="font-size: 15px; font:normal; font-weight:10">q</mi>
+      <mrow class="MJX-TeXAtom-ORD">
+        <mi style="font-size: 15px; font:normal; font-weight:10">j</mi>
+        <mo>+</mo>
+        <mn>1</mn>
+      </mrow>
+    </msup>
+    <mo stretchy="false">)</mo>
+  </mrow>
+  <munderover>
+    <mo>&#x220F;<!-- ∏ --></mo>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mi style="font-size: 15px; font:normal; font-weight:10">k</mi>
+      <mo>=</mo>
+      <mn>0</mn>
+    </mrow>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mo>&#x221E;</mo>
+    </mrow>
+  </munderover>
+  <mrow class="MJX-TeXAtom-ORD">
+    <mo stretchy="false">(</mo>
+    <mn>1</mn>
+    <mo>&#x2212;<!-- − --></mo>
+    <msup>
+      <mi style="font-size: 15px; font:normal; font-weight:10">q</mi>
+      <mrow class="MJX-TeXAtom-ORD">
+        <mi style="font-size: 15px; font:normal; font-weight:10">k</mi>
+        <mo>+</mo>
+        <mn>1</mn>
+      </mrow>
+    </msup>
+    <mo stretchy="false">)</mo>
+  </mrow>
+  <mo>=</mo>
+  <munderover>
+    <mo>&#x2211;<!-- ∑ --></mo>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mi style="font-size: 15px; font:normal; font-weight:10">&#x2113;<!-- ℓ --></mi>
+      <mo>=</mo>
+      <mo>&#x2212;<!-- − --></mo>
+      <mrow class="MJX-TeXAtom-ORD">
+        <mo>&#x221E;</mo>
+      </mrow>
+    </mrow>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mo>&#x221E;</mo>
+    </mrow>
+  </munderover>
+  <mrow class="MJX-TeXAtom-ORD">
+    <msup>
+      <mi style="font-size: 15px; font:normal; font-weight:10">z</mi>
+      <mrow class="MJX-TeXAtom-ORD">
+        <mi style="font-size: 15px; font:normal; font-weight:10">&#x2113;<!-- ℓ --></mi>
+      </mrow>
+    </msup>
+    <msup>
+      <mi style="font-size: 15px; font:normal; font-weight:10">q</mi>
+      <mrow class="MJX-TeXAtom-ORD">
+        <mi style="font-size: 15px; font:normal; font-weight:10">&#x2113;<!-- ℓ --></mi>
+        <mo stretchy="false">(</mo>
+        <mi style="font-size: 15px; font:normal; font-weight:10">&#x2113;<!-- ℓ --></mi>
+        <mo>&#x2212;<!-- − --></mo>
+        <mn>1</mn>
+        <mo stretchy="false">)</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo>/</mo>
+        </mrow>
+        <mn>2</mn>
+      </mrow>
+    </msup>
+  </mrow>
+</math>   
+   Yikes, but it’s useful (we will see an application!). Even more yikes, we’re going to prove this equality
+using partitions, where a partition of a nonnegative integer n is a way of writing n as a sum of
+positive integers, e.g. 4 + 1 + 1 + 1 is a partition of 7. Come learn about the shocking and beautiful
+interplay between combinatorics and analysis. (The intercast of this interplay includes partitions,
+Young diagrams, and generating functions.)
+
+<br>
+    <br> <i>Class format:</i> Days 1-4: Lecture < 30 minutes, IBL for the rest of class time; Day 5: Lecture<br>
+    <i>Prerequisites:</i> comfort with infinite series (be able to sum a geometric series, but we will ignore ques-
+tions of convergence) and limits (not much deeper than an intuitive notion); if you are worried about
+it, talk to me! <br><br>
+    <b>Chilis:</b> <img id="chili" src="chili.png"> <img id="chili" src="chili.png"> <img id="chili" src="chili.png"> <img id="chili" src="chili.png"> <br>
+    <b>Class Actions:</b>  &#128214; (Optional:  &#128101;) <blue>HW Recommended</blue> <br>
+    <b>Themes:</b> <purple>Algebraic Combinatorics</purple>
+    </p>
+  <p class="info" id="3G2D"><b>Combinatorial species</b> (Linus, MTWΘF )<br><br>
+    Permutations are a species. You know how to count how many permutations there are. <br>
+Domino tilings of width-2 rectangles, is a species. You may or may not know how to count them. <br>
+If you breed them, you get the species “Permutations next to domino tilings.” Or if you breed them
+a different way you get “Permutations of domino tilings” or “Domino tilings, where each tile is a
+permutation.” Do you know how to count those? How about doing it in literally one line of algebra? <br>
+
+The theory of combinatorial species shows us how to associate each species to a “generating func-
+tion,” an algebraic cheat code for solving combinatorics problems. A beautiful correspondence trans-
+ports us between algebraic operations on generating functions, and different types of breeding. We’ll
+
+use this to count some elusive types of objects, and also, to give 2-line proofs of a few bijections that
+would probably take a whole class period to prove normally.
+  
+    <br><br>
+    <i>Class format:</i> I’ll lecture some amount (more or less depending on the day) and then break y’all into
+    breakout rooms. I’ll have some problems for you to solve, as well as time for camper-guided exploration
+    and discovery of new species. <br>
+    <i>Prerequisites:</i> If you already know how to use generating functions, you’ll be a little bored in day
+    1. Knowing how to differentiate functions like xex
+    
+    is nice, but it’s totally OK to just type it into
+    
+    WolframAlpha. <br> <br>
+    <b>Chilis:</b> <img id="chili" src="chili.png"> <img id="chili" src="chili.png"> <img id="chili" src="chili.png"> <br>
+    <b>Class Actions:</b>&#129300; &#128101;<gret>HW Optional</gret> <br>
+    <b>Themes:</b> <purple> Algebraic Combinatorics</purple>
+    </p>
+  <p class="info" id="3G3D">
+    <b>Graph colorings</b> (Mia, MTW</grey>ΘF)<br><br>
+    A new island has been discovered in the Arctic Ocean! While the geographers are arguing over how to divide the island, the cartographers begin to wonder about the map: how many colors are needed to color the countries so that any two countries that share a border get different colors? The Four Color Theorem says just four. We won’t prove this – it took over 100 years and a computer program that checked 1,936 different cases to prove this theorem – but we will use this question as a springboard to others.<br>
+Suppose the countries decide that they have <i>non-negotiable</i> color preferences. For instance, the country Zudral demands to be cyan or magenta. And the country Scaecia refuses to be anything but light blue, sky blue, or cornflower blue. Given that each country now has a list of allowable colors, how does that change the cartographer’s ability to color the map?<br> Or what if we are allowed countries to be shaded in with several colors? In this case, Zudral could be indecisive and be one half cyan and one half magenta. Or what if we changed up the objective entirely and instead of focusing on the total number of colors used, we tried to minimize the number of colors “seen” in the neighboring countries? <br> Secretly, the questions above can be changed into questions about graph colorings, specifically, list coloring, fractional coloring, and “local coloring” respectively. With each new coloring, there arises a new chromatic number and we return to our central questions: <br> <br>
+(1) What are the bounds for this chromatic number? <br>
+(2) Can we construct a family of graphs that forces this chromatic number arbitrarily far from its bounds? <br>
+Note: Although maps are an excellent motivating example, we will be focusing on general graphs, not just planar graphs! 
+<br><br>
+     <i>Class format:</i> Interactive lecture<br>
+     <i>Prerequisites:</i> Graph theory <br> <br>
+     <b>Chilis:</b> <img id="chili" src="chili.png"> <img id="chili" src="chili.png"><br>
+     <b>Class Actions:</b>  (Optional: &#128172;)  <blue>HW Recommended</blue> <br>
+     <b>Themes:</b> <purple>Graph theory</purple>
+
+  </p>
+  <p class="info" id="3G4D">
+    <b>Finite Fourier analysis</b> (Mike Orrison, MTWΘF)<br><br>
+In this course, we will focus on how and why you might want to rewrite a complex-valued function
+defined on a finite abelian group as a linear combination of simple functions called characters. As we
+will see, doing so quickly leads to discussions of far-reaching algorithms and ideas in mathematics such
+as discrete Fourier transforms (DFTs), fast Fourier transforms (FFTs), and the Uncertainty Principle.
+  <br><br>
+      <i>Class format:</i> I was thinking I’d keep it pretty simple by just sharing my slides on Zoom, and annotating them along the way when helpful. I’m not planning on using any breakout rooms, etc.
+
+<br>
+      <i>Prerequisites:</i>Complex Numbers (basic arithmetic and geometric interpretations), Linear Algebra
+(bases, invertible matrices, eigenvalues, complex inner products, orthogonality), and Group Theory
+(examples of finite abelian groups and their subgroups, cosets, homomorphisms).
+
+
+ <br> <br>
+      <b>Chilis:</b> <img id="chili" src="chili.png"> <img id="chili" src="chili.png"> <img id="chili" src="chili.png"><br>      
+      <b>Class Actions: </b> <blue>HW Recommended</blue> <br>
+      <b>Themes:</b> <purple> Discrete analysis</purple>
+
+  </p>
+  <p class="info" id="3G5D"><b>Continued fractions</b> (Ben, MTWΘF)<br><br>
+    <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+      <mi style="font-size: 15px; font:normal; font-weight:10">One common, and quite good, approximation for π is &nbsp;</mi>
+      <mfrac>
+        <mn>22</mn>
+        <mn>7</mn>
+      </mfrac>
+      <mi style="font-size: 15px; font:normal; font-weight:10">,&nbsp; or &nbsp;</mi>
+      <mn>3</mn>
+      <mo>+</mo>
+      <mfrac>
+        <mn>1</mn>
+        <mn>7</mn>
+      </mfrac>
+      
+      <mi style="font-size: 15px; font:normal; font-weight:10">.&nbsp; A slightly better one is &nbsp;</mi> 
+      </math>
+      <br>
+      <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+      <mfrac>
+        <mn>333</mn>
+        <mn>106</mn>
+      </mfrac>
+      <mo>=</mo>
+      <mn>3</mn>
+      <mo>+</mo>
+      <mfrac>
+        <mn>1</mn>
+        <mrow>
+          <mn>7</mn>
+          <mo>+</mo>
+          <mfrac>
+            <mn>1</mn>
+            <mn>15</mn>
+          </mfrac>
+        </mrow>
+      </mfrac>
+  
+      <mi style="font-size: 15px; font:normal; font-weight:10">,</mi>
+    </math>
+    <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+    <mi style="font-size: 15px; font:normal; font-weight:10"> and a much better one is &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</mi>
+   </math>
+    <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+      <mfrac>
+        <mn>355</mn>
+        <mn>113</mn>
+      </mfrac>
+      <mo>=</mo>
+      <mn>3</mn>
+      <mo>+</mo>
+      <mfrac>
+        <mn>1</mn>
+        <mrow>
+          <mn>7</mn>
+          <mo>+</mo>
+          <mfrac>
+            <mn>1</mn>
+            <mn>16</mn>
+          </mfrac>
+        </mrow>
+      </mfrac>
+      <mi style="font-size: 15px; font:normal; font-weight:10">.</mi>
+    </math>
+    <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+      <mi style="font-size: 15px; font:normal; font-weight:10">(It’s accurate to six decimal places—if we approximate π by &nbsp;</mi>
+      <mfrac>
+        <mn>3141</mn>
+        <mn>1000</mn>
+      </mfrac>
+      <mi style="font-size: 15px; font:normal; font-weight:10">, it’s accurate to only three places despite having</mi> 
+      </math>
+      <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+      <mi style="font-size: 15px; font:normal; font-weight:10"> a relatively huge denominator, which you’d expect to let us get closer.) These “very close” approximations all come</mi>
+      </math>
+      <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+       <mi style="font-size: 15px; font:normal; font-weight:10"> from continued fractions, which you might also have
+        heard about in the golden ratio, φ, which is given by</mi>
+        </math>
+    <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+      <mrow class="MJX-TeXAtom-ORD">
+        <mo>&#x3C6;</mo>
+      </mrow>
+      <mo>=</mo>
+      <mn>1</mn>
+      <mo>+</mo>
+      <mfrac>
+        <mn>1</mn>
+        <mrow>
+          <mn>1</mn>
+          <mo>+</mo>
+          <mfrac>
+            <mn>1</mn>
+            <mrow>
+              <mn>1</mn>
+              <mo>+</mo>
+              <mfrac>
+                <mn>1</mn>
+                <mrow>
+                  <mn>1</mn>
+                  <mo>+</mo>
+                  <mo>.</mo>
+                  <mo>.</mo>
+                  <mo>.</mo>
+                </mrow>
+              </mfrac>
+            </mrow>
+          </mfrac>
+        </mrow>
+      </mfrac>
+      <mo>=</mo>
+      <mfrac>
+        <mrow>
+          <mn>1</mn>
+          <mo>+</mo>
+          <msqrt>
+            <mn>5</mn>
+          </msqrt>
+        </mrow>
+        <mn>2</mn>
+      </mfrac>
+      <mi style="font-size: 15px; font:normal; font-weight:10">.</mi>
+    </math>
+    <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+    <mi style="font-size: 15px; font:normal; font-weight:10">More generally, if we take an eventually periodic continued fraction, such as  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</mi>
+    </math>
+    <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+      <mn>3</mn>
+      <mo>+</mo>
+      <mfrac>
+        <mn>1</mn>
+        <mrow>
+          <mn>4</mn>
+          <mo>+</mo>
+          <mfrac>
+            <mn>1</mn>
+            <mrow>
+              <mn>5</mn>
+              <mo>+</mo>
+              <mfrac>
+                <mn>1</mn>
+                <mrow>
+                  <mn>4</mn>
+                  <mo>+</mo>
+                  <mfrac>
+                    <mn>1</mn>
+                    <mrow>
+                      <mn>5</mn>
+                      <mo>+</mo>
+                      <mfrac>
+                        <mn>1</mn>
+                        <mrow>
+                          <mn>4</mn>
+                          <mo>+</mo>
+                          <mfrac>
+                            <mn>1</mn>
+                            <mrow>
+                              <mn>5</mn>
+                              <mo>+</mo>
+                              <mfrac>
+                                <mn>1</mn>
+                                <mrow>
+                                  <mo>.</mo>
+                                  <mo>.</mo>
+                                  <mo>.</mo>
+                                </mrow>
+                              </mfrac>
+                            </mrow>
+                          </mfrac>
+                        </mrow>
+                      </mfrac>
+                    </mrow>
+                  </mfrac>
+                </mrow>
+              </mfrac>
+            </mrow>
+          </mfrac>
+        </mrow>
+      </mfrac>
+    </math>
+    <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+      <mi style="font-size: 15px; font:normal; font-weight:10">we can show that it’s a number of the form &nbsp;</mi>
+      <mfrac>
+        <mrow>
+          <mi style="font-size: 15px; font:normal; font-weight:10">a</mi>
+          <mo>+</mo>
+          <msqrt>
+            <mi style="font-size: 15px; font:normal; font-weight:10">d</mi>
+          </msqrt>
+        </mrow>
+        <mi style="font-size: 15px; font:normal; font-weight:10">b</mi>
+      </mfrac>
+      <mi style="font-size: 15px; font:normal; font-weight:10">&nbsp; for some integers a, b, d. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</mi>
+    </math>
+    <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+      <mi style="font-size: 15px; font:normal; font-weight:10">But what about the other way around? If we have a real number of the form &nbsp;</mi>
+      <mfrac>
+        <mrow>
+          <mi style="font-size: 15px; font:normal; font-weight:10">a</mi>
+          <mo>+</mo>
+          <msqrt>
+            <mi style="font-size: 15px; font:normal; font-weight:10">d</mi>
+          </msqrt>
+        </mrow>
+        <mi style="font-size: 15px; font:normal; font-weight:10">b</mi>
+      </mfrac>
+      <mi style="font-size: 15px; font:normal; font-weight:10">,&nbsp; what can we say </mi>
+    </math>
+    <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+    <mi style="font-size: 15px; font:normal; font-weight:10">about its continued fraction expansion?&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</mi>
+    </math>
+    <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+      <mi style="font-size: 15px; font:normal; font-weight:10">
+    This course will aim to answer this question, and also provide a more general introduction to
+      continued fraction expansions.</mi>
+     </math>
+      <br>
+    <br> <i>Class format:</i> The course will be primarily lecture-based, with homework problems building intuition
+    for the concepts and exploring related topics <br>
+    <i>Prerequisites:</i> None! Some past exposure to the idea of a limit won’t hurt, but isn’t strictly necessary <br> <br>
+    <b>Chilis:</b> <img id="chili" src="chili.png"> <img id="chili" src="chili.png"> <br>
+    <b>Class Actions: </b><blue>HW Recommended</blue> <br>
+    <b>Themes:</b> <purple>Discrete analysis</purple>
+    </p>
+  <p class="info" id="3G6D"><b>Dirichlet’s class number formula </b> (Viv, MTWΘF )<br><br>
+    Here’s a fun fact:
+    <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+      <mn>1</mn>
+      <mo>&#x2212;<!-- − --></mo>
+      <mfrac>
+        <mn>1</mn>
+        <mn>3</mn>
+      </mfrac>
+      <mo>+</mo>
+      <mfrac>
+        <mn>1</mn>
+        <mn>5</mn>
+      </mfrac>
+      <mo>&#x2212;<!-- − --></mo>
+      <mfrac>
+        <mn>1</mn>
+        <mn>7</mn>
+      </mfrac>
+      <mo>+</mo>
+      <mo>&#x22C5;<!-- ⋅ --></mo>
+      <mo>&#x22C5;<!-- ⋅ --></mo>
+      <mo>&#x22C5;<!-- ⋅ --></mo>
+      <mo>=</mo>
+      <mfrac>
+        <mi>&#x03C0;<!-- π --></mi>
+        <mn>4</mn>
+      </mfrac>
+    </math>
+    Some people think of this fact as a fact about the Taylor expansion of arctangent. But I think of it
+as a very deep fact about the function <br> x<sup>2</sup> + y<sup>2</sup>, or in other words, a specific example of Dirichlet’s
+wonderful class number formula. <br> <br>
+A binary quadratic form is a function :
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+  <mi>f</mi>
+  <mrow>
+    <mo>(</mo>
+    <mi>x</mi>
+    <mo>,</mo>
+    <mi>y</mi>
+    <mo>)</mo>
+  </mrow>
+  <mo>=</mo>
+  <mi>a</mi>
+  <msup>
+    <mi>x</mi>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mn>2</mn>
+    </mrow>
+  </msup>
+  <mo>+</mo>
+  <mi>b</mi>
+  <mi>x</mi>
+  <mi>y</mi>
+  <mo>+</mo>
+  <mi>c</mi>
+  <msup>
+    <mi>y</mi>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mn>2</mn>
+    </mrow>
+  </msup>
+</math>
+with a, b, c ∈ Z, which has discriminant d = b
+
+2 − 4ac. The class number of a given discriminant d
+is the number of equivalence classes of binary quadratic forms with discriminant d under a certain
+group action. Dirichlet’s proof of his Class Number Formula is a truly beautiful argument, with ideas
+ranging from group theory to clever averaging to, at one point, the area of an ellipse. Come explore
+one of my favorite proofs of all time!  
+    <br><br>
+    <i>Class format:</i> Lecture; I’ll be sharing a tablet screen and writing. <br>
+    <i>Prerequisites:</i>  Group Theory; if you haven’t seen group actions, talk to me! It is also helpful if you
+    have seen the Chinese Remainder Theorem, and 2-by-2 matrices (how they multiply, and how they
+    act on 2-dimensional vectors).<br> <br>
+    <b>Chilis:</b> <img id="chili" src="chili.png"> <img id="chili" src="chili.png"> <img id="chili" src="chili.png"> <img id="chili" src="chili.png"> <br>
+    <b>Class Actions:</b> <blue>HW Recommended</blue> <br>
+    <b>Themes:</b> <purple>Number theory</purple>
+    </p>
+  <p class="info" id="3G7D"><b>Kleinian groups and fractals</b> (Dan Gulotta, MTWΘF )<br><br>
+     <img src="fractal2.png" alt="fractal" class = "fractal"> <img src="jorgensen.png" class = "fractal"> <br><br>
+     The fractals above are very symmetric. But the symmetries are not the familiar, Euclidean ones; instead they are of the form <span class="math inline">\(z \mapsto \frac{az+b}{cz+d}\)</span>, where <span class="math inline">\(z\)</span> is a complex coordinate. Such symmetries are called Möbius transformations. You can generate more fractals like this here: <a href="https://guests.mpim-bonn.mpg.de/gulotta/mc21.html">https://guests.mpim-bonn.mpg.de/gulotta/mc21.html</a>.<br>
+     So how do we construct a group of Möbius transformations that produces fractals like these? Surprisingly, the answer involves something called uniformization. Uniformization is the process of expressing a complicated surface as a quotient of a simpler surface by a group action. This allows us to use group theory to understand geometry and topology, and vice versa.<br>
+     Our exploration of uniformization will lead to a debate about the proper way to gift-wrap a donut (Fuchs prefers wrapping paper with no holes while Schottky prefers paper with no corners). We will manage to satisfy both sides by taking a bite out of the donut, and we’ll get pretty pictures as a reward.
+     <br><br>
+    <i>Class format:</i> Most of the time will be spent on lecture, with some opportunities for discussion and
+    exploration. I will use a virtual whiteboard. <br>
+    <i>Prerequisites:</i>  I will assume that you are familiar with complex numbers, the definition of a group,
+    and 2 × 2 matrices.<br> <br>
+    <b>Chilis:</b> <img id="chili" src="chili.png"> <img id="chili" src="chili.png"> <img id="chili" src="chili.png"> <br>
+    <b>Class Actions:</b> &#128101; (Optional: &#128172;) <blue>HW Recommended</blue> <br>
+    <b>Themes:</b> <purple>Symmetries</purple>
+  </p>
+  <p class="info" id="3G8D">
+    <b>Learning online learning online</b> (Eric Neyman, MTWΘF)<br><br>
+You should read the title of this class as Learning (Online Learning) Online. Online learning – and
+more generally online algorithms – is a topic within the study of algorithms. The word online here
+does not mean “over the internet”; instead it means sequential decision-making. For example, let’s say
+that once the pandemic is over, you want to celebrate by eating out at the restaurant down the block
+once a week for a year. (It just opened up so you haven’t been there, but the menu looks good!) You
+order a dish, and really like it. The following week, you need to make a decision: get the same dish
+again, or try something new? Getting the same dish again means you’ll probably like it a lot, but if
+you get something new then on the off chance that you like it even more, that’ll be good to know for
+the future. How should you balance trying new things with getting things you already know you like?
+If you find this question intriguing and want to learn more, come to my class!
+  <br><br>
+      <i>Class format:</i> I’ll be using my iPad as a whiteboard (so I’ll be screen sharing my iPad and writing on
+it). Probably around 20% of the time will be spent in breakout rooms. Of the other 80%, probably
+25% will discussion and 75% will be interactive lecture.
+
+
+<br>
+      <i>Prerequisites:</i>basic facts about expected values, like linearity of expectation. Basic calculus will at
+times be helpful, but you should be able to follow most of the class without it.
+
+
+
+ <br> <br>
+      <b>Chilis:</b> <img id="chili" src="chili.png"> <img id="chili" src="chili.png"> <br>     
+<b>Class Actions: </b> &#128172; &#129300; &#128101; <blue>HW Recommended</blue> <br>
+      <b>Themes:</b> <purple> CS & Algorithms, Math in real life</purple>
+
+  </p>
+  <p class="info" id="3G9D"><b>Cryptography and how to break it</b> (Linus, MTWΘF)<br><br>
+    In a typical cryptography class, you learn cryptosystems like Diffie-Hellman that let two people commu-
+    nicate securely even if all their messages are open to the public. And, yes, we will do that. (Contents:
+    Diffie-Hellman, RSA, Yau circuit evaluation, mayyybe elliptic curves.)
+    But more importantly. Just as there exist smart mathematicians trying to make the internet secure,
+    there exist smart mathematicians trying to learn your credit card details. And from their battle springs
+    cool math. So in this class, we’ll look at a ton of attacks that bust open modern cryptosystems when
+    they are implemented even slightly incorrectly. <br>
+    <br> <i>Class format:</i> Lecture<br>
+    <i>Prerequisites:</i> Modular arithmetic, enough to have a<sup>p</sup> = a mod p deep in your heart.<br> <br>
+    <b>Chilis:</b> <img id="chili" src="chili.png"> <img id="chili" src="chili.png"> <img id="chili" src="chili.png"> <br>
+    <b>Class Actions: </b><blue>HW Recommended</blue> <br>
+    <b>Themes:</b> <purple>CS & algorithms, Number theory</purple> </p>
+  <p class="info" id="3G10D"><b>Introduction to analysis </b> (Alan & Charlotte, MTWΘF )<br><br>
+    This class is a rigorous introduction to limits and related concepts in calculus. Consider the following
+questions: <br> <br>
+(1) Every calculus student knows that: <br>
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+  <mfrac>
+    <mi>d</mi>
+    <mrow>
+      <mi>d</mi>
+      <mi>x</mi>
+    </mrow>
+  </mfrac>
+  <mrow>
+    <mo>(</mo>
+    <mi>f</mi>
+    <mo>+</mo>
+    <mi>g</mi>
+    <mo>)</mo>
+  </mrow>
+  <mo>=</mo>
+  <msup>
+    <mi>f</mi>
+    <mo>&#x2032;</mo>
+  </msup>
+  <mo>+</mo>
+  <msup>
+    <mi>g</mi>
+    <mo>&#x2032;</mo>
+  </msup>
+</math>
+Is it also true that:
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+  <mfrac>
+    <mi>d</mi>
+    <mrow>
+      <mi>d</mi>
+      <mi>x</mi>
+    </mrow>
+  </mfrac>
+  <munderover>
+    <mo>&#x2211;<!-- ∑ --></mo>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mi>n</mi>
+      <mo>=</mo>
+      <mn>1</mn>
+    </mrow>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mo>&#x221E;</mo>
+    </mrow>
+  </munderover>
+  <msub>
+    <mi>f</mi>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mi>n</mi>
+    </mrow>
+  </msub>
+  <mo>=</mo>
+  <munderover>
+    <mo>&#x2211;<!-- ∑ --></mo>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mi>n</mi>
+      <mo>=</mo>
+      <mn>1</mn>
+    </mrow>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mo>&#x221E;</mo>
+    </mrow>
+  </munderover>
+  <msubsup>
+    <mi>f</mi>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mi>n</mi>
+    </mrow>
+    <mo>&#x2032;</mo>
+  </msubsup>
+</math>
+(2) Every calculus student knows that a + b = b + a. Is it also true that you can rearrange terms
+in an infinite series without changing its sum? <br> <br>
+Sometimes, things are not as they seem. For example, the answer to the second question is a
+resounding “no.” The Riemann rearrangement theorem, which we will see, states that we can rearrange
+the terms in infinite series such as:
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+  <munderover>
+    <mo>&#x2211;<!-- ∑ --></mo>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mi>n</mi>
+      <mo>=</mo>
+      <mn>1</mn>
+    </mrow>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mo>&#x221E;</mo>
+    </mrow>
+  </munderover>
+  <mfrac>
+    <mrow>
+      <mo stretchy="false">(</mo>
+      <mo>&#x2212;<!-- − --></mo>
+      <mn>1</mn>
+      <msup>
+        <mo stretchy="false">)</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi>n</mi>
+        </mrow>
+      </msup>
+    </mrow>
+    <mi>n</mi>
+  </mfrac>
+</math>
+so that the sum converges to π, e, or whatever we want!
+
+To help us study the questions above and many other ones, the key tool we’ll use is the “epsilon-
+delta definition” of a limit. This concept can be hard to work with at first, so we will study many
+
+examples and look at related notions, such as uniform convergence. Being comfortable reasoning with
+limits is central to the field of mathematical analysis, and will open the door to some very exciting
+mathematics.
+  
+    <br><br>
+    <i>Class format:</i> Mostly lecture-based. We’ll spend some time each class in breakout rooms discussing
+    problems. <br>
+    <i>Prerequisites:</i> a calculus class of some kind <br> 
+    <i>Required for:</i> The inverse and implicit function theorems (W4); Nowhere differentiable but continuous
+    functions are everywhere! (W4) <br> <br>
+    <b>Chilis:</b> <img id="chili" src="chili.png"> <img id="chili" src="chili.png"> <br>
+    <b>Class Actions:</b> &#128172;&#129300; &#128101; <red>HW Required</red> <br>
+    <b>Themes:</b> <purple>Analysis</purple>
+    </p>
+  <p class="info" id="3G11D">
+    <b>Noncommutative ring theory (1 of 2)</b> (Susan, MTWΘF)<br><br>
+    A ring <i>R</i> is called “simple” if its only ideals are {0} and <i>R</i> itself. A commutative ring is simple if and only if it is a field. A good first guess would be that a noncommutative ring is simple if and only if it is a division ring. This would also be a wrong first guess. Unfortunately, in noncommutative rings simplicity gets complicated.<br> In this class we’ll prove the Wedderburn-Artin’s structure theorem for semi simple rings, and see how simplicity and division rings are related. We’ll start this week with a quick jaunt through module theory. We’ll define modules, prove Zassenhaus’s lemma and the Schreier refinement theorem, and use these results to prove the Jordan–Hölder’s theorem, which essentially says that every sufficiently nice module has a unique decomposition into its simplest components.
+<br><br>
+    <i>Class format:</i> Interactive lecture <br>
+    <i>Prerequisites:</i>  Ring theory, or a solid understanding of the definition of rings, domains, division rings, and ideals. <br>
+    <i>Required for:</i> Noncommutative ring theory (2 of 2) (W4) <br> <br>
+    <b>Chilis:</b> <img id="chili" src="chili.png"> <img id="chili" src="chili.png"> <img id="chili" src="chili.png"> <img id="chili" src="chili.png"> <br>
+    <b>Class Actions:</b>  (Optional: &#128172;) <blue>HW Recommended</blue> <br>
+    <b>Themes:</b> <purple>Math in real life</purple>
+
+
+    
+  </p>
+  <p class="info" id="3G12D">
+    <b>Non-Euclidean geometries</b> (Samantha, MTWΘF)<br><br>
+The geometry you’ve seen in school was likely Euclidean geometry, and it’s based on five different
+axioms, or assumptions. One of those axioms is the Parallel Postulate, which says that if you have
+a line and a point that’s not on the line, you can draw exactly one line through that point which is
+parallel to the first line. <br>
+
+What happens if you remove this axiom? You’ll get different types of geometry called spherical and
+hyperbolic geometry. In this class, we’ll explore basic geometry concepts in these geometries and see
+what’s the same and what’s different from Euclidean geometry. Note: Very few proofs (if any) will be
+given. Instead, you’ll be exploring the concepts using online applets and testing out lots of examples!
+
+
+
+  <br><br>
+      <i>Class format:</i> First day will be a lecture and the remaining days will be IBL, meaning I’ll give you
+lots of questions to explore in groups, and you’ll learn by working through the problems (instead of
+being taught directly by me).
+
+
+
+<br>
+      <i>Prerequisites: </i>Euclidean geometry
+
+
+ <br> <br>
+      <b>Chilis:</b> <img id="chili" src="chili.png"> <br>
+<b>Class Actions: </b> &#128214; &#128172; &#129300; &#128101; <grey>No HW</grey> <br>
+      <b>Themes:</b> <purple> Rigid shapes</purple>
+
+  </p>
+  <p class="info" id="3G13D"><b>Introduction to linear algebra</b> (Emily, MTWΘF)<br><br>
+    Linear algebra is a fundamental area of mathematics that deals with vectors, matrices, and linear
+
+    systems, but really it is so much more than that. It provides us with the building blocks to bet-
+    ter understand so many areas of applied and pure math, from geometry to homological algebra to
+    
+    engineering. Every mathematician learns linear algebra at some point! <br>
+    Some topics that we will explore: vector spaces, dimension, matrices, linear transformations, rank,
+    and as many other topics as we can fit in at a 2-chili pace. We will approach topics from both
+    computational (doing examples) and theoretical (doing proofs) perspectives, so some comfortability
+    with abstract concepts would be good to have. Homework is required in the sense that you should
+    definitely attempt it to gain a fuller understanding, but it will be neither collected nor graded. <br>
+    <br> <i>Class format:</i> You can expect about half of our class-time to be spent in a lecture format, and the
+    other half spent doing IBL style worksheets.<br>
+    <i>Prerequisites:</i> None officially, but taking the Mathcamp crash course at the same time would be a
+good idea if you are new to abstraction.<br>
+<i>Required for:</i> Representations of symmetric groups (W2); The calculus of variations (W3); The Schwarzschild solution (W3); The derivative as a linear transformation (W4); The fundamental theo-
+rem of algebra and its many proofs (W4); Finite Fourier analysis (W4) <br> <br>
+    <b>Chilis:</b> <img id="chili" src="chili.png"> <img id="chili" src="chili.png"> <br>
+    <b>Class Actions:</b> &#128214; &#129300; (Optional: &#128172; &#128101;) <red>HW Required</red> <br>
+    <b>Themes:</b> <purple>Algebraic structures</purple>
+    </p>
+  <p class="info" id="3G14D"><b>Introduction to ring theory </b> (Susan, MTWΘF ) <br><br>
+    Ring theory is a beautiful field of mathematics. We cut ourselves loose from our usual number
+systems—the complexes, the reals, the rationals, the integers, and just work with ...stuff. Stuff that
+you can add. And multiply. Rings are structures in which addition and multiplication exist and act as they “should.” Polynomials, power series, matrices, real-valued functions on a set—wherever you
+have some way of defining an addition and a multiplication, you’ve got a ring.
+Somehow, in throwing away the numbers that gave us our initial intuition about how addition and
+multiplication should work, we are left with a tool that is immensely powerful. Ring theory is the
+backbone of fields such as algebraic geometry, representation theory, homological algebra, and Galois
+theory.
+This class will be a quick introduction to some of the basics of ring theory. We will cover the ring
+axioms, homomorphisms of rings, quotient rings, and several important examples and counterexamples.
+   
+    <br><br>
+    <i>Class format:</i> Interactive lecture with problem sets designed to substantially boost understanding.<br>
+    <i>Prerequisites:</i> None <br> 
+    <i>Required for:</i> Finite fields and how to find them (W3); Noncommutative ring theory (1 of 2) (W3) <br> <br>
+    <b>Chilis:</b>  <img id="chili" src="chili.png"><img id="chili" src="chili.png"><img id="chili" src="chili.png"> <br>
+    <b>Class Actions:</b>  (Optional:  &#128172; ) <red>HW Required</red> <br>
+    <b>Themes:</b> <purple>Algebraic structures</purple>
+    </p>
+  <p class="info" id="3G15D"><b>Classifying infinite-type surfaces </b> (Assaf, MTWΘF ) <br><br>
+    An infinite-type surface is a surface which is not finite type. Think about infinite tori stuck together,
+    or a never-ending flute, or whatever the heck this thing is:
+    <img src="w3-assaf.png" alt ="image" id="Assaf">
+    You may have heard of the classification of (orientable) surfaces using genus and boundary compo-
+nents, but for infinite-type surfaces, the classification is much much more interesting, involving Cantor
+
+sets, and some really fun topological spaces. In this class, we will develop the theory of infinite-type
+surfaces and state the classification theorem, which was proven in 1963 by Ian Richards. Along the
+way, we will meet some famous infinite-type surfaces with some great names. <br><br>
+So... imagine Jacob’s Ladder, leaning on a Budding Cantor Tree over a Shark Tank. If you would
+like to learn how to visualize this not as an OSHA violation, but as infinite-type surfaces, come to this
+class!
+ 
+<br><br>
+    <i>Class format:</i> Lecture, with long-ish periods of collaboration<br>
+    <i>Prerequisites:</i> Topology (know the meaning of a “homeomorphism between compact Hausdorff topo-
+    logical spaces”) <br><br>
+    <b>Chilis:</b> <img id="chili" src="chili.png"> <img id="chili" src="chili.png"> <img id="chili" src="chili.png"><br>
+    <b>Class Actions:</b>  &#128172; &#128101; (Optional: &#128214;) <blue>HW Recommended</blue> <br>
+    <b>Themes:</b> <purple>Squishy shapes</purple>
+
+
+  </p>
+  <p class="info" id="3G16D">
+    <b>Noncommutative ring theory (2 of 2)</b> (Susan, MTWΘF)<br><br>
+A ring <span class="math inline">\(R\)</span> is called “simple” if its only ideals are <span class="math inline">\(\{0\}\)</span> and <span class="math inline">\(R\)</span> itself. A commutative ring is simple if and only if it is a field. A good first guess would be that a noncommutative ring is simple if and only if it is a division ring. This would also be a wrong first guess. Unfortunately, in noncommutative rings simplicity gets complicated.<br>
+In this class we’ll prove the Wedderburn–Artin’s structure theorem for semi simple rings, and see how simplicity and division rings are related. We’ll start this week with a quick jaunt through module theory. We’ll define modules, prove Zassenhaus’s lemma and the Schreier refinement theorem, and use these results to prove the Jordan–Hölder’s theorem, which essentially says that every sufficiently nice module has a unique decomposition into its simplest components.
+
+  <br><br>
+      <i>Class format:</i> Interactive lecture
+
+
+<br>
+      <i>Prerequisites:</i> Noncommutative ring theory (1 of 2)
+
+
+ <br> <br>
+      <b>Chilis:</b> <img id="chili" src="chili.png"> <img id="chili" src="chili.png"> <img id="chili" src="chili.png"> <img id="chili" src="chili.png"> <br>
+<b>Class Actions: </b> <blue>HW Recommended</blue> <br>
+      <b>Themes:</b> <purple> Algebreic structures</purple>
+
+  </p>
+  <p class="info" id="3G17D"><b>Kakeya sets over finite fields </b> (Charlotte, MTWΘF)<br><br>
+    Imagine you have a needle on a table in front of you. (For our mathematical purposes, we assume said
+    needle has zero width.) You would like to move the needle along the table so that it ends up rotated
+    180 degrees. <br>
+    Certainly rotating through an appropriately sized circle would do the trick, but can we rotate the
+    needle using less area? It turns out the answer to this question is yes - to an extreme degree. We can
+    rotate it using arbitrarily small area—that is, through as small a region as we would like! <br>
+    This probably surprising and counterintuitive fact (that we’ll prove in class) leads to one of the most
+    important and still unsolved conjectures in harmonic analysis: the Kakeya conjecture. In an effort
+    to shed some light on this conjecture, mathematicians analyzed the analogous problem in the setting
+    of finite fields. In the finite field setting, a shockingly simple and elegant proof was found using ...
+    polynomials! In this class we’ll discover the power of polynomials while proving the finite field Kakeya
+    conjecture. <br>
+    <br> <i>Class format:</i> I’ll be taking notes on a tablet during class. You’ll be listening, and asking or answering
+    questions if you’d like to! <br>
+    <i>Prerequisites:</i> It would be helpful, but not necessary, to be comfortable with the definition of a vector
+space and its dimension. <br><br>
+    <b>Chilis:</b> <img id="chili" src="chili.png"> <img id="chili" src="chili.png"> <br>
+    <b>Class Actions:</b> (Optional: &#9999;&#65039; &#128172; &#129300; ) <blue>HW Recommended</blue> <br>
+    <b>Themes:</b> <purple>Discrete analysis</purple>
+    </p>
+  <p class="info" id="3G18D"><b>Problem solving: geometric transformations </b> (Misha, MTWΘF ) <br><br>
+    In this class, we will learn how to use geometric transformations to solve math competition problems.
+The following topics will be covered: <br><br>
+(1) Translation and central symmetry (Monday) <br><br>
+(2) Rotation and reflection (Tuesday) <br><br>
+(3) Similarity and spiral similarity (Wednesday) <br><br>
+(4) Inversion (Thursday) <br><br>
+(5) On Friday, we’ll see problems of all types mixed together. <br><br>
+In class, we will learn about how to use these transformations, and how to spot when they can be
+used, by solving problems together. There will be problems left to solve on your own. You won’t need
+to solve these to keep up with the class, but you should, because solving problems on your own is
+critical to learning problem-solving.
+  
+    <br><br>
+    <i>Class format:</i>Extra-interactive lecture: I will often ask for suggestions for how to begin solving a
+    problem from you, and follow those whenever possible. <br>
+    <i>Prerequisites:</i>The equivalent of a high school geometry class. <br> <br>
+    <b>Chilis:</b> <img id="chili" src="chili.png"> <img id="chili" src="chili.png"> <br>
+    <b>Class Actions:</b> &#129300; (Optional: &#128172; ) <blue>HW Recommended</blue> <br>
+    <b>Themes:</b> <purple>Rigid shapes, Symmetries</purple>
+    </p>
+  <p class="info" id="3G19D">
+    <b>What are your numbers worth? or, the part of algebraic number theory we can actually do</b> (Eric, MTWΘF)<br><br>
+      In this class we will figure out what numbers are worth. Some numbers will be worth a lot, other numbers will be worth negative amounts, yet still others will be worth fractional amounts. We will learn the difference between knowing a number (very extremely mind-bogglingly hard) and knowing what a number is worth (surprisingly incredibly magically easy). We will gain the power of being able to figure out the worth of numbers (and many cool corollaries of this power) by making line doodles. In actuality this is a course about the local part of algebraic number theory, but those words won’t show up much until the last day. (If you want more technical words: we’ll be learning about the p-adic valuation(s) on Q and finite extensions thereof, through the lens of Newton polygons. But don’t worry if you don’t know any of these words yet!)
+  <br><br>
+      <i>Class format:</i> Here is the tentative plan. Day 1 will be an interactive lecture. Day 2 will be a very short lecture followed by you solving problems on a worksheet. Day 3 will be entirely worksheet. Day 4 will be back to interactive lecture. Day 5 will be split between lecture and worksheet. All the lecturing will be done through screensharing handwritten slides from an ipad.<br>
+      <i>Prerequisites:</i> You’ll need to be comfortable with modular arithmetic, at the level of being able to easily translate between statements in modular arithmetic and statements in divisibility of integers; Misha’s Topics in number theory course in week 1 will set you up well. On day 4 we will do a bit of linear algebra with coefficients in Z/pZ, but at a <img id="chili" src="chili.png"> pace so don’t be scared. There will be a few very optional homework problems that use background in ring theory and linear algebra. <br> <br>
+      <b>Chilis:</b> <img id="chili" src="chili.png"> <br>
+      <b>Class Actions:</b>  &#128214; &#9999;&#65039; &#129300; (Optional: &#128101;) <blue>HW Recommended</blue> <br>
+      <b>Themes:</b> <purple>Number theory</purple>
+
+  </p>
+  <p class="info" id="3G20D">
+    <b>PDEs part 1: Laplace’s equation</b> (Assaf, MTWΘF)<br><br>
+Laplace’s equation is the deceptively simple <span class="math display">\[\Delta f = g,\]</span> perhaps with some initial/boundary conditions, where <span class="math inline">\(\Delta f = \sum_i \frac{d^2}{dx_i^2} f\)</span> is the Laplacian. <span class="math inline">\(g = 0\)</span>, we say that <span class="math inline">\(f\)</span> is <em>harmonic</em>, and it turns out that there are lots and lots of strange, yet obvious-in-hindsight properties of harmonic functions. For example, nonconstant harmonic functions on <span class="math inline">\(\mathbb{R}^n\)</span> never attain an extreme value, and we can use this to provide a proof of the fundamental theorem of algebra using only partial differential equations! As another example, the value of an harmonic function at a point is equal to the average value of it on a circle around that point.<br>
+If any of this seems a bit like complex analysis, you’re mistaken! We will prove all of these facts using just the fact that <span class="math inline">\(\Delta f = 0\)</span>!<br>
+In this class, we’ll go through basic properties of Laplace’s equation with various boundary and initial conditions. We’ll prove the maximum principle, mean-value property, and link them to Brownian motion. We’ll talk about energy methods, and possibly move on to other, more advanced topics in elliptic PDEs.<br>
+Get ready to integrate by parts a lot!
+
+
+  <br><br>
+      <i>Class format:</i> Lecture with small work periods
+
+
+<br>
+      <i>Prerequisites:</i>Multivariable calculus -or- the Derivative as a linear transformation. Integration by
+parts is highly recommended. Complex analysis mildly recommended.
+
+ <br> <br>
+      <b>Chilis:</b> <img id="chili" src="chili.png"> <img id="chili" src="chili.png"> <img id="chili" src="chili.png"> → <img id="chili" src="chili.png"> <img id="chili" src="chili.png"> <img id="chili" src="chili.png"> <img id="chili" src="chili.png"> <br>
+<b>Class Actions: </b> &#128214; &#128172; &#128101; (Optional: &#9999;&#65039;) <blue>HW Recommended</blue> <br>
+      <b>Themes:</b> <purple> Analysis</purple>
+
+  </p>
+
+</body>
+</html>
